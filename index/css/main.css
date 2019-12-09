@@ -1,0 +1,771 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'PragmaticaCondC';
+    src: url('../fonts/PragmaticaCondC.eot');
+    src: url('../fonts/PragmaticaCondC.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PragmaticaCondC.woff2') format('woff2'),
+        url('../fonts/PragmaticaCondC.woff') format('woff'),
+        url('../fonts/PragmaticaCondC.ttf') format('truetype'),
+        url('../fonts/PragmaticaCondC.svg#PragmaticaCondC') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PragmaticaC';
+    src: url('../fonts/PragmaticaC-Oblique.eot');
+    src: url('../fonts/PragmaticaC-Oblique.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/PragmaticaC-Oblique.woff2') format('woff2'),
+        url('../fonts/PragmaticaC-Oblique.woff') format('woff'),
+        url('../fonts/PragmaticaC-Oblique.ttf') format('truetype'),
+        url('../fonts/PragmaticaC-Oblique.svg#PragmaticaC-Oblique') format('svg');
+    font-weight: 500;
+    font-style: italic;
+}
+
+body{
+    font-family:'PragmaticaC', sans-serif;
+    
+}
+.container{
+    width: 975px;
+    margin: 0 auto;
+}
+.pr-header{
+     background-color: #292e34;
+}
+.pr-header .pr-content {
+    display: flex;
+    justify-content: space-between;
+}
+.pr-header .pr-content .header-text{
+   padding-top: 8px;
+   padding-bottom: 7px;
+}
+.pr-header .pr-content .header-logo{
+    padding-top: 5px;
+    padding-bottom: 2px;
+}
+ .pr-header .pr-content .header-text p{
+    color: #ffffff;
+    font-size: 10.58px; 
+}
+header {
+    background-color: #ffffff;
+}
+header .contacts{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+header .contacts .adress{
+    display: flex;
+    justify-content: space-between;
+}
+header .contacts .adress .contact-text ul{
+   list-style: none;
+    position: relative;
+}
+header .contacts .adress .contact-text ul:after{
+   content: "";
+    position: absolute;
+    border-left: 1px dotted #cccccc;
+    width: 5px;
+    height: 60px; 
+    top: 5px;
+    left: 16px;
+}
+header .contacts .adress .contact-text:first-child ul:after{
+   display: none;
+}
+
+header .contacts .adress .contact-text ul li {
+    color: #292e34;
+    font-size:17.64px;
+    padding-left:40px;
+}
+menu .menu-button{
+    display: none;
+}
+
+menu{
+    background-color: #292e34;
+     padding-top: 25px;
+    padding-bottom: 20px;
+}
+menu ul{
+    list-style: none;
+    display: flex;
+    justify-content:space-around;
+}
+menu ul li a{
+  font-size:21.17px;
+  color: #ffffff;
+  position: relative;
+  text-decoration: none;
+  align-items: center;
+ font-family: 'PragmaticaCondC', sans-serif;
+
+
+}
+menu .container ul li a:after{
+    content:"";
+   position:absolute;
+   background-color: #ffffff;
+   top: 5px;
+   left: -11px;
+   width: 2px;
+   height: 15px;
+}
+menu .container ul li a:hover{
+   color: #ffc62e;
+}
+menu .container ul li:first-child  a:after{
+    display: none;
+}
+section.construction{
+    background-image: url(../img/bg.png);
+    background-size: cover;
+    position: relative;
+    padding-top: 140px;
+    padding-bottom: 30px;
+}
+section.construction:after{
+    content: "";
+    position: absolute;
+    background-image: url(../img/layer.png);
+    width: 200px;
+    height: 330px;
+    bottom: 1px;
+    left: 800px;
+}
+section.construction .construction-wrapp .construction-title{
+  padding-bottom: 40px;
+  width: 360px;
+  background-color: #555657;
+  opacity: 0.9;
+  width: 420px;
+  padding-left: 25px;
+}
+section.construction .construction-wrapp .construction-title .construction-text{
+    padding-top: 20px;
+}
+section.construction .construction-wrapp .construction-title .construction-text h3{
+    color: #ffffff;
+    font-size: 28.22px;
+   font-family: 'PragmaticaCondC', sans-serif;
+}
+section.construction .construction-wrapp .construction-title .construction-text p{
+    color: #ffffff;
+    font-size: 14.11px;
+    padding-top: 11px;
+}
+section.construction .construction-wrapp .construction-title .construction-btn{
+    padding-top: 30px;
+}
+section.construction .construction-wrapp .construction-title .construction-btn a{
+    text-decoration: none;
+    font-size: 28.22px;
+    color: #333333;
+    font-family: 'PragmaticaCondC', sans-serif;
+    background-color: #ffc62e;
+    padding: 20px 25px;
+}
+section.online-chat{
+    background-color: #ffc62e;
+}
+section.online-chat .online-content{
+    display: flex;
+}
+section.online-chat .online-content .text-logo{
+    display: flex;
+     align-items: center;
+}
+section.online-chat .online-content .text-logo p{
+    color: #333333;
+    font-size: 24.69px;
+}
+section.online-chat .online-content .text-logo .online-logo{
+    padding:15px 40px;
+}
+section.online-chat .online-content .text-logo .online-logo img{
+    width: 100%;
+    height: 100%;
+}
+section.online-chat .online-content .chat-logo{
+    display: flex;
+}
+section.online-chat .online-content .chat-logo{
+    background-color:#ffae00;
+    position: relative;
+    padding: 30px 40px 35px 30px;
+    font-family: 'PragmaticaCondC', sans-serif;
+}
+section.online-chat .online-content .chat-logo:before{
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    border-top: 55px solid transparent;
+   border-bottom:55px solid transparent; 
+   border-right:30px solid #ffae00; 
+   right: 100%;
+   top:0;
+   left:-29px;
+    
+}
+section.online-chat .online-content .chat-logo .chat-text a{
+    color:  #ffffff;
+    font-size: 31.75px;
+    padding-left: 20px;
+    text-decoration: none;
+}
+section.electricity{
+    background-color: #ffffff;
+}
+section.electricity .electricity-wrapp .electricity-content{
+    padding-top: 65px;
+    padding-bottom: 62px;
+    flex: 0 0 24%;
+}
+section.electricity .electricity-wrapp{
+    display: flex;
+    justify-content: space-between;
+}
+section.electricity .electricity-wrapp .electricity-content .content-img{
+  padding-bottom: 25px;
+}
+section.electricity .electricity-wrapp .electricity-content .content-img img{
+    width: 100%;
+}
+section.electricity .electricity-wrapp .electricity-content .content-text{
+    padding-bottom: 25px;
+}
+section.electricity .electricity-wrapp .electricity-content .content-text h2{
+    color: #292e34;
+    font-size: 21.17px;
+    font-family: 'PragmaticaCondC', sans-serif;
+}
+section.electricity .electricity-wrapp .electricity-content .content-text p{
+    color: #666666;
+    font-size: 14.11px;
+    padding-top: 20px;
+    line-height: 1.538;
+}
+section.electricity .electricity-wrapp .electricity-content .content-btn a{
+  text-decoration: none;
+  color: #333333;
+  font-size: 17.64px;
+  font-family: 'PragmaticaCondC', sans-serif;
+  background-color: #ffc62e;
+  padding: 11px 19px;
+}
+section.objects{
+    background-color: #292e34;
+}
+section.objects .object-wrapp .object-title{
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+section.objects .object-wrapp .object-title .object-logo{
+  padding: 5px 10px;
+}
+section.objects .object-wrapp .object-title .object-text h3{
+  color: #ffffff;
+  font-family: 'PragmaticaCondC', sans-serif;
+  font-size: 31.75px;
+}
+section.objects .object-wrapp .object-content{
+    padding-top: 25px;
+    padding-bottom: 45px;
+}
+section.objects .object-wrapp .object-content{
+    position: relative;
+}
+section.objects .object-wrapp .object-content .object-group{
+    padding-left: 15px;
+    padding-right: 15px;
+}
+section.objects .object-wrapp .object-content .owl-nav .owl-prev{
+    position: absolute;
+    color: #ffcc33;
+    font-size: 45px;
+    right: 100%;
+    top: 143px;
+
+}
+section.objects .object-wrapp .object-content .owl-nav .owl-next{
+    position: absolute;
+    color: #ffcc33;
+    font-size: 45px;
+    top: 143px;
+    left: 100%;
+}
+section.objects .object-wrapp .object-content .object-group .object-image{
+    padding-bottom:20px;
+}
+section.objects .object-wrapp .object-content .object-group .group-text{
+    width: 236px;
+}
+section.objects .object-wrapp .object-content .object-group .group-text h3{
+  color: #ffffff;
+  font-size: 21.17px;
+  font-weight: bold;
+  padding-bottom: 20px;
+}
+section.objects .object-wrapp .object-content .object-group .group-text p{
+    font-size: 14.11px;
+    color: #ffffff;
+    font-weight: bold
+    line-height: 1;
+}
+section.inform {
+    background-color: #ffffff;
+}
+section.inform .inform-wrapp .inform-title{
+    display: flex;
+    justify-content: center;
+}
+section.inform .inform-wrapp {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+section.inform .inform-wrapp .inform-title h3{
+    color: #ffc62e;
+    font-size: 31.75px;
+     font-family: 'PragmaticaCondC', sans-serif;
+}
+section.inform .inform-wrapp .inform-title a{
+    color: #999999;
+    font-size: 21.17px;
+     font-family: 'PragmaticaCondC', sans-serif;
+    padding-top: 10px;
+    padding-left: 12px;
+}
+section.inform .inform-wrapp .inform-content{
+    display: flex;
+    justify-content: center;
+}
+section.inform .inform-wrapp .inform-group .inform-text{
+   padding-top: 45px;
+   flex: 0 0 33.33333%;
+
+}
+section.inform .inform-wrapp .inform-group .inform-text h3{
+    color: #333333;
+    font-size: 17.64px;
+     font-family: 'PragmaticaCondC', sans-serif;
+    padding-bottom: 20px;
+    line-height: 1;
+}
+section.inform .inform-wrapp .inform-group .inform-text  p{
+    color: #666666;
+    font-size:14.11px;
+    padding-bottom: 25px;
+}
+section.inform .inform-wrapp .inform-group .inform-btn a{
+    text-decoration: none;
+    color: #292e34;
+    font-weight: bold;
+    font-size: 17.64px;
+    background-color: #ffc62e;
+    padding: 10px 12px;
+}
+section.inform .inform-wrapp{
+    display: flex;
+}
+section.inform .inform-logo{
+   align-self: flex-end;
+   padding-right: 30px;
+}
+section.inform .inform-logo img{
+    width: 100%;
+    height: 100%;
+}
+section.about-company{
+    background-image: url(../img/Layer-21.jpg);
+    background-size:cover ;
+}
+section.about-company .company-wrapp{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+section.about-company .company-wrapp .company-title{
+    padding-left: 25px;
+    width: 560px;
+    height: 250px;
+    align-self: flex-start;
+}
+section.about-company .company-wrapp .company-title .company-text h2{
+  color: #ffffff;
+  font-size: 35.28px;
+   font-family: 'PragmaticaCondC', sans-serif;
+  padding-bottom: 20px;
+}
+section.about-company .company-wrapp .company-title .company-text p{
+    font-size: 17.64px;
+    color: #ffffff;
+    padding-bottom: 15px;
+}
+section.about-company .company-wrapp .company-title .company-btn a{
+ text-decoration: none;
+  color: #292e34;
+ font-family: 'PragmaticaCondC', sans-serif;
+ font-size: 17.64px;
+ background-color: #ffc62e;
+ padding: 10px 12px;
+}
+section.adress{
+    background-color: #ffc62e;
+}
+section.adress .adress-wrapp {
+    padding-top: 20px;
+    padding-bottom: 15px;
+}
+section.adress .adress-wrapp p{
+    font-size: 14.11px;
+    color: #292e34;
+}
+@media (max-width: 575px) {
+.container{
+    width: 100%;
+    padding: 0 15px;
+ }
+ header .contacts{
+    display: block;
+    text-align: center;
+ }
+header .contacts .header-logo img{
+    width: 160px;
+}
+header .contacts .adress{
+    padding-top: 20px;
+}
+header .contacts .adress .contact-text ul li{
+    font-size: 12px;
+    padding-left: 0;
+}
+header .contacts .adress .contact-text ul:after{
+    top: -2px;
+    height: 45px;
+    left: -17px;
+}
+menu{
+    position: relative;
+}
+menu .menu-button{
+    display: inline-block;
+}
+menu .menu-button a{
+    color: #ffffff;
+    font-size: 25px;
+}
+menu ul{
+    position: absolute;
+    background-color: #292e34;
+    flex-direction: column;
+    z-index: 999;
+    height: 0;
+    top: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 100%;
+    left: 0;
+
+}
+menu .menu-button:hover~ul{
+    height: 189px;
+}
+menu ul li a{
+    font-size: 20px;
+    padding:15px;
+}
+menu .container ul li a:after{
+    display: none;
+}
+section.construction .construction-wrapp .construction-title{
+    width: 280px;
+    padding-bottom: 50px;
+}
+section.online-chat .online-content .text-logo p{
+    font-size: 13px;
+    padding-right: 0px;
+}
+section.construction:after{
+    display: none;
+}
+section.online-chat .online-content .chat-logo{
+    padding:15px 15px;
+}
+section.online-chat .online-content .chat-logo img{
+    width: 35px;
+}
+section.online-chat .online-content .chat-logo .chat-text a{
+    padding-left: 5px;
+    display: inline-block;
+    font-size: 10px;
+    padding-right: 2px;
+}
+section.online-chat .online-content .chat-logo:before{
+ border-top: 35px solid transparent;
+ border-right: 29px solid #ffae00;
+ border-bottom: 40px solid transparent;
+}
+section.online-chat .online-content .text-logo .online-logo {
+  display: none;
+}
+section.electricity .electricity-wrapp {
+    flex-wrap: wrap;
+    justify-content: center;
+}
+section.electricity .electricity-wrapp .electricity-content .content-img img{
+    width: auto;
+}
+section.electricity .electricity-wrapp .electricity-content{
+   padding-top: 35px;
+   padding-bottom: 35px;
+}
+section.objects .object-wrapp .object-content .object-group{
+    padding-left: 15px;
+    padding-right: 33px;
+}
+section.objects .object-wrapp .object-title .object-text h3{
+   font-size: 20px;
+}
+section.objects .object-wrapp .object-title .object-logo{
+    padding: 0 10px;
+}
+section.objects .object-wrapp{
+    width:285px;
+}
+section.objects .object-wrapp .object-content .owl-nav .owl-prev{
+    right: 285px;
+}
+section.objects .object-wrapp .object-content .owl-nav .owl-next{
+    left: 267px;
+}
+section.inform .inform-wrapp .inform-title h3{
+    font-size: 20px;
+}
+section.inform .inform-wrapp .inform-title a{
+    font-size: 11px;
+}
+section.inform .inform-wrapp .inform-content{
+    display: block;
+}
+section.inform .inform-logo{
+    display: none;
+}
+section.about-company .company-wrapp{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    display: block;
+}
+section.about-company .company-wrapp .company-image img{
+    width: 100%;
+}
+section.about-company .company-wrapp .company-title .company-text h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+section.about-company .company-wrapp .company-title .company-text p{
+    font-size: 11px;
+    padding-bottom: 10px;
+}
+section.about-company .company-wrapp .company-title{
+ padding-left: 0px;
+ width: auto;
+ height: auto;
+}
+section.adress .adress-wrapp p{
+    font-size: 12px;
+}
+section.about-company .company-wrapp .company-title .company-btn a{
+    font-size: 10px;
+    padding: 7px 12px;
+}
+
+}
+@media (min-width: 576px) and (max-width: 767px) {
+ .container{
+    width: 546px;
+}
+header .contacts{
+  align-items: center;
+}
+header .contacts .header-logo img{
+  width: 100%;
+}
+header .contacts .adress .contact-text ul li{
+    font-size: 10px;
+}
+header .contacts .adress .contact-text ul:after{
+    left: 20px;
+    height: 35px;
+    top: 0px;
+}
+menu .container{
+    width: 100%;
+}
+menu{
+    position: relative;
+}
+menu .menu-button a{
+    color: #ffffff;
+    font-size: 20px;
+    padding-left: 15px;
+}
+menu ul{
+      position: absolute;
+    background-color: #292e34;
+    flex-direction: column;
+    z-index: 999;
+    height: 0;
+    top: 100%;
+    overflow: hidden;
+    transition: all 0.5s;
+    width: 100%;
+    left: 0;
+
+}
+menu .menu-button:hover~ul{
+  height:216px;
+}
+section.online-chat .online-content .text-logo p{
+    font-size: 17.69px;
+}
+section.online-chat .online-content .chat-logo{
+    padding: 25px 28px;
+} 
+section.online-chat .online-content .chat-logo:before{
+    border-top: 65px solid transparent;
+}
+section.construction:after{
+    display: none;
+}
+section.electricity .electricity-wrapp .electricity-content{
+    padding-top: 40px;
+    padding-bottom: 42px;
+    flex: 0 0 46%;
+}
+section.electricity .electricity-wrapp{
+    flex-wrap: wrap;
+}
+section.objects .object-wrapp .object-content{
+    width: 100%;
+}
+section.objects .object-wrapp .object-content .owl-nav .owl-prev{
+    top: 245px;
+    right: 98%;
+}
+section.objects .object-wrapp .object-content .owl-nav .owl-next{
+    top: 245px;
+    left: 98%;
+}
+section.inform .inform-wrapp .inform-title h3{
+    font-size: 25px;
+}
+section.inform .inform-wrapp .inform-title a{
+    font-size: 16px;
+}
+section.inform .inform-logo{
+    display: none;
+}
+section.inform .inform-wrapp .inform-group {
+    padding-left: 20px;
+}
+section.inform .inform-wrapp .inform-group .inform-text p{
+    font-size: 12px;
+}
+section.about-company .company-wrapp .company-image img{
+    width: 100%;
+}
+section.about-company .company-wrapp .company-title .company-text h2{
+    font-size: 20px;
+    padding-bottom: 10px;
+}
+section.about-company .company-wrapp .company-title .company-text p{
+    font-size: 12.64px;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+ .container{
+    width: 730px;
+ }
+ menu .menu-button{
+    display:none;
+ }
+ menu ul li a{
+    font-size: 15px;
+ }
+ menu .container ul li a:after{
+    height: 14px;
+    top: 3px;
+ }
+ section.construction:after{
+    left: 500px;
+ }
+ section.online-chat .online-content .chat-logo{
+    padding:25px 35px;
+ }
+ section.online-chat .online-content .chat-logo:before{
+    border-top: 65px solid transparent;
+ }
+ section.objects .object-wrapp .object-content .owl-nav .owl-prev{
+    top: 175px;
+    right: 99%;
+ }
+ section.objects .object-wrapp .object-content .owl-nav .owl-next{
+    top: 175px;
+    left: 99%;
+ }
+section.inform .inform-wrapp .inform-content .inform-group{
+    padding-left: 20px;
+}
+section.about-company .company-wrapp .company-image img{
+ width: 100%;
+}
+section.about-company .company-wrapp .company-title .company-text h2{
+    font-size: 25px;
+}
+section.about-company .company-wrapp .company-title .company-text p{
+    font-size: 15px;
+}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container{
+    width: 962px;
+  }
+  menu .menu-button{
+    display: none;
+  }
+  section.objects .object-wrapp .object-content .owl-nav .owl-prev{
+    right: 99%;
+    top: 235px;
+  }
+  section.objects .object-wrapp .object-content .owl-nav .owl-next{
+    left: 99%;
+    top: 235px;
+  }
+  section.inform .inform-wrapp .inform-content .inform-group{
+    padding-left: 20px;
+  }
+
+}
+
+
+
+
+
+
+
+
