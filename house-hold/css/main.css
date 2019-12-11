@@ -1,0 +1,248 @@
+html, body {
+    border: 0;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+div, span, object, iframe, img, table, caption, thead, tbody,
+tfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,
+nav, footer, header, section, summary, mark, audio, video {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,
+del, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,
+ol, ul, li, fieldset, legend, label {
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, canvas, figure, figure img, figcaption, hgroup,
+footer, header, nav, section, audio, video {
+    display: block;
+}
+
+table {
+    border-collapse: separate;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+table caption, table th, table td {
+    text-align: left;
+    vertical-align: middle;
+}
+
+a img {
+    border: 0;
+}
+
+:focus {
+    outline: 0;
+}
+
+body {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+    outline: 0 !important;
+}
+
+p {
+    cursor: default;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+section.house-hold{
+    background-color: #fff;
+      width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+section.house-hold .hold-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+section.house-hold .hold-wrap .house-hold-title{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section.house-hold .hold-wrap .house-hold-title h2{
+  font-weight: 700;
+  color: #404142;
+  font-size: 45px;
+  display: block;
+}
+section.house-hold .hold-wrap .house-hold-title .job-categories{
+    display: flex;
+}
+section.house-hold .hold-wrap .house-hold-title .job-categories .job h6{
+    font-weight: 700;
+    color: #404142;
+    font-size: 17px;
+}
+section.house-hold .hold-wrap .house-hold-title .job-categories  ul{
+    display: flex;
+}
+section.house-hold .hold-wrap .house-hold-title .job-categories  ul li{
+    list-style:none;
+    padding-left: 15px;
+    color: #434345;
+    font-size: 15px;
+}
+section.house-hold .hold-wrap .house-hold-title .job-categories  ul li span{
+    font-size:18px;
+    color:#7a7a7a;
+    padding-right:5px;
+}
+section.house-hold .hold-wrap .house-hold-logo{
+    padding-top: 70px;
+}
+section.house-hold .hold-wrap .house-hold-logo img{
+    width: 100%;
+}
+section.house-hold .house-hold-inform {
+    padding-bottom: 50px;
+    border-top: 1px solid #bababa;
+    border-bottom: 1px solid #bababa;
+}
+section.house-hold .house-hold-inform ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top:30px;
+        width: 900px;
+    padding: 0 15px;
+    align-items: center;
+}
+section.house-hold .house-hold-inform ul li{
+    list-style: none;
+    flex: 0 0 33%;
+    padding-top: 20px;
+    color:#434345;
+    font-size: 15px;
+    font-weight: 700;
+
+}
+section.house-hold .house-hold-inform ul li .text{
+    color:#bababa;
+    padding-top: 10px;
+    padding-left: 27px;
+}
+section.house-hold .house-hold-inform ul li span{
+    color: #64aae1;
+    font-size: 18px;
+    padding-right: 15px;
+}
+section.house-hold .house-hold-inform ul li a{
+    text-decoration: none;
+    color: #bababa;
+    font-size: 15px;
+    transition: all 0.5s;
+}
+section.house-hold .house-hold-inform ul li a:hover{
+    text-decoration: underline;
+    color: #7a7a7ac9;
+}
+section.house-hold .description-text{
+    padding-top: 20px;
+   border-bottom: 1px solid #bababa;
+}
+section.house-hold .description-text .description-title h3{
+     font-size: 17px;
+     color: #404142;
+     font-weight: 700;
+     padding-bottom: 20px;
+}
+section.house-hold .description-text .description-title p {
+  color: #434345;
+  font-size: 15px;
+  padding-bottom: 40px;
+}
+section.house-hold .primary-area{
+    padding-top: 20px;
+    padding-bottom: 40px;
+}
+section.house-hold .primary-area .item-text h6{
+    font-size: 17px;
+    font-weight: 700;
+    color: #404142;
+    padding-bottom: 15px;
+}
+section.house-hold .primary-area .primary-list{
+    display: flex;
+    padding-top: 10px;
+    flex: 0 0 50%;
+}
+section.house-hold .primary-area .primary-list ul{
+    padding-right:60px;
+}
+section.house-hold .primary-area .primary-list ul li {
+    list-style: none;
+    position: relative;
+}
+section.house-hold .primary-area .primary-list ul li:before{
+    content: "";
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    background-color: #64aae1;
+    left: -8px;
+    top: 8px;
+}
+section.house-hold .primary-btn{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    display: flex;
+}
+section.house-hold .primary-btn .apply-btn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #5771a4;
+    border-color: #5771a4;
+    padding: 15px 30px;
+    border-radius: 6px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+}
+section.house-hold .primary-btn .apply-btn a:hover{
+    background-color:#2a4375;
+}
+section.house-hold .primary-btn .job-btn{
+    padding-left: 45px;
+}
+section.house-hold .primary-btn .job-btn a{
+    text-decoration: none;
+    color: #fff;
+    background-color: #64aae1;
+    border-color: #64aae1;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: 700;
+    transition: all 0.5s;
+
+}
+section.house-hold .primary-btn .job-btn a:hover{
+        color: #404142;
+    background-color: #ffdb13;
+    border-color: #ffdb13;
+}
