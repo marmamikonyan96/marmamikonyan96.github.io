@@ -1,0 +1,224 @@
+body{
+    font-weight: normal;
+    background-color: #fff;
+    font-family: 'Roboto', sans-serif;
+}
+.container{
+    width: 1178px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+p{
+    font-size: 17px;
+    color: #1b1e21;
+    letter-spacing: 2px;
+    line-height: 1.4em;
+}
+section.title{
+    margin: 60px;
+}
+section.title .container .registration_ad .guide p{
+    font-size: 19px;
+}
+section.title .container .registration_ad .reg_inform{
+    margin-top: 25px;
+    margin-left: 30px;
+}
+section.title .container .registration_ad .reg_inform p{
+    font-size: 20px;
+    line-height: 1.2em;
+}
+section.selecting{
+    margin-top: 20px;
+}
+section.selecting .container .choose{
+    text-align: center;
+}
+section.selecting .container .choose button.profession{
+    background-color: #ffffff;
+    border:1px solid #000000;
+}
+section.selecting .container .choose button.profession p{
+    text-align: center;
+    padding: 8px 35px;
+    color: #5a6268;
+    font-size: 16px;
+}
+section.selecting .container .choose button.profession p:last-child{
+    font-size: 16px;
+    text-align: center;
+    color: #1b1e21;
+}
+section.selecting .container .choose .actions{
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-evenly;
+}
+section.categories .container .types_of_categories{
+    margin: 50px;
+}
+section.categories .container .types_of_categories .guide{
+    width: 416px;
+}
+section.categories .container .types_of_categories .registration{
+    margin: 70px;
+    display: flex;
+    justify-content: space-around;
+}
+section.categories .container .types_of_categories .registration .important_num{
+    width: 427px;
+    display: flex;
+    flex-flow: column;
+}
+section.categories .container .types_of_categories .registration .important_num button{
+    width: 220px;
+    height: 60px;
+    align-self: center;
+    background-color: #fff;
+    border: 1px solid #1b1e21;
+}
+section.categories .container .types_of_categories .registration .description{
+    width: 574px;
+    margin-top: 53px;
+}
+section.categories .container .types_of_categories .location{
+    margin-left: 150px;
+}
+section.categories .container .types_of_categories .location form input{
+    width: 50%;
+    padding: 20px 15px;
+    border:1px solid #1b1e21;
+}
+section.categories .container .types_of_categories .location .allow{
+    width: 350px;
+    margin-top: 25px;
+}
+@media (max-width: 575px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    section.title{
+        margin: 5px;
+    }
+    p{
+        font-size: 12px;
+        letter-spacing: 1px;
+        line-height: 1.1rem;
+    }
+    section.title .container .registration_ad .guide p{
+        font-size: 12px;
+    }
+    section.title .container .registration_ad .reg_inform{
+        margin:25px 5px;
+    }
+    section.title .container .registration_ad .reg_inform p{
+        font-size: 12px;
+    }
+    section.selecting .container .choose button.profession p{
+        padding: 0px 16px;
+        font-size: 12px;
+    }
+    section.selecting .container .choose button.profession p:last-child{
+        font-size: 12px;
+    }
+    section.selecting .container .choose .actions{
+        flex-wrap: wrap;
+    }
+    section.selecting .container .choose button.profession{
+        margin-bottom: 15px;
+    }
+    section.categories .container .types_of_categories{
+        margin: 50px 5px;
+    }
+    section.categories .container .types_of_categories .guide{
+        width: 196px;
+    }
+    section.categories .container .types_of_categories .registration{
+        margin: 30px 0;
+        flex-wrap: wrap;
+    }
+    section.categories .container .types_of_categories .registration .important_num button{
+        width: 170px;
+    }
+    section.categories .container .types_of_categories .location .allow{
+        width: 139px;
+    }
+    section.categories .container .types_of_categories .guide{
+        width: 190px;
+    }
+    section.categories .container .types_of_categories .location form input{
+        width: 70%;
+    }
+    section.categories .container .types_of_categories .location{
+        margin: 0;
+    }
+}
+@media (min-width: 576px) and (max-width: 767px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    section.selecting .container .choose .actions{
+        flex-wrap: wrap;
+    }
+    section.selecting .container .choose button.profession p:last-child{
+        font-size: 14px;
+    }
+    section.selecting .container .choose button.profession{
+        margin-bottom: 15px;
+    }
+    section.categories .container .types_of_categories{
+        margin: 50px 2px;
+    }
+    section.categories .container .types_of_categories .registration .important_num p{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    section.categories .container .types_of_categories .registration .important_num button{
+        width: 150px;
+    }
+    section.categories .container .types_of_categories .registration .description p{
+        font-size: 13px;
+        letter-spacing: 1px;
+    }
+    section.categories .container .types_of_categories .location form input{
+        width: 88%;
+    }
+}
+@media (min-width: 768px) and (max-width: 991px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+    section.selecting .container .choose button.profession p:last-child{
+        font-size: 13px;
+    }
+    section.selecting .container .choose button.profession{
+        margin-left: 10px;
+    }
+    section.categories .container .types_of_categories{
+        margin: 50px 2px;
+    }
+    section.categories .container .types_of_categories .registration .description p{
+        font-size: 12px;
+    }
+    section.categories .container .types_of_categories .registration .important_num p{
+        font-size: 13px;
+    }
+    section.categories .container .types_of_categories .registration .important_num button{
+        width: 170px;
+    }
+    section.categories .container .types_of_categories .registration .important_num {
+        width: 508px;
+    }
+    section.categories .container .types_of_categories .location form input{
+        width: 52%;
+    }
+}
+@media (min-width: 992px) and (max-width: 1199px){
+    .container{
+        width: 100%;
+        padding: 0;
+    }
+}
