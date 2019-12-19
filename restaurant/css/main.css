@@ -121,7 +121,7 @@ section.phone .call .call-digits{
 }
 section.about .about_info{
 	display: flex;
-	justify-content: space-between;
+	justify-content: space-around;
 	margin-top: 60px;
 	margin-bottom: 95px;
 }
@@ -321,3 +321,86 @@ footer .credits{
 .show{
 	display: block ! important;
 }
+@media (max-width: 575px){
+	.container{
+		padding:0;
+	}
+	header .container .row .col-lg-3{
+		text-align:center;
+		margin-bottom : 15px;
+	}
+	.row{
+		margin:0;
+	}
+	.col-lg-6 .nav{
+		margin-top:15px;
+	}
+	.menu{
+		flex-wrap:wrap;
+	}
+	.nav{
+		margin-rigt:20px;
+	}
+	.book{
+		width:160px;
+	}
+	button.book__icon{
+		margin:0 auto;
+	}
+	section.offer .title h2{
+		font-size:26px;
+	}
+	section.offer .title p span{
+		font-size:30px;
+	}
+	section.offer .title p{
+		font-size:30px;
+	}
+}
+@media (min-width: 576px) and (max-width: 767px){
+	header .container .row .col-lg-3{
+		text-align:center;
+		margin-bottom : 15px;
+	}
+	section.about .about_info .text h2{
+		font-size:28px;
+	}
+	section.about .about_info .text p{
+		width:460px;
+	}
+	section.about .about_info .info_pic{
+		flex-wrap:wrap;
+	}
+	section.about .about_info .info_pic img{
+		padding:15px 5px;
+	}
+	.col-lg-12{
+		padding:0;
+	}
+	.container{
+		padding:0;
+	}
+}
+@media (min-width: 768px) and (max-width: 991px){
+	header .container .row .col-lg-3{
+		text-align:center;
+		margin-bottom : 15px;
+	}
+	section.about .about_info{
+		flex-wrap:wrap;
+	}
+	section.about .about_info .text button.read_more{
+		margin:0 auto;
+	}
+	.info_pic{
+		margin-top:20px;
+	}
+}
+@media (min-width: 992px) and (max-width: 1199px){
+	section.about .about_info .text h2{
+		font-size:29px;
+	}
+	section.about .about_info .text p{
+		width:355px;
+		}
+	}
