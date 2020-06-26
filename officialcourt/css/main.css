@@ -1,0 +1,887 @@
+/** @format */
+html,
+body {
+  border: 0;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  font-family: "Arima Madurai", cursive;
+  background-color: #fbf3e6; }
+
+.selector-for-some-widget {
+  box-sizing: content-box; }
+
+div,
+span,
+object,
+iframe,
+img,
+table,
+caption,
+thead,
+tbody,
+tfoot,
+tr,
+tr,
+td,
+article,
+aside,
+canvas,
+details,
+figure,
+hgroup,
+menu,
+nav,
+footer,
+header,
+section,
+summary,
+mark,
+audio,
+video {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+article,
+aside,
+canvas,
+figure,
+figure img,
+figcaption,
+hgroup,
+footer,
+header,
+nav,
+section,
+audio,
+video {
+  display: block; }
+
+table {
+  border-collapse: separate;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+table caption,
+table th,
+table td {
+  text-align: left;
+  vertical-align: middle; }
+
+a img {
+  border: 0; }
+
+body {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+a {
+  outline: 0 !important;
+  text-decoration: none;
+  font-weight: bold;
+  font-family: "Arima Madurai", cursive;
+  font-size: 16px;
+  color: #855121; }
+
+h2,
+h6 {
+  text-align: center;
+  font-weight: bold;
+  color: #855121;
+  font-family: "Montserrat", sans-serif; }
+
+h3 {
+  font-size: 22px;
+  text-align: center; }
+
+p {
+  cursor: default;
+  font-family: "Montserrat", sans-serif;
+  color: #5d2502; }
+
+.container {
+  width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+ul {
+  list-style-type: none;
+  inset-inline-start: 10px; }
+
+a:hover {
+  text-decoration: underline; }
+
+.fixed-top + section#main {
+  padding-top: 300px; }
+
+.fixed-top + section.info {
+  padding-top: 300px; }
+
+.fixed-top + section.link {
+  padding-top: 300px; }
+
+.fixed-top + .international_content {
+  padding-top: 300px; }
+
+.fixed-top + .international_content {
+  padding-top: 300px; }
+
+.fixed-top + .second_page {
+  padding-top: 300px; }
+
+.fixed-top + .third_page {
+  padding-top: 300px; }
+
+.fixed-top + .fourth_page {
+  padding-top: 300px; }
+
+.fixed-top + .fifth_page {
+  padding-top: 300px; }
+
+.fixed-top + .international_page {
+  padding-top: 300px; }
+
+.fixed-top + section.mail {
+  padding-top: 300px; }
+
+.fixed-top + .courtofcassation {
+  padding-top: 300px; }
+
+.fixed-top + section.courtofappellate {
+  padding-top: 300px; }
+
+.fixed-top + .content_inform {
+  padding-top: 300px; }
+
+.fixed-top + section.lib {
+  padding-top: 300px; }
+
+.fixed-top + .courtofappellate {
+  padding-top: 300px; }
+
+.fixed-top + .link {
+  padding-top: 300px; }
+
+header#myHeader {
+  background-color: #f0e8dd; }
+
+.web_head {
+  display: flex;
+  justify-content: space-between; }
+
+h2 {
+  font-size: 34px; }
+
+h6 {
+  font-size: 22px; }
+
+.h_title {
+  padding: 12px;
+  text-transform: capitalize; }
+
+.logo {
+  width: 117px; }
+  .logo img {
+    width: 100%; }
+
+.h_flag {
+  width: 347px; }
+  .h_flag img {
+    width: 100%; }
+
+.header_content {
+  background-color: #a06649;
+  background-repeat: no-repeat;
+  position: relative;
+  border-bottom: solid #5d2502 2px; }
+
+.simple {
+  /*header*/
+  display: flex;
+  padding: 10px 20px;
+  justify-content: space-between; }
+  .simple ul {
+    display: flex; }
+    .simple ul li {
+      padding-left: 5px;
+      align-self: center;
+      font-weight: bold;
+      padding-left: 5px; }
+      .simple ul li i {
+        font-size: 29px;
+        color: #fff; }
+
+.header_menu {
+  display: flex;
+  justify-content: space-between; }
+
+.menu_item {
+  position: relative; }
+  .menu_item ul li a {
+    font-weight: bold;
+    box-sizing: border-box;
+    padding: 0 7px;
+    color: #ffff;
+    line-height: 25px;
+    font-size: 21px; }
+  .menu_item ul li a:hover {
+    text-decoration: underline;
+    color: #000; }
+  .menu_item .submenu {
+    background-color: #a06649;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    overflow: auto;
+    width: 280px;
+    left: 20px; }
+    .menu_item .submenu ul {
+      padding: 3px;
+      text-align: center;
+      width: 255px; }
+      .menu_item .submenu ul li {
+        padding-top: 10px; }
+        .menu_item .submenu ul li a {
+          font-size: 15px; }
+    .menu_item .submenu a {
+      font-size: 16px;
+      padding-left: 5px;
+      color: #fff;
+      font-family: "Arima Madurai", cursive;
+      font-weight: normal; }
+    .menu_item .submenu a:hover {
+      animation-duration: 15s; }
+
+.menu_item:hover .submenu {
+  display: block;
+  z-index: 2; }
+
+/*end header---------------------------------------------------------*/
+/*main.php-------------------------------------------------------------*/
+section#main {
+  margin-top: 40px;
+  margin-bottom: 25px; }
+
+.wrap {
+  display: flex;
+  justify-content: space-between; }
+
+.left_content .news {
+  background-image: url(../img/back.jpg);
+  background-size: contain;
+  width: 330px; }
+  .left_content .news li {
+    padding: 10px 15px; }
+  .left_content .news a {
+    color: #7c350a;
+    font-weight: bold;
+    font-size: 17px; }
+
+form {
+  margin-top: 30px; }
+  form input.go {
+    margin-bottom: 3px; }
+
+input {
+  width: 100%; }
+
+.media_news {
+  width: 330px;
+  margin-top: 50px;
+  background-color: #f0e8dd; }
+
+.n_title {
+  margin-top: 20px;
+  text-align: center; }
+  .n_title h6 {
+    color: #7c350a;
+    font-weight: normal;
+    padding-top: 5px; }
+
+.feedback img {
+  width: 100%; }
+
+.media_title {
+  padding: 10px; }
+  .media_title a {
+    color: #7c350a;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: "Arima Madurai", cursive;
+    font-weight: regular; }
+  .media_title a:hover {
+    text-decoration: underline;
+    color: #000;
+    font-family: "Arima Madurai", cursive;
+    font-weight: regular; }
+
+.content_map {
+  margin-top: 150px;
+  width: 250px;
+  height: 150px; }
+
+/*left content end ----------------------------------------------------------*/
+/*/*/
+.president {
+  margin-left: 35px; }
+  .president .title {
+    margin-bottom: 20px; }
+    .president .title h3 {
+      font-weight: normal;
+      color: #000; }
+  .president .img {
+    width: 176px;
+    margin-left: 7px; }
+    .president .img img {
+      width: 100%; }
+  .president .name {
+    padding-top: 20px;
+    margin-left: 6px; }
+    .president .name p {
+      color: #855121;
+      font-family: "Arima Madurai", cursive;
+      font-weight: regular; }
+  .president .cv {
+    margin-left: 6px; }
+    .president .cv ul {
+      padding-inline-start: 0; }
+      .president .cv ul li {
+        margin-bottom: 15px; }
+        .president .cv ul li a {
+          color: #855121;
+          font-family: "Arima Madurai", cursive;
+          font-weight: regular; }
+
+/*right content*/
+.statement {
+  background-color: #f0e8dd;
+  width: 304px; }
+
+.menu_right {
+  padding-top: 5px;
+  position: relative; }
+  .menu_right li {
+    padding-left: 10px; }
+  .menu_right a {
+    color: #7c350a;
+    font-weight: bold;
+    display: block;
+    font-size: medium;
+    font-size: 17px;
+    font-family: "Arima Madurai", cursive;
+    font-weight: regular; }
+  .menu_right a:hover {
+    color: #000; }
+
+.submenu_right {
+  background-image: url(../img/back.jpg);
+  background-size: contain;
+  position: absolute;
+  width: 100%;
+  cursor: pointer;
+  z-index: 1;
+  top: 26px;
+  display: none;
+  transition: max-height 0.2s ease-out;
+  left: 1px; }
+  .submenu_right ul {
+    width: 100%;
+    padding-left: 10px; }
+    .submenu_right ul a {
+      color: #7c350a;
+      font-weight: bold;
+      display: block;
+      font-size: 16px; }
+    .submenu_right ul a:hover {
+      text-decoration: underline; }
+
+.menu_right:hover .submenu_right {
+  display: block; }
+
+/*right_contet end-------------------------------------------------------------------------*/
+/*section global------------------------------------------*/
+section.global {
+  background-color: #f0e8dd; }
+
+.legal_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+
+.europetype {
+  display: flex;
+  border: 1px solid #855121;
+  background-image: url(../img/globback.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 5px;
+  width: 270px;
+  height: 90px; }
+
+.g_title {
+  margin: 10px;
+  align-self: center; }
+  .g_title a {
+    font-size: 12px;
+    color: #000; }
+
+.iconeu {
+  align-self: center;
+  width: 100px; }
+  .iconeu img {
+    width: 100%; }
+
+/*global section ending ----------------------------------------------------------------------*/
+/*footer ----------------------*/
+.footer {
+  background-color: #a06649; }
+  .footer .footer_wrap {
+    padding-top: 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+
+.panel-content {
+  width: 130px; }
+
+p {
+  color: #fff;
+  font-size: 17px;
+  font-family: "Arima Madurai", cursive;
+  font-weight: 400; }
+
+h5 {
+  font-family: "Montserrat", sans-serif;
+  color: #7c350a; }
+
+/*footer -----------------------------*/
+/*contact.php ----------/**/
+section.mail {
+  width: 500px;
+  margin: 0 auto; }
+  section.mail input {
+    width: 320px; }
+  section.mail textarea {
+    margin-top: 15px;
+    width: 320px; }
+
+/*otherinfo -------------------------------------------------------------------.php*/
+nav.inf {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fbf3e6;
+  margin: 0 auto; }
+  nav.inf .submenu {
+    background-color: #fbf3e6;
+    position: absolute;
+    cursor: pointer;
+    display: none;
+    z-index: 1;
+    overflow: auto;
+    width: 285px;
+    left: -68px; }
+    nav.inf .submenu ul {
+      width: 100%;
+      text-align: center; }
+      nav.inf .submenu ul li {
+        padding-top: 10px; }
+    nav.inf .submenu a {
+      font-size: 17px;
+      font-weight: normal;
+      color: #855121; }
+  nav.inf .info_items:hover .submenu {
+    display: block; }
+
+.info_items {
+  position: relative; }
+  .info_items ul a {
+    color: #855121;
+    font-size: 20px;
+    font-weight: bold; }
+
+/*vchrabek --------------------*/
+.text_content {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30px; }
+
+.cassation_title {
+  text-align: center;
+  padding-top: 25px; }
+  .cassation_title h4 {
+    color: #7c350a;
+    font-weight: normal;
+    font-size: 21px; }
+
+article {
+  margin-top: 15px; }
+  article li span {
+    font-weight: normal;
+    color: #5d2502; }
+  article li a {
+    padding-left: 10px;
+    color: #5d2502;
+    font-weight: normal;
+    font-size: 16px; }
+  article li a:hover {
+    font-weight: normal;
+    color: #5d2502;
+    text-decoration: none; }
+
+.info_text h4 {
+  font-weight: bold;
+  color: #855121;
+  font-size: 19px; }
+
+.info_text h2 {
+  font-weight: normal;
+  color: #855121;
+  font-size: 17px; }
+
+.info_text p {
+  color: #5d2502;
+  font-size: 13px;
+  font-weight: normal;
+  line-height: 2; }
+
+/*vchrabek------------------------------*/
+/*courtofappellate--------------------------------------------------*/
+section.courtofappellate .appellate_title h4 {
+  text-align: center; }
+
+section.courtofappellate .title_wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px; }
+
+section.courtofappellate .main_branches {
+  padding-top: 14px;
+  align-self: center; }
+
+section.courtofappellate .info_text {
+  width: 500px;
+  margin: 0 auto;
+  margin-top: 30px; }
+  section.courtofappellate .info_text h4 {
+    font-weight: bold;
+    color: #855121;
+    font-size: 19px; }
+  section.courtofappellate .info_text h2 {
+    font-weight: normal;
+    color: #855121;
+    font-size: 17px; }
+  section.courtofappellate .info_text p {
+    color: #5d2502;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 2; }
+
+/*adresses-------------------------------------------------*/
+.adresses_title {
+  text-align: center;
+  margin-bottom: 35px; }
+
+.flex {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 35px; }
+
+.adress_wrap {
+  width: 270px;
+  margin-bottom: 25px;
+  background-image: url(../img/back.jpg);
+  background-size: contain; }
+  .adress_wrap h6 {
+    font-size: 18px;
+    padding-top: 10px;
+    text-align: center; }
+
+.court {
+  padding: 15px 10px; }
+  .court p {
+    font-size: 14px;
+    color: #7c350a; }
+
+.inform_contact {
+  padding: 10px; }
+  .inform_contact p {
+    color: #5d2502;
+    font-size: 14px;
+    font-weight: bold; }
+
+/*end adresss-----------------------------------------------------*/
+.link {
+  background-color: #f0e8dd; }
+
+.link_wrap {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 30px; }
+
+.link_title {
+  text-align: center; }
+  .link_title h4 {
+    color: #7c350a;
+    font-weight: bold; }
+
+.all_links {
+  text-align: start;
+  padding: 20px;
+  margin-bottom: 23px;
+  margin-left: 15px; }
+  .all_links p {
+    font-size: 15px;
+    color: #7c350a;
+    font-weight: bold; }
+  .all_links a {
+    color: #5d2502;
+    font-size: 14px; }
+
+/*end links*/
+/*index2.php-------------------------------------------------*/
+article {
+  text-align: center; }
+  article h5 {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #7c350a; }
+  article p {
+    padding: 10px 30px;
+    color: #855121;
+    font-family: "Arima Madurai", cursive;
+    font-weight: regular;
+    font-size: 14px; }
+  article a {
+    color: #855121;
+    font-family: "Arima Madurai", cursive;
+    font-weight: regular;
+    font-size: 14px;
+    padding: 35px; }
+  article a:hover {
+    font-weight: bold;
+    text-decoration: underline; }
+
+.fifth_page article {
+  text-align: center; }
+  .fifth_page article .f_title {
+    margin: 0 35px; }
+    .fifth_page article .f_title h5 {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #7c350a; }
+  .fifth_page article .f_link {
+    padding: 30px 35px; }
+    .fifth_page article .f_link a {
+      color: #855121;
+      font-family: "Arima Madurai", cursive;
+      font-weight: regular;
+      font-size: 14px;
+      text-align: center; }
+    .fifth_page article .f_link a:hover {
+      font-weight: bold;
+      text-decoration: underline; }
+
+/*end ------------------------------------------------------*/
+.international_content {
+  background-color: #f0e8dd; }
+  .international_content .int_title {
+    text-align: center;
+    padding-top: 20px; }
+    .international_content .int_title h4 {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #7c350a; }
+  .international_content .file {
+    text-align: center;
+    margin-bottom: 36px; }
+    .international_content .file h2 {
+      text-align: center;
+      font-family: "Montserrat", sans-serif;
+      color: #7c350a; }
+  .international_content .pdf {
+    text-align: center;
+    padding-bottom: 30px; }
+    .international_content .pdf a {
+      padding: 15px 20px;
+      color: #7c350a;
+      background-color: #f0e8dd; }
+    .international_content .pdf a:hover {
+      text-decoration: underline; }
+
+/*end international -----------------------------------*/
+/*library --------------------------------*/
+.lib_items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap; }
+
+.flex_item {
+  width: 270px; }
+  .flex_item .type_files {
+    margin-top: 25px; }
+    .flex_item .type_files li a {
+      font-size: 16px;
+      font-weight: normal;
+      color: #855121; }
+    .flex_item .type_files li a:hover {
+      color: #a06649;
+      font-weight: bold; }
+  .flex_item .title h6 {
+    font-size: 17px;
+    color: #7c350a;
+    font-weight: bold;
+    text-align: center; }
+
+/*library-----------------------------------------*/
+@media (min-width: 335px) and (max-width: 575px) {
+  .container {
+    width: 100%;
+    padding: 0; }
+  .h_flag {
+    display: none; }
+  .logo {
+    display: block;
+    width: 85px; }
+  h2 {
+    font-size: 18px; }
+  h6 {
+    font-size: 19px; }
+  .menu_item ul li a {
+    font-size: 14px;
+    font-weight: normal; }
+  .menu_item .submenu {
+    width: 100%;
+    left: 0; }
+  .menu_item .submenu ul li a {
+    font-size: 13px; }
+  .menu_item .submenu ul {
+    width: 100%; }
+  .wrap {
+    flex-wrap: wrap; }
+  .left_content {
+    width: 100%;
+    margin: 0 auto; }
+  .left_content .news {
+    width: 100%; }
+    .left_content .news ul {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px 5px; }
+    .left_content .news .submenu {
+      left: 6px;
+      width: 100%; }
+      .left_content .news .submenu a {
+        font-size: 14px; }
+  .media_news {
+    width: 100%; }
+  .president {
+    width: 100%;
+    margin: 25px auto; }
+  .president .img {
+    margin: 0 auto; }
+  .statement {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap; }
+  .menu_right a {
+    font-size: 13px; }
+  .footer .footer_wrap {
+    justify-content: space-around; }
+  p {
+    font-size: 14px; }
+  .text_content {
+    width: 100%; }
+  section.courtofappellate .title_wrap {
+    flex-wrap: wrap; }
+  section.courtofappellate .info_text {
+    width: 100%; } }
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    padding: 0; }
+  h2 {
+    font-size: 18px; }
+  H6 {
+    font-size: 15px; }
+  .h_flag {
+    width: 211px; }
+  .h_title {
+    padding: 8px; }
+  .logo {
+    width: 68px; }
+  .header_menu {
+    justify-content: space-around;
+    flex-wrap: wrap; }
+  .left_content .news {
+    width: 250px; }
+  .media_news {
+    width: 270px; }
+  h3 {
+    font-size: 17px; }
+  .president .img {
+    width: 169px; }
+  .wrap {
+    flex-wrap: wrap; }
+  .statement {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap; }
+  .menu_right a {
+    font-size: 13px; } }
+
+/*----------------------------------------------------------------------*/
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 100%;
+    padding: 0; }
+  .h_flag {
+    width: 291px; }
+  .logo {
+    width: 98px; }
+  h2 {
+    font-size: 21px; }
+  h6 {
+    font-size: 19px; }
+  .menu_item ul li a {
+    font-size: 19px; }
+  .menu_item .submenu {
+    width: 245px;
+    left: -17px; }
+    .menu_item .submenu ul {
+      width: 225px; }
+  .left_content .news {
+    width: 245px; }
+  .left_content .news a {
+    font-size: 15px; }
+  .media_news {
+    width: 245px; }
+  .president .title h3 {
+    font-size: 17px; }
+  .statement {
+    width: 235px;
+    margin-left: 20px; }
+  .info_items .submenu ul a {
+    font-size: 17px; }
+  .president .img {
+    width: 160px; } }
+
+/*--------------------------------------------------------------------------*/
+@media (min-width: 992px) and (max-width: 1199px) {
+  .container {
+    width: 100%;
+    padding: 0; }
+  .inform_contact p {
+    font-size: 13px; } }
