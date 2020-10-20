@@ -411,6 +411,16 @@ footer .adress p span {
 }
 .mapouter {
   padding-top: 100px;
+  position: relative;
+  text-align: right;
+  height: 400px;
+  width: 600px;
+}
+.gmap_canvas {
+  overflow: hidden;
+  background: none !important;
+  height: 200px;
+  width: 600px;
 }
 .contact_us a {
   color: darkgrey;
@@ -499,7 +509,7 @@ section.mail form textarea {
   }
   .title h2 {
     padding-top: 0;
-    font-size: 43px;
+    font-size: 46px;
   }
   .animated p {
     line-height: 1.7;
@@ -507,6 +517,7 @@ section.mail form textarea {
     padding-left: 45px;
     padding-top: 60px;
     width: 78%;
+    padding-bottom: 60px;
   }
   .animated h5 {
     font-size: 41px;
@@ -514,6 +525,9 @@ section.mail form textarea {
   }
   h5 {
     margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  h2 {
     margin-block-end: 0;
   }
   p {
@@ -537,5 +551,44 @@ section.mail form textarea {
   }
   .service__content .container .item .item_title a {
     font-size: 37px;
+  }
+  section.services .service_title h2 {
+    padding-bottom: 200px;
+  }
+  footer .adress p {
+    font-size: 20px;
+  }
+  footer .adress p span {
+    font-size: 19px;
+  }
+  footer .about ul li a {
+    font-size: 23px;
+  }
+  footer .copyright p {
+    font-size: 23px;
+  }
+  footer .copyright p span {
+    font-size: 20px;
+  }
+  footer .adress {
+    padding-top: 120px;
+  }
+  .mapouter {
+    width: 355px;
+    height: 210px;
+  }
+  .gmap_canvas {
+    width: 330px;
+    height: 166px;
+  }
+  .animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    padding-bottom: 0%;
+  }
+  [data-aos^="fade"][data-aos^="fade"].aos-animate {
+    opacity: 1;
+    transform: translateZ(0);
+    padding-bottom: 24px;
   }
 }
