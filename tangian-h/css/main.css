@@ -455,25 +455,7 @@ section.mail form textarea {
 /*************************************enm***********************************/
 
 /**********media*/
-@media screen and (max-width: 1039px) {
-  footer .about ul li a {
-    font-size: 20px;
-  }
-  footer .copyright p {
-    font-size: 20px;
-  }
-  footer .copyright p span {
-    font-size: 18px;
-  }
-  .gmap_canvas {
-    width: 215px;
-    height: 133px;
-  }
-  .mapouter {
-    width: 210px;
-    height: 210px;
-  }
-}
+
 @media screen and (max-width: 1920px) {
   .container {
     width: 100%;
@@ -611,5 +593,24 @@ section.mail form textarea {
   }
   .service__content .container {
     width: 980px;
+  }
+}
+@media screen and (max-width: 1039px) {
+  footer .about ul li a {
+    font-size: 20px;
+  }
+  footer .copyright p {
+    font-size: 20px;
+  }
+  footer .copyright p span {
+    font-size: 18px;
+  }
+  .gmap_canvas {
+    width: 173px;
+    height: 133px;
+  }
+  .mapouter {
+    width: 210px;
+    height: 210px;
   }
 }
