@@ -446,7 +446,10 @@ section.mail form textarea {
 
 /**********media*/
 
-@media screen and (max-width: 1039px) {
+@media screen and (max-width: 1480px) {
+  .container {
+    width: 100%;
+  }
   .callback .number {
     margin-left: 35px;
   }
@@ -524,11 +527,5 @@ section.mail form textarea {
     padding-left: 20px;
     font-size: 25px;
     margin-top: 28px;
-  }
-}
-
-@media screen and (max-width: 1199px) {
-  .container {
-    width: 100%;
   }
 }
