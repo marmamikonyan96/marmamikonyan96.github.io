@@ -538,6 +538,9 @@ section.mail form textarea {
     height: 100%;
     background-position: bottom;
   }
+  .service__content .container {
+    width: 1380px;
+  }
   .service__content .container .item .title span {
     font-size: 45px;
   }
@@ -549,8 +552,11 @@ section.mail form textarea {
     font-size: 25px;
     margin-top: 28px;
   }
+  .service__content .container .item .item_title a:first-child {
+    font-size: 45px;
+  }
   .service__content .container .item .item_title a {
-    font-size: 37px;
+    font-size: 33px;
   }
   section.services .service_title h2 {
     padding-bottom: 200px;
@@ -590,9 +596,6 @@ section.mail form textarea {
     opacity: 1;
     transform: translateZ(0);
     padding-bottom: 24px;
-  }
-  .service__content .container {
-    width: 980px;
   }
 }
 @media screen and (max-width: 1039px) {
