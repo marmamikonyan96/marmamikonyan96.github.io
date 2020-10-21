@@ -712,3 +712,17 @@ section.mail form textarea {
     font-size: 38px;
   }
 }
+@media screen and (max-width: 967px) {
+  .header__wrapp .nav__menu ul li a {
+    font-size: 15px;
+  }
+  .header__wrapp .nav__menu ul li:first-child {
+    margin-left: 15px;
+  }
+  .header__wrapp .nav__menu ul li {
+    padding-left: 23px;
+  }
+  .callback .number p {
+    font-size: 23px;
+  }
+}
