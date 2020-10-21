@@ -261,6 +261,7 @@ section.services .service_title {
 
 section.services .service_title h2 {
   font-size: 90px;
+  color: #000;
 }
 
 .service__content {
@@ -481,10 +482,37 @@ section.mail form textarea {
 #russian .secondary .header__wrapp .nav__menu ul li a {
   font-size: 26px;
 }
-#russian .secondary .callback #russian .secondary .callback .number p {
-  font-size: 35px;
+#russian .secondary .callback {
+  display: flex;
+}
+
+#russian .secondary .callback .contact-title {
+  margin-top: 44px;
+}
+#russian .secondary .callback .number {
   margin-left: 112px;
   display: flex;
+}
+#russian .secondary .callback .number p {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  align-self: center;
+  padding-left: 40px;
+}
+#rusian .secondary .callback .number p {
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  font-size: 35px;
+  align-self: center;
+  padding-left: 40px;
+}
+#rusian .secondary .callback .number span {
+  margin-top: 61px;
+  font-size: 40px;
+}
+#russian .secondary .callback .number span svg:hover {
+  cursor: pointer;
 }
 /************************************************************animation service item**/
 
