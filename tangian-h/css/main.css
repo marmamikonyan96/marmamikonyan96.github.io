@@ -256,12 +256,13 @@ section.services {
 
 section.services .service_title {
   text-align: center;
-  padding-top: 15%;
+  padding-top: 3%;
 }
 
 section.services .service_title h2 {
   font-size: 90px;
   color: #000;
+  padding-bottom: 350px;
 }
 
 .service__content {
