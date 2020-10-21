@@ -598,7 +598,7 @@ section.mail form textarea {
     padding-bottom: 24px;
   }
 }
-@media screen and (max-width: 1039px) {
+@media screen and (max-width: 1199px) {
   footer .about ul li a {
     font-size: 20px;
   }
