@@ -262,6 +262,7 @@ section.services .service_title {
 section.services .service_title h2 {
   font-size: 90px;
   color: #000;
+  padding-bottom: 407px;
 }
 
 .service__content {
@@ -489,7 +490,11 @@ section.mail form textarea {
 #russian .secondary .callback .contact-title {
   margin-top: 44px;
 }
-
+#russian .secondary .callback .number {
+  display: flex;
+  margin-left: 120px;
+  margin-top: 50px;
+}
 /************************************************************animation service item**/
 
 /*************************************enm***********************************/
@@ -601,9 +606,7 @@ section.mail form textarea {
   .service__content .container .item .item_title a {
     font-size: 33px;
   }
-  section.services .service_title h2 {
-    padding-bottom: 200px;
-  }
+
   footer .adress p {
     font-size: 20px;
   }
