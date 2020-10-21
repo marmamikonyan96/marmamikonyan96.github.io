@@ -205,7 +205,9 @@ section.about {
   background-size: cover;
   background-position: center;
 }
-
+section#main_subpage {
+  width: 1110px;
+}
 .title {
   padding-top: 45px;
   padding-bottom: 40px;
@@ -450,6 +452,16 @@ section.mail form textarea {
   margin-bottom: 20px;
   font-size: 28px;
 }
+#russian .callback .number span {
+  font-size: 25px;
+}
+#russian.header__wrapp .nav__menu ul li a {
+  font-size: 30px;
+}
+#russian .title h2 {
+  text-align: center;
+  font-size: 54px;
+}
 /************************************************************animation service item**/
 
 /*************************************enm***********************************/
@@ -502,6 +514,9 @@ section.mail form textarea {
   }
   section.about {
     height: 100%;
+  }
+  section#main_subpage {
+    width: 980px;
   }
   .title {
     padding-bottom: 0;
@@ -599,6 +614,20 @@ section.mail form textarea {
   }
 }
 @media screen and (max-width: 1199px) {
+  .service__content .container {
+    width: 950px;
+  }
+  section.services .service_title h2 {
+    font-size: 66px;
+  }
+  .service__content .container .item .item_title a {
+    font-size: 31px;
+  }
+  section#main_subpage {
+    width: 850px;
+    margin: 0 auto;
+  }
+
   footer .about ul li a {
     font-size: 20px;
   }
@@ -608,6 +637,13 @@ section.mail form textarea {
   footer .copyright p span {
     font-size: 18px;
   }
+  footer .about ul li:last-child::before {
+    left: 13px;
+    top: -1px;
+  }
+  footer .about ul li:last-child {
+    padding-left: 25px;
+  }
   .gmap_canvas {
     width: 173px;
     height: 133px;
@@ -615,5 +651,33 @@ section.mail form textarea {
   .mapouter {
     width: 210px;
     height: 210px;
+  }
+}
+@media screen and (max-width: 1039px) {
+  a {
+    font-size: 21px;
+  }
+  .title h2 {
+    font-size: 36px;
+  }
+  .service__content .container .item .description p {
+    font-size: 21px;
+  }
+  .service__content .container {
+    width: 795px;
+  }
+  section.services .service_title h2 {
+    font-size: 55px;
+  }
+  .service__content .container .item .item_title a {
+    font-size: 27px;
+  }
+}
+@media screen and (max-width: 1013px) {
+  .header__wrapp .nav__menu ul li a {
+    font-size: 17px;
+  }
+  .title h2 {
+    font-size: 38px;
   }
 }
