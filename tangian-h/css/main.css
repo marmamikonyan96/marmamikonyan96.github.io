@@ -118,7 +118,9 @@ li {
 .header__wrapp .nav__menu ul {
   display: flex;
 }
-
+.header__wrapp .nav__menu ul li.active span {
+  display: none;
+}
 .header__wrapp .nav__menu ul li {
   padding-left: 44px;
   position: relative;
@@ -846,4 +848,125 @@ section.mail form textarea {
     background-color: #1e1f46;
     position: relative;
   }
+
+  .header__wrapp .nav__menu .navbar ul .active {
+    position: relative;
+  }
+  .header__wrapp .nav__menu ul a::after {
+    display: none;
+  }
+  .header__wrapp .nav__menu ul li.active span {
+    display: block;
+    padding-top: 2px;
+    color: #fff;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .header__wrapp .nav__menu ul li.active:hover > .submenu {
+    transform: rotateX(0deg);
+    visibility: visible;
+    opacity: 1;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu {
+    position: absolute;
+    z-index: 5;
+    min-width: 100%;
+    height: auto;
+    background: #1e1f46;
+    left: -15px;
+    visibility: hidden;
+    opacity: 0;
+    transform-origin: 0% 0%;
+    transform: rotateX(-90deg);
+    transition: 0.3s linear;
+    padding-top: 25px;
+    flex-direction: column;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu li {
+    padding-bottom: 20px;
+    padding-right: 15px;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu li a {
+    font-size: 24px;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu li a:hover {
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 631px) {
+  .callback .number {
+    margin-left: 0;
+  }
+  .callback .number span {
+    font-size: 19px;
+    margin-top: 58px;
+  }
+  .callback {
+    flex-direction: column;
+    align-items: center;
+  }
+  .callback .contact-title {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .callback .contact-title a {
+    font-size: 28px;
+  }
+  .callback .number span {
+    margin-top: 27px;
+  }
+  .callback .number p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+}
+@media screen and (max-width: 631px) {
+  .mapouter {
+    position: relative;
+    top: 24px;
+  }
+  .animated {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .animated p {
+    width: 85%;
+  }
+  .animated h5 {
+    padding-left: 0;
+    text-align: center;
+  }
+  .animated p:first-child {
+    text-align: left;
+    font-size: 22px;
+  }
+  .title h2 {
+    font-size: 27px;
+  }
+  .animated p:first-child {
+    font-size: 20px;
+  }
+  section.services .service_title h2 {
+    font-size: 38px;
+  }
+  section.services .service_title {
+    padding-top: 15%;
+  }
+  .service__content .container {
+    width: 100%;
+  }
+  .service__content .container .item .item_title a:first-child {
+    font-size: 36px;
+  }
+  .service__content .container .item .item_title a {
+    font-size: 22px;
+  }
+  .service__content .container .item .description p {
+    font-size: 16px;
+  }
+  .animation-element.slide-right {
+    transform: translate3d(7px, 0px, 0px);
+  }
+}
+@media screen and (max-width: 461px) {
 }
