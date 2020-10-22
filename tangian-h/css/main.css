@@ -969,4 +969,68 @@ section.mail form textarea {
   }
 }
 @media screen and (max-width: 461px) {
+  .row .logo {
+    width: 37px;
+    margin: 0px auto;
+  }
+  .row .container {
+    flex-direction: column;
+  }
+  .callback {
+    flex-direction: column;
+  }
+  .callback .contact-title a {
+    font-size: 15px;
+    padding-top: 0;
+  }
+  .callback .contact-title {
+    margin-top: 1px;
+    margin-left: 0;
+  }
+  .callback .number p {
+    font-size: 11px;
+    margin-right: 10px;
+    padding-left: 2px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+  .callback .number span {
+    margin-top: 5px;
+  }
+  .callback .number span {
+    font-size: 8px;
+  }
+  .callback .number {
+    margin-left: 0px;
+    margin-bottom: 10px;
+  }
+  #language {
+    padding: 0;
+  }
+  .header__wrapp .row {
+    justify-content: space-around;
+  }
+  .header__wrapp .nav__menu ul li.active span {
+    font-size: 20px;
+  }
+  #language ul.submenu a {
+    font-size: 9px;
+  }
+  #language ul.submenu li {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  #language ul.submenu {
+    right: 6px;
+    top: 20px;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu {
+    left: -16px;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu li a {
+    font-size: 20px;
+  }
+  .title h2 {
+    font-size: 20px;
+  }
 }
