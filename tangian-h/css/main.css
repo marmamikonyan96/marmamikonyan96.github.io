@@ -826,5 +826,16 @@ section.mail form textarea {
     width: 600px;
   }
 }
-@media screen and (max-width: 783px) {
+@media screen and (max-width: 770px) {
+  #main_subpage .container {
+    width: 450px;
+  }
+  .title h2 {
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 731px) {
+  .title h2 {
+    font-size: 29px;
+  }
 }
