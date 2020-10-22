@@ -520,11 +520,7 @@ section.mail form textarea {
 /*************************************enm***********************************/
 
 /**********media*/
-@media screen and (max-width: 731px) {
-  .title h2 {
-    font-size: 29px;
-  }
-}
+
 @media screen and (max-width: 1920px) {
   .container {
     width: 100%;
@@ -836,5 +832,18 @@ section.mail form textarea {
   }
   .title h2 {
     font-size: 28px;
+  }
+}
+@media screen and (max-width: 752px) {
+  .title h2 {
+    font-size: 30px;
+  }
+  .header__wrapp #nav__menu ul li a {
+    font-size: 17px;
+  }
+  .header__wrapp #nav__menu {
+    overflow: hidden;
+    background-color: #1e1f46;
+    position: relative;
   }
 }
