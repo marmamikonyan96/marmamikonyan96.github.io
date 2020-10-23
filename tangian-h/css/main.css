@@ -703,6 +703,9 @@ section.mail form textarea {
   a {
     font-size: 21px;
   }
+  .header__wrapp .nav__menu ul li a {
+    font-size: 19px;
+  }
   .title h2 {
     font-size: 36px;
   }
@@ -733,6 +736,15 @@ section.mail form textarea {
   }
   #russian #main_subpage .container {
     width: 800px;
+  }
+  #russian .animated p {
+    font-size: 22px;
+  }
+  #russian .title h2 {
+    font-size: 42px;
+  }
+  #russian section#main_subpage .title h2 {
+    font-size: 46px;
   }
 }
 @media screen and (max-width: 1013px) {
@@ -1032,5 +1044,29 @@ section.mail form textarea {
   }
   .title h2 {
     font-size: 20px;
+  }
+  #main_subpage .container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 375px) {
+  .header__wrapp .nav__menu ul li.active ul.submenu li a {
+    font-size: 22px;
+  }
+  .header__wrapp .nav__menu ul li:first-child {
+    padding-left: 8px;
+  }
+  .animated h5 {
+    font-size: 37px;
+  }
+  .animated p {
+    width: 90%;
+    text-align: left;
+  }
+  .animated {
+    text-align: left;
+  }
+  .title h2 {
+    font-size: 25px;
   }
 }
