@@ -195,6 +195,7 @@ li {
 #about #language ul.submenu a {
   color: #1e1f46;
 }
+
 #service #language ul.submenu a {
   color: #1e1f46;
 }
@@ -844,6 +845,9 @@ section.mail form textarea {
   #main_subpage .container {
     width: 450px;
   }
+  #russian #main_subpage .container {
+    width: 600px;
+  }
   .title h2 {
     font-size: 28px;
   }
@@ -931,7 +935,6 @@ section.mail form textarea {
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
-
   .mapouter {
     position: relative;
     top: 24px;
@@ -980,6 +983,12 @@ section.mail form textarea {
   }
   .animation-element.slide-right {
     transform: translate3d(7px, 0px, 0px);
+  }
+  #main_subpage .container {
+    width: 400px;
+  }
+  #russian #main_subpage .container {
+    width: 400px;
   }
 }
 @media screen and (max-width: 461px) {
@@ -1074,4 +1083,18 @@ section.mail form textarea {
   .title h2 {
     font-size: 25px;
   }
+  #about #language ul.submenu {
+    top: 18px;
+  }
+  #russian #about #language ul.submenu {
+    top: 18px;
+  }
+  #russian #about #language ul.submenu li a {
+    color: #fff;
+  }
+  #about #language ul.submenu li a {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 320px) {
 }
