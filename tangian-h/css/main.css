@@ -931,8 +931,7 @@ section.mail form textarea {
     margin-block-start: 1em;
     margin-block-end: 1em;
   }
-}
-@media screen and (max-width: 631px) {
+
   .mapouter {
     position: relative;
     top: 24px;
@@ -960,6 +959,9 @@ section.mail form textarea {
   }
   section.services .service_title h2 {
     font-size: 38px;
+  }
+  .service__content .container .item .description p {
+    padding-right: 22px;
   }
   section.services .service_title {
     padding-top: 15%;
@@ -1046,6 +1048,9 @@ section.mail form textarea {
     font-size: 20px;
   }
   #main_subpage .container {
+    width: 100%;
+  }
+  #russian #main_subpage .container {
     width: 100%;
   }
 }
