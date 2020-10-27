@@ -18,6 +18,12 @@
 
     <title>Task</title>
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <header>
@@ -50,6 +56,54 @@
         </div>
       </div>
     </header>
+
+    <section class="items">
+      <div class="container">
+        <div class="choose_type">
+          <p>Сортировать по:</p>
+          <ul>
+            <li>
+              Цене <span id="click"> <i class="fas fa-angle-down"></i> </span>
+            </li>
+            <li>
+              Возрасту<span id="click">
+                <i class="fas fa-angle-down"></i>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <div class="limited_wrapper">
+          <div id="types">
+            <div class="image">
+              <img src="img/1type.png" alt="" />
+            </div>
+            <div class="description">
+              <div class="title">
+                <p>Кот полосатый</p>
+              </div>
+              <div class="details">
+                <p>
+                  Коричневый<br />
+                  окрас
+                </p>
+                <p>
+                  <span>2 мес.<br /></span>Возраст
+                </p>
+                <p>
+                  <span>4 <br /></span>Кол-во лап
+                </p>
+              </div>
+              <div class="cost">
+                <p>30 000 руб.</p>
+              </div>
+            </div>
+            <div class="button">
+              <button><a href="#">Купить</a></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <footer>
       <div class="footer">
         <div class="container">
@@ -57,7 +111,23 @@
             <div class="note">
               <div class="buy">
                 <p>Успей купить!</p>
-                <p>Подпишись и успей словить все акции</p>
+                <p>Подпишись и успей <br />словить все акции</p>
+              </div>
+            </div>
+            <div class="form_content">
+              <form action="subscription">
+                <input type="text" placeholder="Email" />
+                <input type="button" value="Подписаться" />
+              </form>
+              <div class="checkbox">
+                <input
+                  type="checkbox"
+                  id="click"
+                  name="check"
+                  checked
+                  value="subscription"
+                />
+                <label for="click"> Подписаться на новости</label>
               </div>
             </div>
           </div>

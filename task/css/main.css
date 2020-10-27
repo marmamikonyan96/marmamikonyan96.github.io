@@ -78,6 +78,74 @@ footer .container {
 footer .container .footer_wrapp {
   display: flex;
   justify-content: space-between;
-  padding-top: 82px;
+  padding-top: 72px;
   padding-bottom: 92px;
+}
+footer .container .footer_wrapp .buy p {
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+}
+footer .container .footer_wrapp .buy p:last-child {
+  font-size: 28px;
+  font-weight: 400;
+  text-align: left;
+}
+footer .container .footer_wrapp form {
+  display: flex;
+  margin-top: 33px;
+}
+footer .container .footer_wrapp form input {
+  display: inline;
+  width: 300px;
+  height: 65px;
+  border-radius: 10px;
+  font-size: 14px;
+  padding-left: 35px;
+}
+footer .container .footer_wrapp form input:nth-child(even) {
+  width: 250px;
+  background: #6ebbd3;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  padding: 0;
+  margin-left: 16px;
+  align-self: center;
+}
+footer .container .footer_wrapp input {
+  margin-top: 25px;
+}
+section.items .container .choose_type {
+  display: flex;
+  justify-content: flex-start;
+}
+section.items .container .choose_type p {
+  font-weight: 700;
+  color: #000;
+}
+section.items .container .choose_type ul {
+  display: flex;
+}
+section.items .container .choose_type ul li {
+  color: #000;
+  padding-left: 50px;
+}
+section.items .container .choose_type ul li span {
+  padding-left: 15px;
+  font-size: 18px;
+}
+section.items .container .limited_wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+section.items .container .limited_wrapper #types {
+  margin: 38px 21px 27px 21px;
+}
+section.items .container .limited_wrapper #types .image {
+  height: 264px;
+  width: 380px;
+}
+section.items .container .limited_wrapper #types .image img {
+  width: 100%;
 }
