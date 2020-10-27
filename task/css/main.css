@@ -135,17 +135,46 @@ section.items .container .choose_type ul li span {
   padding-left: 15px;
   font-size: 18px;
 }
-section.items .container .limited_wrapper {
+section.items .container .cats {
   display: flex;
   flex-wrap: wrap;
 }
-section.items .container .limited_wrapper #types {
-  margin: 38px 21px 27px 21px;
+section.items .container .cats #types {
+  margin: 38px 0px 27px 0px;
+  background-color: #f3f3f3;
+  flex: 0 0 33.3333%;
 }
-section.items .container .limited_wrapper #types .image {
+section.items .container .cats #types .image {
   height: 264px;
   width: 380px;
 }
-section.items .container .limited_wrapper #types .image img {
+section.items .container .cats #types .image img {
   width: 100%;
+}
+section.items .container .cats #types .description .title {
+  padding-left: 30px;
+}
+section.items .container .cats #types .description .title p {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: left;
+  color: #000;
+}
+section.items .container .cats #types .description .details {
+  display: flex;
+}
+section.items .container .cats #types .description .details p {
+  font-size: 12px;
+  font-weight: 400;
+  text-align: left;
+  color: #000;
+  position: relative;
+}
+section.items .container .cats #types .description .details p:before {
+  width: 4px;
+  height: 26px;
+  left: 158px;
+  top: 695px;
+  background: #6ebbd3;
+  position: absolute;
 }
