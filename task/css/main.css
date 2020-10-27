@@ -11,6 +11,73 @@ body {
   width: 1180px;
   margin: 0 auto;
 }
-.header_wrapP {
-  background-image: url(../img/);
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #ffff;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+}
+header {
+  background-image: url(../img/headerback.png);
+  height: auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header .container .header_wrapp {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 39px;
+  padding-bottom: 66px;
+  position: relative;
+}
+header .container .header_wrapp .logo_type .vectors {
+  height: 50px;
+  width: 78px;
+  padding-bottom: 50px;
+}
+header .container .header_wrapp .logo_type .vectors img {
+  width: 100%;
+}
+header .container .header_wrapp .logo_type .finder p {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 38px;
+  line-height: 46px;
+}
+header .container .header_wrapp .menu ul {
+  display: flex;
+  position: absolute;
+  left: 123px;
+}
+header .container .header_wrapp .menu ul li {
+  padding-left: 50px;
+}
+header .container .header_wrapp .contact {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+header .container .header_wrapp .contact .number p {
+  font-size: 24px;
+  font-weight: 700;
+}
+header .container .header_wrapp .contact .number p:last-child {
+  font-size: 18px;
+  font-weight: 400;
+  text-align: right;
+}
+footer .container {
+  background-color: #1f2021;
+  padding: 0 15px;
+}
+footer .container .footer_wrapp {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 82px;
+  padding-bottom: 92px;
 }
