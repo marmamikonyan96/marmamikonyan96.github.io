@@ -221,9 +221,7 @@ section.items
   background: #6ebbd3;
   position: absolute;
 }
-section.items .container .cats #types .button {
-  position: absolute;
-}
+
 section.items .container .cats #types .button button {
   width: 359px;
   height: 65px;
@@ -277,12 +275,45 @@ section.items .container .else a:hover {
 @media screen and (max-width: 1199px) {
   .container {
     width: 100%;
-    padding: 0 15px;
+    padding: 0;
+    margin: 0 auto;
   }
   header {
     background-position: center;
   }
-  .footer .container .footer_wrapp {
-    justify-content: space-around;
+  header .container .header_wrapp .logo_type {
+    margin-left: 20px;
+  }
+
+  section.items .container .cats #types .button button {
+    width: 353px;
+  }
+  section.items .container .choose_type {
+    margin-left: 22px;
+  }
+  section.items .container .cats #types {
+    margin-left: 0;
+  }
+}
+@media screen and (max-width: 1122px) {
+  header {
+    background-position: top;
+  }
+  section.items .container .cats #types {
+    width: 332px;
+  }
+  section.items .container .cats #types .button button {
+    width: 332px;
+  }
+  section.items .container .cats #types .description .details p {
+    padding-left: 35px;
+  }
+}
+@media screen and (max-width: 1085px) {
+  .footer .container .footer_wrapp form input {
+    width: 225px;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    width: 228px;
   }
 }

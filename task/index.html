@@ -56,14 +56,12 @@
         </div>
       </div>
     </header>
-
-    <
     <section class="items">
       <div class="container">
         <div class="choose_type">
           <p>Сортировать по:</p>
           <ul>
-            <li>
+            <li class="sortedbycost">
               Цене <span id="click"> <i class="fas fa-angle-down"></i> </span>
             </li>
             <li>
@@ -74,7 +72,7 @@
           </ul>
         </div>
         <div class="cats">
-          <div id="types">
+          <div class="types">
             <div class="image">
               <img src="img/1type.png" alt="" />
             </div>
@@ -102,7 +100,7 @@
               <button><a href="#">Купить</a></button>
             </div>
           </div>
-          <div id="types">
+          <div class="types">
             <div class="image">
               <img src="img/type2.png" alt="" />
             </div>
@@ -130,7 +128,7 @@
               <button id="saled"><a href="#">Продан</a></button>
             </div>
           </div>
-          <div id="types">
+          <div class="types">
             <div class="image">
               <img src="img/3type.png" alt="" />
             </div>
@@ -158,7 +156,7 @@
               <button><a href="#">Купить</a></button>
             </div>
           </div>
-          <div id="types">
+          <div class="types">
             <div class="image">
               <img src="img/1type.png" alt="" />
             </div>
@@ -186,7 +184,7 @@
               <button><a href="#">Купить</a></button>
             </div>
           </div>
-          <div id="types">
+          <div class="types">
             <div class="image">
               <img src="img/3type.png" alt="" />
             </div>
@@ -214,7 +212,7 @@
               <button><a href="#">Купить</a></button>
             </div>
           </div>
-          <div id="types">
+          <div class="types">
             <div class="image">
               <img src="img/type2.png" alt="" />
             </div>
@@ -258,9 +256,14 @@
             </div>
           </div>
           <div class="form_content">
-            <form action="subscription">
-              <input type="text" placeholder="Email" />
-              <input type="button" value="Подписаться" />
+            <form
+              name="myform"
+              method="post"
+              action="#"
+              onsubmit="return validateemail();"
+            >
+              <input type="text" name="email" placeholder="Email" />
+              <input type="submit" value="Подписаться" />
             </form>
             <div class="checkbox">
               <input
