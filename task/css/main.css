@@ -140,24 +140,15 @@ section.items .container .cats {
   flex-wrap: wrap;
 }
 section.items .container .cats #types {
-  margin: 38px 0px 27px 0px;
+  margin: 38px 0px 21px 0px;
   flex: 0 0 33.3333%;
   position: relative;
-}
-section.items .container .cats #types .image {
+  background-color: #f3f3f3;
   height: 264px;
   width: 380px;
 }
 section.items .container .cats #types .image img {
   width: 100%;
-}
-section.items .container .cats #types .description {
-  background-color: #f3f3f3;
-  height: 192px;
-  width: 380px;
-  left: 0px;
-  top: 228px;
-  position: absolute;
 }
 
 section.items .container .cats #types .description .title {
@@ -178,6 +169,7 @@ section.items .container .cats #types .description .details p {
   text-align: left;
   color: #000;
   position: relative;
+  padding-left: 45px;
 }
 section.items .container .cats #types .description .details p:before {
   content: url();
