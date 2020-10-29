@@ -426,4 +426,25 @@ section.items .container .else a:hover {
     display: block;
     cursor: pointer;
   }
+
+  .footer .container .footer_wrapp .buy p {
+    font-size: 34px;
+  }
+  .footer .container .footer_wrapp .buy p:last-child {
+    font-size: 19px;
+  }
+  .footer .container .footer_wrapp form {
+    display: flex;
+    margin-top: 0px;
+    margin-right: 54px;
+    flex-direction: column;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    padding: 0;
+    margin-left: 0;
+    align-self: baseline;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    width: 227px;
+  }
 }
