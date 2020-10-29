@@ -28,7 +28,9 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
 }
-
+header .header_content {
+  background: rgba(31, 32, 33, 0.79);
+}
 header .container .header_wrapp {
   display: flex;
   justify-content: space-between;
@@ -49,6 +51,15 @@ header .container .header_wrapp .logo_type .finder p {
   font-weight: bold;
   font-size: 38px;
   line-height: 46px;
+}
+header .container .header_wrapp .dropdown button.dropbtn {
+  margin-right: 381px;
+  margin-top: 29px;
+  display: none;
+}
+
+header .container .header_wrapp .dropdown button i {
+  font-size: 22px;
 }
 header .container .header_wrapp .menu ul {
   display: flex;
@@ -375,5 +386,29 @@ section.items .container .else a:hover {
 @media screen and (max-width: 893px) {
   header .container .header_wrapp .menu {
     display: none;
+  }
+  header .container .header_wrapp {
+    padding-top: 0px;
+    padding-bottom: 28px;
+    background: #1f2021c4;
+  }
+  header .header_content {
+    background-color: transparent;
+  }
+  header .container .header_wrapp .logo_type .vectors {
+    height: 27px;
+    width: 71px;
+    padding-bottom: 10px;
+    margin-top: 24px;
+  }
+  header .container .header_wrapp .logo_type .finder p {
+    font-size: 32px;
+  }
+  header .container .header_wrapp .contact {
+    top: 2px;
+  }
+  header .container .header_wrapp .dropdown {
+    position: relative;
+    display: inline-block;
   }
 }

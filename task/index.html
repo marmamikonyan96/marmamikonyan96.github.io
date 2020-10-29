@@ -27,7 +27,7 @@
   </head>
   <body>
     <header>
-      <div class="header_content" style="background: rgba(31, 32, 33, 0.79)">
+      <div class="header_content">
         <div class="container">
           <div class="header_wrapp">
             <div class="logo_type">
@@ -38,13 +38,18 @@
                 <p>Найдено 349 котов</p>
               </div>
             </div>
-            <div class="menu">
-              <ul>
-                <li><a href="#">Main</a></li>
-                <li><a href="#">Gallery</a></li>
-                <li><a href="#">News</a></li>
-                <li><a href="#">Profile</a></li>
-              </ul>
+            <div class="dropdown">
+              <button onclick="myFunction()" class="dropbtn">
+                <i class="fas fa-stream"></i>
+              </button>
+              <div class="menu dropdown-content" id="dropdown">
+                <ul>
+                  <li><a href="#">Main</a></li>
+                  <li><a href="#">Gallery</a></li>
+                  <li><a href="#">News</a></li>
+                  <li><a href="#">Profile</a></li>
+                </ul>
+              </div>
             </div>
             <div class="contact">
               <div class="number">
@@ -280,6 +285,7 @@
         </div>
       </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/index.js"></script>
   </body>
 </html>

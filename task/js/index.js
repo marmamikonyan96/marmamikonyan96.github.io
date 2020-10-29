@@ -9,3 +9,8 @@ if (atposition<1 || dotposition<atposition+2 || dotposition+2>=x.length){
   }  
 }  
 
+
+$("#toggle").click(function () {
+  $(this).toggleClass("active");
+  $("#overlay").toggleClass("open");
+});
