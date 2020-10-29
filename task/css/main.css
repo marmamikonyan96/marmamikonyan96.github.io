@@ -444,7 +444,4 @@ section.items .container .else a:hover {
     margin-left: 0;
     align-self: baseline;
   }
-  .footer .container .footer_wrapp form input:nth-child(2n) {
-    width: 227px;
-  }
 }
