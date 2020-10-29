@@ -167,16 +167,16 @@ section.items .container .cats #types .image:after {
   right: 31px;
   top: 36px;
 }
-section.items .container .cats #types .image:after {
+section.items .container .cats #types .saled:after {
   content: "40%";
   position: absolute;
   background-color: #e62d2d;
-  width: 68px;
+  width: 63px;
   height: 39px;
   color: #fff;
   border-radius: 10px;
   text-align: center;
-  padding-top: 5px;
+  padding-top: 15px;
   font-weight: 700;
 }
 
@@ -340,5 +340,40 @@ section.items .container .else a:hover {
   }
   .footer .container .footer_wrapp form input:nth-child(2n) {
     width: 228px;
+  }
+}
+@media screen and (max-width: 996px) {
+  .footer .container .footer_wrapp .buy p {
+    font-size: 42px;
+  }
+  .footer .container .footer_wrapp .buy p:last-child {
+    font-size: 22px;
+  }
+  section.items .container .cats #types {
+    flex: 0 0 40.3333%;
+  }
+  section.items .container .cats #types .button button {
+    width: 388px;
+  }
+  section.items .container .cats #types {
+    margin: 38px 5px 68px 21px;
+  }
+}
+@media screen and (max-width: 971px) {
+  section.items .container .cats #types .button button {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 955px) {
+  .footer .container .footer_wrapp form input {
+    width: 190px;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    width: 178px;
+  }
+}
+@media screen and (max-width: 893px) {
+  header .container .header_wrapp .menu {
+    display: none;
   }
 }
