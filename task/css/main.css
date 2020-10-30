@@ -449,6 +449,9 @@ section.items .container .else a:hover {
   .navbar .overlay.open .menu {
     display: block;
   }
+  li.close-menu {
+    display: none;
+  }
   .navbar .overlay.open .menu ul {
     text-align: center;
     flex-direction: column;
