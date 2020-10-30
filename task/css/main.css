@@ -22,7 +22,7 @@ a {
   font-style: normal;
   font-weight: 400;
 }
-.navbar .overlay.open .menu li.close-menu {
+li.close-menu {
   display: none;
 }
 .navbar .navbar-button {
@@ -449,8 +449,8 @@ section.items .container .else a:hover {
   .navbar .overlay.open .menu {
     display: block;
   }
-  .navbar .overlay.open .menu li.close-menu {
-    display: none;
+  li.close-menu {
+    display: block;
   }
   .navbar .overlay.open .menu ul {
     text-align: center;
