@@ -22,6 +22,9 @@ a {
   font-style: normal;
   font-weight: 400;
 }
+li.close-menu {
+  display: none;
+}
 .navbar .navbar-button {
   display: none;
 }
