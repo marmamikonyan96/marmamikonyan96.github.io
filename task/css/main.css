@@ -22,7 +22,7 @@ a {
   font-style: normal;
   font-weight: 400;
 }
-li.close-menu {
+.navbar .overlay.open .menu li.close-menu {
   display: none;
 }
 .navbar .navbar-button {
@@ -449,7 +449,7 @@ section.items .container .else a:hover {
   .navbar .overlay.open .menu {
     display: block;
   }
-  li.close-menu {
+  .navbar .overlay.open .menu li.close-menu {
     display: none;
   }
   .navbar .overlay.open .menu ul {
