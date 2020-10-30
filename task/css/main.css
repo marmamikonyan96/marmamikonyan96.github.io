@@ -615,6 +615,20 @@ section.items .container .else a:hover {
     font-size: 13px;
   }
 }
+@media screen and (max-width: 490px) {
+  section.items .container .else button {
+    width: 295px;
+  }
+  .footer .container .footer_wrapp form input {
+    width: 132px;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    width: 150px;
+  }
+  .navbar .overlay.open .menu ul li a {
+    font-size: 26px;
+  }
+}
 @media screen and (max-width: 449px) {
   header {
     background-size: cover;
@@ -629,5 +643,27 @@ section.items .container .else a:hover {
   section.items .container .choose_type ul li {
     padding-left: 17px;
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .footer .container .footer_wrapp form {
+    flex-direction: column;
+  }
+  section.items .container .choose_type ul li {
+    font-size: 14px;
+  }
+  section.items .container .choose_type {
+    padding-top: 25px;
+  }
+  section.items .container .choose_type p {
+    font-size: 14px;
+  }
+  section.items .container .choose_type ul {
+    margin-block-start: 14px;
+  }
+}
+@media screen and (max-width: 346px) {
+  section.items .container .choose_type ul {
+    flex-wrap: wrap;
   }
 }
