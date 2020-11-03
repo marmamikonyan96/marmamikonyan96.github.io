@@ -101,7 +101,7 @@ li.close-menu {
   cursor: pointer;
 }
 
-.header__wrapp .nav__menu ul li:first-child {
+.header__wrapp .nav__menu ul li {
   padding-left: 16px;
   padding-top: 5px;
 }
@@ -118,7 +118,7 @@ li.close-menu {
   align-self: center;
 }
 
-.header__wrapp .nav__menu ul {
+.header__wrapp .nav__menu .submenu {
   display: flex;
 }
 .header__wrapp .nav__menu ul li.active span {
@@ -129,14 +129,14 @@ li.close-menu {
   position: relative;
 }
 
-.header__wrapp .nav__menu ul li a {
+.header__wrapp .nav__menu ul li  a {
   font-size: 30px;
   font-weight: 800;
   font-family: "Playfair Display", serif;
   color: #f3f3f3;
 }
 
-.header__wrapp .nav__menu ul a:after {
+.header__wrapp .nav__menu ul li  a:after {
   content: "";
   position: absolute;
   background: hsl(254, 43%, 86%);
@@ -148,7 +148,7 @@ li.close-menu {
   transition: 0.35s ease;
 }
 
-.header__wrapp .nav__menu ul a:hover:after {
+.header__wrapp .nav__menu ul li a:hover:after {
   width: 100%;
 }
 
@@ -971,12 +971,11 @@ section.mail form textarea {
     font-size: 25px;
     cursor: pointer;
   }
-  .header__wrapp .nav__menu ul li.active ul.submenu {
+  .header__wrapp .nav__menu ul li.active .overlay {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    height: 100%;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.35s, visibility 0.35s, height 0.35s;
@@ -986,7 +985,7 @@ section.mail form textarea {
     flex-direction: column;
     text-align: center;
   }
-  .header__wrapp .nav__menu .submenu .open {
+  .header__wrapp .nav__menu .overlay.open {
     opacity: 1;
     visibility: visible;
     height: 100%;
@@ -998,7 +997,7 @@ section.mail form textarea {
     text-decoration: underline;
   }
 
-  /*@media screen and (max-width: 555px) {
+  @media screen and (max-width: 555px) {
   #russian #language ul.submenu {
     right: -19px;
     top: 44px;
@@ -1025,7 +1024,7 @@ section.mail form textarea {
   .header__wrapp .nav__menu ul li:first-child {
     padding-left: 22px;
   }
-}*/
+
 @media screen and (max-width: 461px) {
   .row .logo {
     width: 37px;

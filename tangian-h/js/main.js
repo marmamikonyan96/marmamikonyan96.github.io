@@ -1,11 +1,11 @@
 /** @format */
 $(document).ready(function () {
   $(".open-menu").on("click", function () {
-    $(".submenu").addClass("open");
+    $(".overlay").addClass("open");
   });
 
   $(".close-menu").on("click", function () {
-    $(".submenu").removeClass("open");
+    $(".overlay").removeClass("open");
   });
 });
 AOS.init();
