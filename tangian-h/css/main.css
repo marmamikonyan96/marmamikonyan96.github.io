@@ -673,12 +673,10 @@ section.mail form textarea {
 #russian #main_subpage .container {
   width: 600px;
 }
-@media screen and (max-width: 1024px) {
-  #russian #main_subpage .container {
-    width: 800px;
-  }
-  #main_subpage .container {
-    width: 800px;
+@media screen and (max-width: 1440px) {
+  #language ul.submenu li {
+    padding-bottom: 2px;
+    padding-top: 3px;
   }
 }
 @media screen and (max-width: 1199px) {
@@ -717,6 +715,7 @@ section.mail form textarea {
     height: 210px;
   }
 }
+
 @media screen and (max-width: 1039px) {
   a {
     font-size: 21px;
@@ -763,6 +762,14 @@ section.mail form textarea {
   }
   #russian section#main_subpage .title h2 {
     font-size: 46px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  #russian #main_subpage .container {
+    width: 800px;
+  }
+  #main_subpage .container {
+    width: 800px;
   }
 }
 @media screen and (max-width: 1013px) {
@@ -858,6 +865,7 @@ section.mail form textarea {
     width: 600px;
   }
 }
+
 @media screen and (max-width: 770px) {
   #main_subpage .container {
     width: 450px;
@@ -869,12 +877,81 @@ section.mail form textarea {
     font-size: 28px;
   }
 }
-@media screen and (max-width: 752px) {
+@media screen and (max-width: 768px) {
+  .header__wrapp .nav__menu ul li.active ul.submenu li a {
+    font-size: 16px;
+  }
+  .header__wrapp .nav__menu ul li.active ul.submenu li {
+    padding-bottom: 15px;
+  }
+  .animated p {
+    width: 78%;
+    text-align: left;
+  }
+  #russian .callback .number span {
+    font-size: 11px;
+  }
+  a {
+    font-size: 18px;
+  }
+  .callback .number {
+    margin-left: 0;
+  }
+  .callback .number span {
+    font-size: 19px;
+    margin-top: 58px;
+  }
+  .callback {
+    flex-direction: column;
+    align-items: center;
+  }
+  .callback .contact-title {
+    margin-top: 10px;
+    margin-right: 15px;
+  }
+  .callback .contact-title a {
+    font-size: 28px;
+  }
+  .callback .number span {
+    margin-top: 27px;
+  }
+  .callback .number p {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+  }
+  .mapouter {
+    position: relative;
+    top: 24px;
+  }
+  .animated {
+    text-align: center;
+    margin-left: 0px;
+  }
+  .animated h5 {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .service__content .container .item .description p {
+    padding-right: 22px;
+  }
+  section.services .service_title {
+    padding-top: 15%;
+  }
+  .service__content .container {
+    width: 100%;
+  }
+  .service__content .container .item .description p {
+    font-size: 16px;
+  }
+  .animation-element.slide-right {
+    transform: translate3d(7px, 0px, 0px);
+  }
+  #main_subpage .container {
+    width: 400px;
+  }
   .title h2 {
     font-size: 30px;
-  }
-  .header__wrapp #nav__menu ul li a {
-    font-size: 17px;
   }
   .header__wrapp #nav__menu {
     overflow: hidden;
@@ -916,101 +993,11 @@ section.mail form textarea {
     flex-direction: column;
   }
   .header__wrapp .nav__menu ul li.active ul.submenu li {
-    padding-bottom: 20px;
     padding-right: 15px;
-  }
-  .header__wrapp .nav__menu ul li.active ul.submenu li a {
-    font-size: 24px;
   }
   .header__wrapp .nav__menu ul li.active ul.submenu li a:hover {
     text-decoration: underline;
   }
-}
-@media screen and (max-width: 631px) {
-  .callback .number {
-    margin-left: 0;
-  }
-  .callback .number span {
-    font-size: 19px;
-    margin-top: 58px;
-  }
-  .callback {
-    flex-direction: column;
-    align-items: center;
-  }
-  .callback .contact-title {
-    margin-top: 10px;
-    margin-right: 15px;
-  }
-  .callback .contact-title a {
-    font-size: 28px;
-  }
-  .callback .number span {
-    margin-top: 27px;
-  }
-  .callback .number p {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-  }
-  .mapouter {
-    position: relative;
-    top: 24px;
-  }
-  .animated {
-    text-align: center;
-    margin-left: 0px;
-  }
-  .animated p {
-    width: 85%;
-  }
-  .animated h5 {
-    padding-left: 0;
-    text-align: center;
-  }
-  .animated p:first-child {
-    text-align: left;
-    font-size: 22px;
-  }
-  .title h2 {
-    font-size: 27px;
-  }
-  .animated h5 {
-    font-size: 32px;
-  }
-  .animated p:first-child {
-    font-size: 20px;
-  }
-  section.services .service_title h2 {
-    font-size: 38px;
-  }
-  .service__content .container .item .description p {
-    padding-right: 22px;
-  }
-  section.services .service_title {
-    padding-top: 15%;
-  }
-  .service__content .container {
-    width: 100%;
-  }
-  .service__content .container .item .item_title a:first-child {
-    font-size: 36px;
-  }
-  .service__content .container .item .item_title a {
-    font-size: 22px;
-  }
-  .service__content .container .item .description p {
-    font-size: 16px;
-  }
-  .animation-element.slide-right {
-    transform: translate3d(7px, 0px, 0px);
-  }
-  #main_subpage .container {
-    width: 400px;
-  }
-  #russian #main_subpage .container {
-    width: 400px;
-  }
-}
 
 @media screen and (max-width: 555px) {
   #russian #language ul.submenu {
@@ -1027,10 +1014,6 @@ section.mail form textarea {
   #language ul.submenu li {
     padding-bottom: 0px;
   }
-  .header__wrapp .nav__menu ul li.active ul.submenu li a {
-    font-size: 19px;
-  }
-
   .header__wrapp .nav__menu ul li:first-child {
     margin-left: 0px;
   }
@@ -1106,9 +1089,6 @@ section.mail form textarea {
   }
   .header__wrapp .nav__menu ul li.active ul.submenu {
     left: 0px;
-  }
-  .header__wrapp .nav__menu ul li.active ul.submenu li a {
-    font-size: 20px;
   }
   #language ul.submenu a:hover {
     color: #fff;
