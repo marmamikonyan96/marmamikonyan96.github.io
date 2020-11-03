@@ -1,5 +1,13 @@
 /** @format */
+$(document).ready(function () {
+  $(".open-menu").on("click", function () {
+    $(".submenu").addClass("open");
+  });
 
+  $(".close-menu").on("click", function () {
+    $(".submenu").removeClass("open");
+  });
+});
 AOS.init();
 
 var $animation_elements = $(".animation-element");
@@ -30,13 +38,3 @@ function check_if_in_view() {
 
 $window.on("scroll resize", check_if_in_view);
 $window.trigger("scroll");
-
-$(document).ready(function () {
-  $(".open-menu").on("click", function () {
-    $(".submenu").addClass("open");
-  });
-
-  $(".close-menu").on("click", function () {
-    $(".submenu").removeClass("open");
-  });
-});
