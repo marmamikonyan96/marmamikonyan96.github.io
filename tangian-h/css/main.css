@@ -1009,12 +1009,6 @@ section.mail form textarea {
     height: 17px;
     top: 4px;
   }
-  #russian footer .copyright p {
-    font-size: 13px;
-  }
-  #russian footer .copyright p span {
-    font-size: 13px;
-  }
 
   .mapouter {
     position: relative;
@@ -1050,7 +1044,7 @@ section.mail form textarea {
   #main_subpage .container {
     width: 400px;
   }
-  #russian footer .adress {
+  footer .adress {
     align-self: center;
     margin-right: 0;
   }
@@ -1059,6 +1053,12 @@ section.mail form textarea {
   }
   #russian footer .adress p span {
     font-size: 15px;
+  }
+  #russian footer .copyright p {
+    font-size: 13px;
+  }
+  #russian footer .copyright p span {
+    font-size: 13px;
   }
   #russian #main_subpage .container {
     width: 227px;
@@ -1069,7 +1069,7 @@ section.mail form textarea {
   #russian #main_subpage .animated {
     padding-top: 0;
   }
-  #russian #main_subpage #russian .animated p {
+  #russian #main_subpage .animated p {
     font-size: 12px;
   }
 }
