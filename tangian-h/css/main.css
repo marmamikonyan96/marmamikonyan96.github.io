@@ -980,6 +980,9 @@ section.mail form textarea {
   .title h2 {
     font-size: 26px;
   }
+  #russian section#main_subpage .title h2 {
+    font-size: 20px;
+  }
   .animated p {
     width: 73%;
     text-align: left;
@@ -1060,6 +1063,15 @@ section.mail form textarea {
   #russian #main_subpage .container {
     width: 227px;
   }
+  #russian #main_subpage .animated h5 {
+    font-size: 22px;
+  }
+  #russian #main_subpage .animated {
+    padding-top: 0;
+  }
+  #russian #main_subpage #russian .animated p {
+    font-size: 12px;
+  }
 }
 @media screen and (max-width: 461px) {
   .row .logo {
@@ -1097,71 +1109,5 @@ section.mail form textarea {
   .callback .number {
     margin-left: 0px;
     margin-bottom: 10px;
-  }
-  #language {
-    padding: 0;
-  }
-  .header__wrapp .row {
-    justify-content: space-between;
-  }
-
-  .title h2 {
-    font-size: 20px;
-  }
-  #main_subpage .container {
-    width: 362px;
-  }
-  #russian section#main_subpage .title h2 {
-    font-size: 21px;
-  }
-  #russian section#main_subpage .animated p {
-    font-size: 13px;
-  }
-  #russian section#main_subpage .animated h5 {
-    font-size: 22px;
-  }
-  section.services .service_title h2 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 375px) {
-  .animated p {
-    width: 90%;
-    text-align: left;
-  }
-  .animated {
-    text-align: left;
-  }
-
-  #about #language ul.submenu {
-    top: 18px;
-  }
-  #russian #about #language ul.submenu {
-    top: 18px;
-  }
-  #russian #about #language ul.submenu li a {
-    color: rgb(65, 60, 97);
-  }
-  #about #language ul.submenu li a {
-    color: rgb(65, 60, 97);
-  }
-  .service__content .container .item .item_title a:first-child {
-    font-size: 25px;
-  }
-  .service__content .container .item .item_title a {
-    font-size: 18px;
-  }
-  footer .about ul li a {
-    font-size: 17px;
-  }
-
-  footer .copyright p span {
-    font-size: 15px;
-  }
-  footer .copyright {
-    padding-left: 20px;
-  }
-  .title h2 {
-    font-size: 20px;
   }
 }
