@@ -5,6 +5,7 @@ body {
   font-family: "Playfair Display", serif;
   font-family: "Roboto", sans-serif;
   line-height: 1, 1;
+  width: 2560px;
 }
 body[data-aos-duration="4000"] [data-aos],
 [data-aos][data-aos][data-aos-duration="4000"] {
@@ -17,8 +18,9 @@ body[data-aos-duration="4000"] [data-aos],
 }
 
 .container {
-  width: 2580px;
+  width: 2220px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 img {
