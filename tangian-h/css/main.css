@@ -19,7 +19,7 @@ body[data-aos-duration="4000"] [data-aos],
 }
 
 .container {
-  width: 2580px;
+  width: 2125px;
   margin: 0 auto;
 }
 
@@ -59,7 +59,7 @@ li.close-menu {
 }
 /**********TOP???????????????????????*?///*/
 .row .logo {
-  width: 103px;
+  width: 200px;
   margin-left: 20px;
   margin-top: 10px;
   margin-bottom: 30px;
@@ -67,6 +67,7 @@ li.close-menu {
 
 .callback {
   display: flex;
+  flex-direction: column;
 }
 
 .callback .contact-title {
@@ -74,7 +75,7 @@ li.close-menu {
 }
 
 .callback .contact-title a {
-  font-size: 42px;
+  font-size: 60px;
   padding-top: 45px;
   font-weight: 600;
   font-family: "Playfair Display", serif;
@@ -88,14 +89,13 @@ li.close-menu {
 .callback .number p {
   font-weight: 500;
   font-family: "Roboto", sans-serif;
-  font-size: 35px;
-  align-self: center;
-  padding-left: 10px;
+  font-size: 58px;
+  padding-left: 30px;
 }
 
 .callback .number span {
-  margin-top: 62px;
-  font-size: 40px;
+  margin-top: 49px;
+  font-size: 72px;
 }
 
 .callback .number span svg:hover {
@@ -103,8 +103,10 @@ li.close-menu {
 }
 /*menu HEADER-MENU??????//////////////*/
 .header__wrapp .nav__menu ul li {
-  padding-left: 16px;
-  padding-top: 5px;
+  padding-left: 40px;
+}
+.header__wrapp .nav__menu ul li:first-child {
+  padding-left: 0;
 }
 
 .header__wrapp {
@@ -125,13 +127,9 @@ li.close-menu {
 .header__wrapp .nav__menu ul li.active span {
   display: none;
 }
-.header__wrapp .nav__menu ul li {
-  padding-left: 44px;
-  position: relative;
-}
 
 .header__wrapp .nav__menu ul li a {
-  font-size: 30px;
+  font-size: 40px;
   font-weight: 800;
   font-family: "Playfair Display", serif;
   color: #f3f3f3;
@@ -154,7 +152,8 @@ li.close-menu {
 }
 /*menu-end////////////////*/
 #language {
-  padding: 12px;
+  padding-top: 20px;
+  padding-bottom: 15px;
 }
 
 #language li {
@@ -164,7 +163,7 @@ li.close-menu {
 
 #language li a {
   color: #fff;
-  margin-right: 29px;
+  margin-right: 0px;
 }
 
 #language ul.submenu {
@@ -174,8 +173,8 @@ li.close-menu {
   transform-origin: 0% 0%;
   transform: rotateX(-90deg);
   transition: 0.3s linear;
-  right: -11px;
-  top: 39px;
+  right: -58px;
+  top: 69px;
   z-index: 1;
   background-color: #1e1f46;
 }
@@ -231,7 +230,7 @@ section.about {
 
 .title h2 {
   color: #1e1f46;
-  font-size: 50px;
+  font-size: 72px;
   padding-top: 5%;
 }
 
@@ -244,8 +243,8 @@ section.about {
 }
 
 .animated p {
-  font-size: 32px;
-  font-weight: 600;
+  font-size: 41px;
+  font-weight: 700;
   font-family: "Roboto" sans-serif;
   padding-left: 20px;
   color: #1e1f46;
@@ -260,10 +259,9 @@ section.about {
 }
 
 section.services {
-  height: 100vh;
   background-image: url(../img/section3.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   opacity: 0.9;
 }
@@ -288,33 +286,34 @@ section.services .service_title h2 {
 .service__content .container .item {
   padding-top: 100px;
   padding-bottom: 100px;
-  margin: 0 auto;
+}
+.service__content .container .item .item_title {
   text-align: center;
 }
 
 .service__content .container .item .item_title a:first-child {
-  font-size: 50px;
+  font-size: 60px;
   color: #1e1f46;
   padding-bottom: 30px;
   display: block;
 }
 
 .service__content .container .item .item_title a {
-  font-size: 40px;
+  font-size: 62px;
   color: #1e1f46;
   text-decoration: none;
   cursor: pointer;
   display: block;
 }
 .service__content .container .item .description {
-  width: 800px;
+  width: 1678px;
   margin: 0 auto;
 }
 .service__content .container .item .description p {
-  font-size: 28px;
+  font-size: 42px;
   color: #1e1f46;
   cursor: pointer;
-  line-height: 1.7;
+  line-height: 2;
 }
 #russian .service__content .container .item .item_title a:first-child {
   font-size: 50px;
@@ -392,7 +391,7 @@ footer .about ul li:last-child::before {
   top: 9px;
 }
 footer .about ul li a {
-  font-size: 32px;
+  font-size: 43px;
   color: #fff;
   font-weight: 300;
   cursor: pointer;
@@ -408,28 +407,28 @@ footer .copyright {
 footer .copyright p {
   color: #fff;
   font-weight: 300;
-  font-size: 29px;
+  font-size: 35px;
 }
 footer .copyright p span {
   color: #fff;
   font-weight: 300;
-  font-size: 29px;
+  font-size: 40px;
   font-style: italic;
   padding-left: 5px;
 }
 footer .adress {
-  padding-top: 100px;
+  padding-top: 77px;
   padding-bottom: 30px;
 }
 footer .adress p {
   color: #fff;
   font-weight: 300;
-  font-size: 29px;
+  font-size: 36px;
 }
 footer .adress p span {
   color: #fff;
   font-weight: 300;
-  font-size: 29px;
+  font-size: 36px;
   font-style: italic;
   padding-left: 5px;
 }
@@ -479,15 +478,23 @@ section.mail form textarea {
 
 #russian .title h2 {
   text-align: center;
-  font-size: 54px;
+  font-size: 86px;
+}
+#russian .animated {
+  padding-bottom: 0;
+}
+#russian .animated h5 {
+  font-size: 86px;
 }
 #russian .animated p {
-  font-size: 24px;
+  font-size: 55px;
   font-weight: 600;
   font-family: "Roboto" sans-serif;
   padding-left: 20px;
   color: #1e1f46;
   line-height: 2.1;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 #russian section#main_subpage {
   margin: 0 auto;
@@ -495,7 +502,7 @@ section.mail form textarea {
   background-image: none;
 }
 #russian section#main_subpage .title h2 {
-  font-size: 45px;
+  font-size: 80px;
 }
 
 #russian .secondary .callback {
@@ -515,600 +522,3 @@ section.mail form textarea {
 /*************************************enm***********************************/
 
 /**********media*/
-
-@media screen and (max-width: 1920px) {
-  .container {
-    width: 100%;
-  }
-  .callback .number {
-    margin-left: 35px;
-  }
-  .callback .contact-title a {
-    font-size: 30px;
-  }
-  .callback .number span {
-    font-size: 24px;
-    margin-top: 54px;
-  }
-  .callback .number p {
-    font-size: 25px;
-    margin-right: 15px;
-  }
-  .header__wrapp .nav__menu ul li a {
-    font-size: 20px;
-  }
-  a {
-    font-size: 25px;
-  }
-  .row .logo {
-    width: 82px;
-  }
-  #language ul.submenu li {
-    padding-bottom: 5px;
-  }
-  #language li a {
-    margin-right: 20px;
-  }
-  #language ul.submenu a {
-    font-size: 16px;
-  }
-  section.about {
-    height: 100%;
-  }
-  #russian #main_subpage .container {
-    width: 1100px;
-  }
-  #main_subpage .container {
-    width: 1100px;
-  }
-  .title {
-    padding-bottom: 0;
-    padding-top: 32px;
-  }
-  .title h2 {
-    padding-top: 0;
-    font-size: 46px;
-  }
-  .animated p {
-    line-height: 1.7;
-    font-size: 21px;
-    padding-left: 45px;
-    padding-top: 60px;
-    width: 78%;
-    padding-bottom: 60px;
-  }
-  .animated h5 {
-    font-size: 41px;
-    padding-left: 48px;
-  }
-  h5 {
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
-  h2 {
-    margin-block-end: 0;
-  }
-  p {
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
-  section.services {
-    height: 100%;
-    background-position: bottom;
-  }
-  .service__content .container {
-    width: 1180px;
-  }
-  .service__content .container .item .title span {
-    font-size: 45px;
-  }
-  .service__content .container .item .title a {
-    font-size: 28px;
-  }
-  .service__content .container .item .description p {
-    padding-left: 20px;
-    font-size: 25px;
-    margin-top: 28px;
-  }
-  .service__content .container .item .item_title a:first-child {
-    font-size: 45px;
-  }
-  .service__content .container .item .item_title a {
-    font-size: 33px;
-  }
-
-  footer .adress p {
-    font-size: 20px;
-  }
-  footer .adress p span {
-    font-size: 19px;
-  }
-  footer .about ul li a {
-    font-size: 23px;
-  }
-  footer .copyright p {
-    font-size: 23px;
-  }
-  footer .copyright p span {
-    font-size: 20px;
-  }
-  footer .adress {
-    padding-top: 120px;
-  }
-  .mapouter {
-    width: 355px;
-    height: 210px;
-  }
-  .gmap_canvas {
-    width: 330px;
-    height: 166px;
-  }
-  .animated {
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    padding-bottom: 0%;
-  }
-  [data-aos^="fade"][data-aos^="fade"].aos-animate {
-    opacity: 1;
-    transform: translateZ(0);
-    padding-bottom: 24px;
-  }
-}
-#russian #main_subpage .container {
-  width: 600px;
-}
-@media screen and (max-width: 1440px) {
-  #language ul.submenu li {
-    padding-bottom: 2px;
-    padding-top: 3px;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .service__content .container {
-    width: 950px;
-  }
-  section.services .service_title h2 {
-    font-size: 66px;
-  }
-  .service__content .container .item .item_title a {
-    font-size: 31px;
-  }
-
-  footer .about ul li a {
-    font-size: 20px;
-  }
-  footer .copyright p {
-    font-size: 20px;
-  }
-  footer .copyright p span {
-    font-size: 18px;
-  }
-  footer .about ul li:last-child::before {
-    left: 13px;
-    top: -1px;
-  }
-  footer .about ul li:last-child {
-    padding-left: 25px;
-  }
-  .gmap_canvas {
-    width: 173px;
-    height: 133px;
-  }
-  .mapouter {
-    width: 210px;
-    height: 210px;
-  }
-}
-
-@media screen and (max-width: 1039px) {
-  a {
-    font-size: 21px;
-  }
-  .header__wrapp .nav__menu ul li a {
-    font-size: 19px;
-  }
-  .title h2 {
-    font-size: 36px;
-  }
-  .service__content .container .item .description p {
-    font-size: 21px;
-  }
-  #russian .service__content .container .item .item_title a:first-child {
-    font-size: 37px;
-  }
-  #russian .service__content .container .item .item_title a {
-    font-size: 30px;
-  }
-  .service__content .container {
-    width: 790px;
-  }
-  section.services .service_title h2 {
-    font-size: 55px;
-  }
-  .service__content .container .item .item_title a {
-    font-size: 27px;
-  }
-  .animation-element.slide-right {
-    transform: translate3d(82px, 0px, 0px);
-  }
-  #russian #language ul.submenu {
-    right: -12px;
-    top: 51px;
-  }
-  #russian #main_subpage .container {
-    width: 800px;
-  }
-  #russian .callback .number span {
-    font-size: 14px;
-  }
-  #russian .animated p {
-    font-size: 22px;
-  }
-  #russian .title h2 {
-    font-size: 42px;
-  }
-  #russian section#main_subpage .title h2 {
-    font-size: 46px;
-  }
-}
-@media screen and (max-width: 1024px) {
-  #russian #main_subpage .container {
-    width: 800px;
-  }
-  #main_subpage .container {
-    width: 800px;
-  }
-}
-@media screen and (max-width: 1013px) {
-  .header__wrapp .nav__menu ul li a {
-    font-size: 17px;
-  }
-  .title h2 {
-    font-size: 38px;
-  }
-  .animation-element.slide-right {
-    transform: translate3d(75px, 0px, 0px);
-  }
-  #russian section#main_subpage .title h2 {
-    font-size: 38px;
-  }
-}
-@media screen and (max-width: 976px) {
-  .header__wrapp .nav__menu ul li a {
-    font-size: 15px;
-  }
-  .header__wrapp .nav__menu ul li {
-    padding-left: 23px;
-  }
-  .callback .number p {
-    font-size: 23px;
-  }
-  #russian .title h2 {
-    text-align: center;
-    font-size: 40px;
-  }
-  .animation-element.slide-right {
-    transform: translate3d(55px, 0px, 0px);
-  }
-  .service__content .container {
-    width: 500px;
-  }
-  .service__content .container .item .description {
-    width: 100%;
-    margin: 0px auto;
-  }
-  .service__content .container .item .description p {
-    font-size: 18px;
-  }
-  section.services .service_title h2 {
-    font-size: 48px;
-  }
-  #russian #main_subpage .container {
-    width: 700px;
-  }
-  #main_subpage .container {
-    width: 700px;
-  }
-  .title h2 {
-    font-size: 35px;
-  }
-}
-@media screen and (max-width: 952px) {
-  footer .container {
-    flex-direction: column;
-    position: relative;
-  }
-  footer .about {
-    padding-top: 15px;
-    padding-bottom: 0;
-  }
-  footer .adress {
-    padding-top: 20px;
-    align-self: flex-end;
-    margin-right: 36px;
-  }
-  .mapouter {
-    padding-top: 0px;
-    margin-left: 30px;
-    height: 147px;
-    position: absolute;
-    top: 131px;
-  }
-  .gmap_canvas {
-    height: 107px;
-  }
-  #russian section#main_subpage .title h2 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 877px) {
-  #russian #main_subpage .container {
-    width: 600px;
-  }
-  #main_subpage .container {
-    width: 600px;
-  }
-  section.about {
-    background-size: contain;
-  }
-}
-
-@media screen and (max-width: 770px) {
-  #main_subpage .container {
-    width: 450px;
-  }
-  #russian #main_subpage .container {
-    width: 450px;
-  }
-  .title h2 {
-    font-size: 28px;
-  }
-}
-@media screen and (max-width: 768px) {
-  /*toop*/
-  a {
-    font-size: 18px;
-  }
-  .callback .number {
-    margin-left: 0;
-  }
-  .callback .number span {
-    font-size: 19px;
-    margin-top: 58px;
-  }
-  .callback {
-    flex-direction: column;
-    align-items: center;
-  }
-  .callback .contact-title {
-    margin-top: 10px;
-    margin-right: 15px;
-  }
-  .callback .contact-title a {
-    font-size: 28px;
-  }
-  .callback .number span {
-    margin-top: 27px;
-  }
-  .callback .number p {
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-  }
-  #russian .title h2 {
-    font-size: 28px;
-  }
-  .animated {
-    padding-top: 0;
-  }
-  .animated p {
-    padding-top: 30px;
-    margin-bottom: 30px;
-  }
-  #russian .animated p {
-    font-size: 16px;
-    line-height: 1.5;
-    font-weight: normal;
-  }
-
-  .animated h5 {
-    font-size: 25px;
-  }
-  #russian #language ul.submenu li {
-    padding-bottom: 2px;
-    padding-top: 3px;
-  }
-  #language ul.submenu a {
-    font-size: 12px;
-  }
-  /*end top*/
-  /*header*-menu*/
-
-  .header__wrapp .nav__menu .submenu li a {
-    font-size: 16px;
-  }
-  .header__wrapp .nav__menu .navbar ul li.active {
-    position: relative;
-    display: block;
-  }
-  .header__wrapp .nav__menu ul a::after {
-    display: none;
-  }
-  .header__wrapp .nav__menu ul li.active span {
-    display: block;
-    padding-top: 2px;
-    color: #fff;
-    font-size: 25px;
-    cursor: pointer;
-  }
-  .header__wrapp .nav__menu .overlay {
-    position: fixed;
-    top: -16px;
-    left: 0;
-    width: 100%;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-    overflow: hidden;
-    z-index: 10000;
-    background: #1e1f46;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 127px;
-  }
-  .header__wrapp .nav__menu .overlay.open {
-    opacity: 1;
-    visibility: visible;
-    height: 100%;
-  }
-  .header__wrapp .nav__menu ul li {
-    padding-top: 0;
-  }
-  .header__wrapp .nav__menu .submenu li {
-    padding-left: 0;
-    padding-top: 20px;
-  }
-
-  li.close-menu {
-    display: block;
-    color: #ffff;
-    font-size: 35px;
-    margin-top: 25px;
-  }
-  .header__wrapp .nav__menu .submenu li a:hover {
-    text-decoration: underline;
-  }
-  /********menu end */
-  .title h2 {
-    font-size: 26px;
-  }
-  #russian section#main_subpage .title h2 {
-    font-size: 20px;
-  }
-  .animated p {
-    width: 73%;
-    text-align: left;
-  }
-  #russian .animated p:last-child {
-    margin-top: 90px;
-  }
-  .animated h5 {
-    font-size: 30px;
-  }
-  #russian .callback .number span {
-    font-size: 14px;
-  }
-  #russian .service__content .container .item .item_title a:first-child {
-    font-size: 30px;
-  }
-  #russian .service__content .container .item .item_title a {
-    font-size: 18px;
-  }
-  #russian .service__content .container .item {
-    padding: 60px 20px;
-  }
-  #russian footer .about ul li:last-child::before {
-    height: 17px;
-    top: 4px;
-  }
-
-  .mapouter {
-    position: relative;
-    top: 24px;
-  }
-  .animated {
-    text-align: center;
-    margin-left: 0px;
-    padding-top: 0;
-  }
-  .animated h5 {
-    padding-left: 0;
-    text-align: center;
-  }
-  #russian section.services {
-    height: 100vh;
-  }
-  .service__content .container .item .description p {
-    padding-right: 22px;
-  }
-  #russian section.services .service_title {
-    padding-top: 39%;
-  }
-  .service__content .container {
-    width: 100%;
-  }
-  .service__content .container .item .description p {
-    font-size: 16px;
-  }
-  .animation-element.slide-right {
-    transform: translate3d(7px, 0px, 0px);
-  }
-  #main_subpage .container {
-    width: 400px;
-  }
-  footer .adress {
-    align-self: center;
-    margin-right: 0;
-  }
-  #russian footer .adress p {
-    font-size: 14px;
-  }
-  #russian footer .adress p span {
-    font-size: 15px;
-  }
-  #russian footer .copyright p {
-    font-size: 13px;
-  }
-  #russian footer .copyright p span {
-    font-size: 13px;
-  }
-  #russian #main_subpage .container {
-    width: 227px;
-  }
-  #russian #main_subpage .animated h5 {
-    font-size: 22px;
-  }
-  #russian #main_subpage .animated {
-    padding-top: 0;
-  }
-  #russian #main_subpage .animated p {
-    font-size: 12px;
-  }
-}
-@media screen and (max-width: 461px) {
-  .row .logo {
-    width: 37px;
-    margin: 0px 10px 15px;
-  }
-  .row .container {
-    justify-content: space-between;
-  }
-  .callback {
-    flex-direction: column;
-    align-items: end;
-  }
-  .callback .contact-title a {
-    font-size: 15px;
-    padding-top: 0;
-  }
-  .callback .contact-title {
-    margin-top: 1px;
-    margin-left: 0;
-  }
-  .callback .number p {
-    font-size: 11px;
-    margin-right: 10px;
-    padding-left: 2px;
-    margin-block-start: 0;
-    margin-block-end: 0;
-  }
-  .callback .number span {
-    margin-top: 5px;
-  }
-  .callback .number span {
-    font-size: 8px;
-  }
-  .callback .number {
-    margin-left: 0px;
-    margin-bottom: 10px;
-  }
-}
