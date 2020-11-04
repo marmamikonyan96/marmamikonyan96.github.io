@@ -286,20 +286,21 @@ section.services .service_title h2 {
 .service__content .container .item {
   padding-top: 100px;
   padding-bottom: 100px;
+  margin-left: 106px;
 }
 .service__content .container .item .item_title {
   text-align: center;
 }
 
 .service__content .container .item .item_title a:first-child {
-  font-size: 60px;
+  font-size: 50px;
   color: #1e1f46;
   padding-bottom: 30px;
   display: block;
 }
 
 .service__content .container .item .item_title a {
-  font-size: 62px;
+  font-size: 42px;
   color: #1e1f46;
   text-decoration: none;
   cursor: pointer;
@@ -310,16 +311,10 @@ section.services .service_title h2 {
   margin: 0 auto;
 }
 .service__content .container .item .description p {
-  font-size: 42px;
+  font-size: 35px;
   color: #1e1f46;
   cursor: pointer;
   line-height: 2;
-}
-#russian .service__content .container .item .item_title a:first-child {
-  font-size: 50px;
-}
-#russian .service__content .container .item .item_title a {
-  font-size: 38px;
 }
 /************************** animation elements*/
 .animation-element.slide-left {
@@ -517,8 +512,75 @@ section.mail form textarea {
   margin-left: 120px;
   margin-top: 50px;
 }
+/*************russian services page*/
+#russian .service__content .container .item .item_title a:first-child {
+  font-size: 50px;
+}
+#russian .service__content .container .item .item_title a {
+  font-size: 38px;
+}
+#russian .service__content .container .item .item_title a:first-child {
+  font-size: 60px;
+}
+#russian .service__content .container .item .item_title a {
+  font-size: 60px;
+}
+#russian .service__content .container .item .description p {
+  font-size: 50px;
+}
+
+/**************footer-russian*******************/
+#russian footer .about ul li a {
+  font-size: 60px;
+}
+#russian footer .about ul li:last-child::before {
+  height: 68px;
+}
+#russian footer .copyright p {
+  font-size: 46px;
+}
+#russian footer .copyright p span {
+  font-size: 46px;
+}
+#russian footer .adress p {
+  font-size: 42px;
+}
+#russian footer .adress p span {
+  font-size: 46px;
+}
+#russian .mapouter {
+  width: 480px;
+}
+#russian .gmap_canvas {
+  width: 490px;
+}
 /************************************************************animation service item**/
 
-/*************************************enm***********************************/
-
 /**********media*/
+@media screen and (max-width: 1920px) {
+  .container {
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  .row .logo {
+    width: 170px;
+    padding-top: 50px;
+  }
+  .callback .contact-title a {
+    font-size: 50px;
+  }
+  .callback .number {
+    margin-left: 112px;
+    margin-right: 74px;
+  }
+  .header__wrapp .nav__menu ul li a {
+    font-size: 32px;
+  }
+  #language {
+    padding-right: 50px;
+  }
+  #language ul.submenu {
+    right: -32px;
+  }
+}
