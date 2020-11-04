@@ -220,6 +220,11 @@ section.about {
 #about section.about {
   margin: 0 auto;
 }
+#about section#main_subpage {
+  margin: 0 auto;
+  height: auto;
+  background-image: none;
+}
 
 .title {
   padding-top: 45px;
@@ -582,5 +587,23 @@ section.mail form textarea {
   }
   #language ul.submenu {
     right: -32px;
+  }
+  footer .about ul li a {
+    font-size: 35px;
+  }
+  footer .adress {
+    padding-left: 60px;
+  }
+  .gmap_canvas {
+    width: 500px;
+  }
+  #about section.about .container {
+    width: 1420px;
+  }
+  #about .title h2 {
+    font-size: 55px;
+  }
+  #about .animated p {
+    font-size: 32px;
   }
 }
