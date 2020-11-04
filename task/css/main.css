@@ -215,9 +215,6 @@ section.about {
   background-size: cover;
   background-position: center;
 }
-#about section.about {
-  margin: 0 auto;
-}
 
 .title {
   padding-top: 45px;
@@ -257,7 +254,13 @@ section.about {
 }
 /*subpage about********************************/
 #about section.about {
-  width: 910px;
+  height: auto;
+  margin: 0 auto;
+  background-image: none;
+}
+#about section.about .container {
+  width: 1900px;
+  background-color: rgb(176 191 248);
 }
 /***********END??????????????????/*/
 /*/********section_service////////////////////////////////////////*/
