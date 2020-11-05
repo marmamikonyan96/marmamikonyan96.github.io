@@ -565,7 +565,6 @@ section.mail form textarea {
 @media screen and (max-width: 1920px) {
   .container {
     width: 100%;
-    padding: 0 15px;
     margin: 0 auto;
   }
   .row .logo {
@@ -612,6 +611,9 @@ section.mail form textarea {
   .service__content .container {
     justify-content: center;
   }
+  .service__content .container .item .description {
+    width: 1320px;
+  }
   #russian .service__content .container {
     justify-content: center;
   }
@@ -647,5 +649,34 @@ section.mail form textarea {
   }
   #russian .animated p:last-child {
     padding-bottom: 85px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  footer .container {
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .mapouter {
+    padding-top: 6px;
+    position: relative;
+    text-align: right;
+    height: 220px;
+    width: 479px;
+  }
+}
+@media screen and (max-width: 1710px) {
+  #about section.about .container {
+    width: 1322px;
+  }
+  .animated p {
+    line-height: 1.7;
+  }
+}
+@media screen and (max-width: 1420px) {
+  section#main_subpage .container {
+    width: 1054px;
+  }
+  #russian section#main_subpage .container {
+    width: 1054px;
   }
 }
