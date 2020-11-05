@@ -140,10 +140,10 @@ li.close-menu {
   position: absolute;
   background: hsl(254, 43%, 86%);
   height: 2px;
-  width: 0%;
-  left: 58%;
+  width: 150px;
+  left: 83px;
   transform: translateX(-47%);
-  bottom: 0;
+  bottom: -118;
   transition: 0.35s ease;
 }
 
@@ -662,6 +662,21 @@ section.mail form textarea {
     text-align: right;
     height: 220px;
     width: 479px;
+  }
+  .callback .contact-title a {
+    font-size: 35px;
+  }
+  .callback .number span {
+    font-size: 30px;
+  }
+  .callback .number p {
+    font-size: 36px;
+  }
+  .header__wrapp .nav__menu ul li:first-child {
+    padding-left: 20px;
+  }
+  .header__wrapp .nav__menu ul li a {
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1710px) {
