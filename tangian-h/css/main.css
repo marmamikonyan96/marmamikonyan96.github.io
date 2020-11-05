@@ -679,4 +679,10 @@ section.mail form textarea {
   #russian section#main_subpage .container {
     width: 1054px;
   }
+  .service__content .container .item .description {
+    width: 915px;
+  }
+  .service__content .container .item .description p {
+    font-size: 35px;
+  }
 }
