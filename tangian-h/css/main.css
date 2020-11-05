@@ -600,10 +600,52 @@ section.mail form textarea {
   #about section.about .container {
     width: 1420px;
   }
+  .animated {
+    padding-bottom: 1px;
+  }
   #about .title h2 {
     font-size: 55px;
   }
   #about .animated p {
     font-size: 32px;
+  }
+  .service__content .container {
+    justify-content: center;
+  }
+  #russian .service__content .container {
+    justify-content: center;
+  }
+  #russian .service__content .container .item {
+    margin-left: 70px;
+  }
+  #russian footer .adress p span {
+    font-size: 35px;
+  }
+  #russian .gmap_canvas {
+    width: 426px;
+  }
+  #russian section.services .service_title h2 {
+    margin-block-end: 0;
+  }
+  #russian footer .about ul li {
+    padding-left: 25px;
+  }
+  #russian footer .about ul li:last-child::before {
+    left: 12px;
+  }
+  #russian footer .copyright p {
+    font-size: 36px;
+  }
+  footer .copyright {
+    padding-left: 18px;
+  }
+  #russian footer .copyright p span {
+    font-size: 38px;
+  }
+  #russian section#main_subpage .container {
+    width: 1325px;
+  }
+  #russian .animated p:last-child {
+    padding-bottom: 85px;
   }
 }
