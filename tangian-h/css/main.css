@@ -530,6 +530,7 @@ section.mail form textarea {
 @media screen and (max-width: 1920px) {
   .container {
     width: 100%;
+    padding: 0;
   }
 
   .callback .contact-title a {
@@ -583,10 +584,10 @@ section.mail form textarea {
   }
   .animated p {
     line-height: 1.7;
-    font-size: 21px;
+    font-size: 38px;
     padding-left: 45px;
     padding-top: 60px;
-    width: 78%;
+    width: 55%;
     padding-bottom: 60px;
   }
   .animated h5 {
@@ -603,13 +604,6 @@ section.mail form textarea {
   p {
     margin-block-start: 0;
     margin-block-end: 0;
-  }
-  section.services {
-    height: 100%;
-    background-position: bottom;
-  }
-  .service__content .container {
-    width: 1180px;
   }
   .service__content .container .item .title span {
     font-size: 45px;
@@ -628,7 +622,9 @@ section.mail form textarea {
   .service__content .container .item .item_title a {
     font-size: 33px;
   }
-
+  footer .about ul li:last-child::before {
+    top: 4px;
+  }
   footer .adress p {
     font-size: 20px;
   }
