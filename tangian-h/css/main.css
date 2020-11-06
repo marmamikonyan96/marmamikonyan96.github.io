@@ -217,7 +217,22 @@ section.about {
 #about section.about {
   margin: 0 auto;
 }
-
+#about section#main_subpage {
+  margin: 0 auto;
+  height: auto;
+  background-image: none;
+}
+#about section#main_subpage .container {
+  width: 1450px;
+}
+#russian section#main_subpage {
+  margin: 0 auto;
+  height: auto;
+  background-image: none;
+}
+#russian section#main_subpage .container {
+  width: 1450px;
+}
 .title {
   padding-top: 45px;
   padding-bottom: 40px;
@@ -236,7 +251,7 @@ section.about {
   animation-fill-mode: both;
   -webkit-animation-duration: 1s;
   -webkit-animation-fill-mode: both;
-  padding-bottom: 5%;
+  padding-bottom: 1px;
 }
 
 .animated p {
@@ -256,10 +271,9 @@ section.about {
 }
 
 section.services {
-  height: 100vh;
   background-image: url(../img/section3.jpeg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
   opacity: 0.9;
 }
@@ -286,37 +300,38 @@ section.services .service_title h2 {
   padding-bottom: 100px;
   margin: 0 auto;
   text-align: center;
+  flex: 0 0 33.33333%;
 }
 
 .service__content .container .item .item_title a:first-child {
-  font-size: 50px;
+  font-size: 64px;
   color: #1e1f46;
   padding-bottom: 30px;
   display: block;
 }
 
 .service__content .container .item .item_title a {
-  font-size: 40px;
+  font-size: 52px;
   color: #1e1f46;
   text-decoration: none;
   cursor: pointer;
   display: block;
 }
 .service__content .container .item .description {
-  width: 800px;
+  width: 1400px;
   margin: 0 auto;
 }
 .service__content .container .item .description p {
-  font-size: 28px;
+  font-size: 40px;
   color: #1e1f46;
   cursor: pointer;
   line-height: 1.7;
 }
 #russian .service__content .container .item .item_title a:first-child {
-  font-size: 50px;
+  font-size: 64px;
 }
 #russian .service__content .container .item .item_title a {
-  font-size: 38px;
+  font-size: 52px;
 }
 /************************** animation elements*/
 .animation-element.slide-left {
@@ -478,7 +493,7 @@ section.mail form textarea {
   font-size: 54px;
 }
 #russian .animated p {
-  font-size: 24px;
+  font-size: 40px;
   font-weight: 600;
   font-family: "Roboto" sans-serif;
   padding-left: 20px;
@@ -491,7 +506,7 @@ section.mail form textarea {
   background-image: none;
 }
 #russian section#main_subpage .title h2 {
-  font-size: 45px;
+  font-size: 48px;
 }
 
 #russian .secondary .callback {
@@ -551,12 +566,7 @@ section.mail form textarea {
   section.about {
     height: 100%;
   }
-  #russian #main_subpage .container {
-    width: 1100px;
-  }
-  #main_subpage .container {
-    width: 1100px;
-  }
+
   .title {
     padding-bottom: 0;
     padding-top: 32px;
@@ -650,9 +660,6 @@ section.mail form textarea {
     padding-bottom: 24px;
   }
 }
-#russian #main_subpage .container {
-  width: 600px;
-}
 @media screen and (max-width: 1440px) {
   #language ul.submenu li {
     padding-bottom: 2px;
@@ -710,7 +717,7 @@ section.mail form textarea {
     font-size: 21px;
   }
   #russian .service__content .container .item .item_title a:first-child {
-    font-size: 37px;
+    font-size: px;
   }
   #russian .service__content .container .item .item_title a {
     font-size: 30px;
