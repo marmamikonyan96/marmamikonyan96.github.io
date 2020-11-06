@@ -531,19 +531,22 @@ section.mail form textarea {
   .container {
     width: 100%;
   }
-  .callback .number {
-    margin-left: 35px;
-  }
+
   .callback .contact-title a {
-    font-size: 30px;
+    font-size: 40px;
+  }
+  .callback .number {
+    margin-right: 20px;
   }
   .callback .number span {
-    font-size: 24px;
+    font-size: 38px;
     margin-top: 54px;
   }
   .callback .number p {
-    font-size: 25px;
+    font-size: 38px;
     margin-right: 15px;
+    align-self: flex-end;
+    margin-top: 47px;
   }
   .header__wrapp .nav__menu ul li a {
     font-size: 20px;
@@ -553,6 +556,9 @@ section.mail form textarea {
   }
   .row .logo {
     width: 82px;
+  }
+  #language ul.submenu {
+    right: 4px;
   }
   #language ul.submenu li {
     padding-bottom: 5px;
