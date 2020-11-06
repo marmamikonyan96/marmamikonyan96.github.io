@@ -39,8 +39,9 @@ li.close-menu {
 }
 
 .container {
-  width: 2375px;
+  width: 2275px;
   margin: 0 auto;
+  padding: 0 15px;
 }
 
 img {
@@ -75,21 +76,22 @@ img {
 }
 
 .callback .number {
-  margin-left: 112px;
+  margin-left: 90px;
   display: flex;
 }
 
 .callback .number p {
   font-weight: 500;
-  font-family: "Roboto", sans-serif;
-  font-size: 35px;
+  font-family: Roboto, sans-serif;
+  font-size: 40px;
   align-self: center;
   padding-left: 10px;
+  margin-bottom: 53px;
 }
 
 .callback .number span {
-  margin-top: 62px;
-  font-size: 40px;
+  margin-top: 52px;
+  font-size: 45px;
 }
 
 .callback .number span svg:hover {
@@ -168,8 +170,8 @@ img {
   transform-origin: 0% 0%;
   transform: rotateX(-90deg);
   transition: 0.3s linear;
-  right: -11px;
-  top: 39px;
+  right: -52px;
+  top: 56px;
   z-index: 1;
   background-color: #1e1f46;
 }
@@ -182,7 +184,7 @@ img {
 }
 
 #language ul.submenu a {
-  font-size: 40px;
+  font-size: 34px;
   font-weight: 800;
   margin: 6px;
   color: #fff;
