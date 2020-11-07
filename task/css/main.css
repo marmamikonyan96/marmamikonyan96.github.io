@@ -22,6 +22,12 @@ a {
   font-style: normal;
   font-weight: 400;
 }
+li.close-menu {
+  display: none;
+}
+.navbar .navbar-button {
+  display: none;
+}
 header {
   background-image: url(../img/headerback.png);
   height: auto;
@@ -52,15 +58,10 @@ header .container .header_wrapp .logo_type .finder p {
   font-size: 38px;
   line-height: 46px;
 }
-header .container .header_wrapp .dropdown button.dropbtn {
-  margin-right: 381px;
-  margin-top: 29px;
-  display: none;
-}
+<<<<<<< HEAD
 
-header .container .header_wrapp .dropdown button i {
-  font-size: 22px;
-}
+=======
+>>>>>>> bd5ef35a82dbe75334e1d19164cfe84291221f04
 header .container .header_wrapp .menu ul {
   display: flex;
   position: absolute;
@@ -354,6 +355,29 @@ section.items .container .else a:hover {
   }
 }
 @media screen and (max-width: 996px) {
+  header {
+    background-size: auto;
+  }
+  header .header_content {
+    background: transparent;
+  }
+  header .container .header_wrapp {
+    background-color: rgba(31, 32, 33, 0.79);
+    padding-bottom: 29px;
+    padding-top: 0;
+  }
+  header .container .header_wrapp .logo_type {
+    padding-top: 30px;
+  }
+  header .container .header_wrapp .logo_type .vectors {
+    padding-bottom: 20px;
+  }
+  header .container .header_wrapp .menu ul {
+    top: 24px;
+  }
+  header .container .header_wrapp .contact {
+    top: 15px;
+  }
   .footer .container .footer_wrapp .buy p {
     font-size: 42px;
   }
@@ -390,43 +414,78 @@ section.items .container .else a:hover {
   header .container .header_wrapp {
     padding-top: 0px;
     padding-bottom: 28px;
-    background: #1f2021c4;
-  }
-  header .header_content {
-    background-color: transparent;
   }
   header .container .header_wrapp .logo_type .vectors {
     height: 27px;
     width: 71px;
-    padding-bottom: 10px;
-    margin-top: 24px;
+    padding-bottom: 50px;
   }
   header .container .header_wrapp .logo_type .finder p {
     font-size: 32px;
   }
+<<<<<<< HEAD
   header .container .header_wrapp .contact {
     top: 2px;
   }
-  header .container .header_wrapp .dropdown {
+
+=======
+  .navbar .navbar-button {
     position: relative;
-    display: inline-block;
-  }
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-  }
-  .show {
     display: block;
+    margin-right: 419px;
+    margin-top: 42px;
   }
-  header .container .header_wrapp .dropdown button.dropbtn {
-    display: block;
+  .navbar .navbar-button .button {
     cursor: pointer;
   }
-
+  .navbar .overlay {
+    position: fixed;
+    background: rgb(63 21 27);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+    z-index: 10000;
+  }
+  .navbar .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+  .navbar .overlay.open .menu {
+    display: block;
+  }
+  li.close-menu {
+    display: block;
+  }
+  .navbar .overlay.open .menu ul {
+    text-align: center;
+    flex-direction: column;
+    padding: 0;
+    margin: 190px auto;
+    height: 100%;
+    width: 100%;
+  }
+  .navbar .overlay.open .menu ul li {
+    padding-bottom: 20px;
+  }
+  .navbar .overlay.open .menu ul li a {
+    font-size: 40px;
+  }
+  .navbar .overlay.open .menu ul li:last-child {
+    padding-top: 30px;
+  }
+  .navbar .overlay.open .menu ul li:last-child i {
+    font-size: 30px;
+  }
+  header .container .header_wrapp .menu ul {
+    left: 0px;
+  }
+>>>>>>> bd5ef35a82dbe75334e1d19164cfe84291221f04
   .footer .container .footer_wrapp .buy p {
     font-size: 34px;
   }
@@ -443,5 +502,185 @@ section.items .container .else a:hover {
     padding: 0;
     margin-left: 0;
     align-self: baseline;
+  }
+}
+@media screen and (max-width: 830px) {
+  header .container .header_wrapp .logo_type .vectors {
+    height: 27px;
+    width: 57px;
+    padding-bottom: 70px;
+  }
+  header .container .header_wrapp .logo_type .finder p {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 768px) {
+  header .container .header_wrapp .logo_type .vectors {
+    padding-bottom: 24px;
+  }
+  header .container .header_wrapp .logo_type .finder p {
+    font-size: 23px;
+  }
+  header .container .header_wrapp .logo_type .vectors {
+    padding-bottom: 74px;
+  }
+}
+@media screen and (max-width: 738px) {
+  header {
+    background-size: cover;
+  }
+  header .container .header_wrapp .logo_type .vectors {
+    padding-bottom: 30px;
+  }
+  header .container .header_wrapp .contact {
+    top: 103px;
+  }
+  .navbar .navbar-button {
+    margin-right: 40px;
+    margin-top: 32px;
+  }
+}
+@media screen and (max-width: 728px) {
+  section.items .container .cats {
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .footer .container .footer_wrapp .buy p {
+    font-size: 30px;
+  }
+  .footer .container .footer_wrapp .buy p:last-child {
+    font-size: 16px;
+  }
+  .footer .container .footer_wrapp form input {
+    height: 50px;
+  }
+}
+@media screen and (max-width: 635px) {
+  header .container .header_wrapp {
+    flex-direction: column;
+  }
+  header .container .header_wrapp .contact {
+    top: 3px;
+  }
+  .navbar .navbar-button {
+    text-align: right;
+  }
+  .footer .container .footer_wrapp {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 6px;
+    padding-bottom: 20px;
+  }
+  .footer .container .footer_wrapp form {
+    margin-right: 0;
+    flex-direction: initial;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    margin-left: 10px;
+    align-self: center;
+  }
+}
+@media screen and (max-width: 552px) {
+  header .container .header_wrapp .contact {
+    position: static;
+  }
+
+  header .container .header_wrapp .contact .number {
+    display: flex;
+    flex-direction: column;
+    margin-left: 23px;
+  }
+  header .container .header_wrapp .contact .number p:last-child {
+    text-align: inherit;
+    margin-block-start: 0;
+    margin-block-end: 10px;
+  }
+  header .container .header_wrapp .contact .number p {
+    margin-block-end: 7px;
+  }
+  header {
+    background-size: auto;
+    background-position: 32%;
+  }
+  header .container .header_wrapp {
+    padding-bottom: 0;
+  }
+  header .container .header_wrapp .logo_type {
+    padding-top: 0;
+    margin-top: 10px;
+  }
+  header .container .header_wrapp .logo_type .finder {
+    line-height: 1;
+    font-size: 21px;
+  }
+  header .container .header_wrapp .logo_type .vectors {
+    padding-bottom: 0;
+  }
+  .navbar .navbar-button {
+    margin-top: 0;
+  }
+  section.items .container .choose_type {
+    margin-left: 5px;
+  }
+  section.items .container .choose_type ul li {
+    padding-left: 20px;
+  }
+  section.items .container .choose_type ul li span {
+    padding-left: 4px;
+    font-size: 13px;
+  }
+}
+@media screen and (max-width: 490px) {
+  section.items .container .else button {
+    width: 295px;
+  }
+  .footer .container .footer_wrapp form input {
+    width: 132px;
+  }
+  .footer .container .footer_wrapp form input:nth-child(2n) {
+    width: 150px;
+  }
+  .navbar .overlay.open .menu ul li a {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 449px) {
+  header {
+    background-size: cover;
+    background-position: 33% center;
+  }
+  section.items .container .choose_type p {
+    font-size: 16px;
+  }
+  section.items .container .choose_type ul {
+    padding-inline-start: 10px;
+  }
+  section.items .container .choose_type ul li {
+    padding-left: 17px;
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 374px) {
+  .footer .container .footer_wrapp form {
+    flex-direction: column;
+  }
+  section.items .container .choose_type ul li {
+    font-size: 14px;
+  }
+  section.items .container .choose_type {
+    padding-top: 25px;
+  }
+  section.items .container .choose_type p {
+    font-size: 14px;
+  }
+  section.items .container .choose_type ul {
+    margin-block-start: 14px;
+  }
+}
+@media screen and (max-width: 346px) {
+  section.items .container .choose_type ul {
+    flex-wrap: wrap;
   }
 }
