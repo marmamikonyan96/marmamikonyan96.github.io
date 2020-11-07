@@ -58,10 +58,7 @@ header .container .header_wrapp .logo_type .finder p {
   font-size: 38px;
   line-height: 46px;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> bd5ef35a82dbe75334e1d19164cfe84291221f04
 header .container .header_wrapp .menu ul {
   display: flex;
   position: absolute;
@@ -423,12 +420,11 @@ section.items .container .else a:hover {
   header .container .header_wrapp .logo_type .finder p {
     font-size: 32px;
   }
-<<<<<<< HEAD
+
   header .container .header_wrapp .contact {
     top: 2px;
   }
 
-=======
   .navbar .navbar-button {
     position: relative;
     display: block;
@@ -485,7 +481,7 @@ section.items .container .else a:hover {
   header .container .header_wrapp .menu ul {
     left: 0px;
   }
->>>>>>> bd5ef35a82dbe75334e1d19164cfe84291221f04
+
   .footer .container .footer_wrapp .buy p {
     font-size: 34px;
   }
