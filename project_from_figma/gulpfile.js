@@ -6,6 +6,15 @@ var sourcemaps = require('gulp-sourcemaps');
 var swiper =  require ('swiper')
 var browserSync = require('browser-sync').create();
 
+const swiper = new Swiper();
+import Swiper from 'swiper';
+import 'swiper/swiper-bundle.css';
+
+const swiper = new Swiper();
+Swiper.use([Navigation, Pagination]);
+
+
+
 function style(done){
     gulp.src('./app/sass/style.scss')
     .pipe(sourcemaps.init())
