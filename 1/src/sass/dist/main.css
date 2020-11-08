@@ -20,7 +20,7 @@ h5 {
   color: #FFFFFF;
 }
 
-button {
+.button {
   border: 1px solid #FF5500;
   border-radius: 5px;
   background-color: #FF5500;
@@ -47,31 +47,28 @@ img {
   margin: 0 auto;
 }
 
-.main__slider {
-  display: flex;
-  justify-content: space-around;
-}
-
 .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   margin: 0 15px;
-  background-color: tomato;
-  opacity: 1;
+  background-color: #C4C4C4;
+  opacity: 0.3;
 }
 
 .swiper-pagination-bullet-active {
-  background-color: #000000;
-  border-radius: 56px;
-  opacity: 0.5;
-  width: 122px;
-  height: 112px;
+  background-color: #fff;
 }
 
 .swiper-button-prev,
 .swiper-button-next {
   position: static;
   margin-left: 10px;
+  background-color: #000000;
+  border-radius: 56px;
+  opacity: 0.5;
+  width: 122px;
+  height: 112px;
+  color: #fff;
 }
 
 .swiper-container {
