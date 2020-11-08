@@ -14,6 +14,11 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
 
     <title>task</title>
   </head>
@@ -28,8 +33,27 @@
             <img src="build/img/logo.png" alt="logo" />
           </div>
         </div>
+        <div class="slider-container">
+          <div class="slider-buttons">
+            <button class="swiper-button-prev"></button>
+            <button class="swiper-button-next"></button>
+          </div>
+
+          <div class="swiper-container">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card"></div>
+              <div class="swiper-slide card"></div>
+              <div class="swiper-slide card"></div>
+              <div class="swiper-slide card"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
       </div>
     </section>
     <script src="build/js/script.js"></script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   </body>
 </html>
