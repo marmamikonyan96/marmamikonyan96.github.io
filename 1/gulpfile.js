@@ -13,6 +13,10 @@ const sass = require("gulp-sass");
 const sassFiles = ["./src/sass/main.sass"];
 const jsFiles = ["./src/js/main.js"];
 
+function browserReload(styles) {
+  browserSync.reload();
+  styles();
+}
 function styles() {
   return gulp
     .src(sassFiles)
@@ -67,6 +71,7 @@ function watch() {
   gulp.watch("./src/css/**/*.sass", styles);
   gulp.watch("./src/js/**/*.js", scripts);
   gulp.watch("./*.html").on("change", browserSync.reload);
+  gulp.watch("./img").on("change", browserSync.reload);
 }
 
 gulp.task("styles", styles);
