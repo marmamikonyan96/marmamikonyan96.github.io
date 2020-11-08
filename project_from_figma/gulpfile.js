@@ -6,7 +6,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var browserSync = require('browser-sync').create();
 
 function style(done){
-    gulp.src('./app/sass/style.scss')
+    gulp.src('./app/sass/style.sass')
     .pipe(sourcemaps.init())
     .pipe(sass({
         outputStyle: 'compressed'
@@ -43,10 +43,10 @@ function browserReload(done){
 
 
 function watchSass(){
-   gulp.watch("./app/sass/**/*.scss", style);
+   gulp.watch("./app/sass/**/*.sass", style);
 }
 function watchFiles(){
-    gulp.watch("./scss/**/*", style);
+    gulp.watch("./sass/**/*", style);
     gulp.watch("./**/*.html", browserReload);
     gulp.watch("./**/*.js", browserReload);
     gulp.watch("./**/*.php", browserReload);
