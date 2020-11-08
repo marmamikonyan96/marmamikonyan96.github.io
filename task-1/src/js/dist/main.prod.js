@@ -1,0 +1,1 @@
+"use strict";require("./_vars");var slider=document.querySelector(".swiper-container"),mySwiper=new Swiper(slider,{slidesPerView:3,spaceBetween:50,pagination:{el:".swiper-pagination",clickable:!0,type:"String"},centeredSlides:!0,loop:!0,navigation:{nextEl:".swiper-button-next",prevEl:".swiper-button-prev"}});

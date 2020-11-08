@@ -1,21 +1,22 @@
+"use strict";
+
+require("./_vars");
+
 /** @format */
-import "./_vars";
-
-const slider = document.querySelector(".swiper-container");
-
-let mySwiper = new Swiper(slider, {
+var slider = document.querySelector(".swiper-container");
+var mySwiper = new Swiper(slider, {
   slidesPerView: 3,
   spaceBetween: 50,
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    type: "String",
+    type: "String"
   },
   centeredSlides: true,
   loop: true,
   // Navigation arrows
   navigation: {
     nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
+    prevEl: ".swiper-button-prev"
+  }
 });

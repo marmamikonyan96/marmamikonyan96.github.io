@@ -1,131 +1,19 @@
 @import "vars";
+@import "mixins";
 @import "fonts";
 @import "vendor";
+@import "settings";
 
+// CUSTOM COMPONENTS STYLES
+// .burger {
+//   --burger-width: 40px;
+//   --burger-height: 20px;
+//   --burger-line-height: 2px;
 
-body {
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  color: #FFFFFF;
-  background-color: #1F1F2C;
-}
-
-a {
-  text-decoration: none;
-  font-size: 14px;
-  color: #FFFFFF;
-  font-weight: 600;
-}
-
-h5 {
-  font-size: 25px;
-  font-weight: 600;
-  color: #FFFFFF;
-}
-
-.button {
-  border: 1px solid #FF5500;
-  border-radius: 5px;
-  background-color: #FF5500;
-  width: 190px;
-  height: 42px;
-}
-
-img {
-  width: 100%;
-}
-
-.window__top {
-  padding-top: 41px;
-  display: flex;
-}
-
-.window__close {
-  margin-left: 35px;
-}
-
-.top__logo {
-  width: 98px;
-  height: 30px;
-  margin: 0 auto;
-}
-
-.slide__desription:first-child {
-  width: 342px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: flex-end;
-  flex-direction: column;
-  background-image: url(../img/1.png);
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.slide__desription:nth-child(2) {
-  background-image: url(../img/2.png);
-  background-repeat: no-repeat;
-  height: 100%;
-}
-
-.slide__desription:nth-child(3) {
-  background-color: #2D2750;
-}
-
-.credit {
-  width: 350px;
-  height: 185px;
-}
-
-.slide__desription:nth-child(4) {
-  background-image: url(../img/4png.png);
-  background-repeat: no-repeat;
-  height: 100%;
-}
+//   @include burger;
+// }
 
 .swiper-container {
-  height: 500px;
-}
-
-.swiper-pagination {
-  width: 80px;
-  height: 4px;
-  margin: 0 15px;
-  background-color: #C4C4C4;
-  opacity: 0.3;
-  position: absolute;
-  left: 500px;
-  bottom: 0px;
-  cursor: pointer;
-}
-
-.swiper-pagination:hover {
-  background-color: #fff;
-}
-
-.swiper-button-prev,
-.swiper-button-next {
-  position: fixed;
-  background-color: #000;
-  border-radius: 56px;
-  opacity: .4;
-  width: 88px;
-  height: 88px;
-  color: #fff;
-  top: 410px;
-}
-
-.swiper-container {
-  padding: 100px 0;
-}
-
-.swiper-slide {
-  opacity: 0.5;
-  transition: transform 0.5s;
-  position: relative;
-}
-
-.swiper-slide-active {
-  opacity: 1;
-  transition: transform 0.5s;
+  width: 600px;
+  height: 300px;
 }
