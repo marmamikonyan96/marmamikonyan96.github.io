@@ -150,20 +150,6 @@ img {
   font-size: 60px;
 }
 
-.owl-theme .owl-dots .owl-dot {
-  position: absolute;
-  width: 40px;
-  height: 3px;
-  background-color: #C4C4C4;
-  bottom: -87px;
-  left: 404px;
-  display: inline-block;
-}
-
-.owl-carousel button.owl-dot:hover {
-  background-color: #fff;
-}
-
 .reaction {
   display: flex;
   justify-content: center;
@@ -196,4 +182,62 @@ img {
 .reaction .like a:hover,
 .dislike a:hover {
   color: #FF5500;
+}
+
+.owl-dot {
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #C4C4C4;
+  bottom: -87px;
+  left: 404px;
+  display: inline-block;
+}
+
+.owl-dot:hover {
+  background-color: #fff;
+}
+
+@media screen and (max-width: 950px) {
+  .owl-carousel .item--description {
+    width: 285px;
+    margin: 0 35px;
+  }
+
+  .owl-carousel .first {
+    width: 350px;
+  }
+
+  .owl-carousel .third .item--description {
+    width: 300px;
+  }
+
+  .owl-carousel .third {
+    width: 360px;
+  }
+
+  .owl-carousel .fourth {
+    width: 360px;
+  }
+
+  .owl-carousel .owl-nav button.owl-next span,
+.owl-carousel .owl-nav button.owl-prev span {
+    font-size: 35px;
+  }
+
+  .owl-carousel .owl-nav button.owl-next {
+    position: absolute;
+    top: 271px;
+    right: 2px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .owl-carousel .owl-nav button.owl-prev {
+    position: absolute;
+    top: 271px;
+    left: 2px;
+    width: 50px;
+    height: 50px;
+  }
 }

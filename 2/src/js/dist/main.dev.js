@@ -17,35 +17,42 @@ $owl.owlCarousel({
   responsive: {
     0: {
       items: 1,
-      nav: true
+      nav: true,
+      dots: true
     },
     600: {
-      items: 2,
-      nav: false
+      items: 1,
+      nav: true,
+      dots: true
     },
     798: {
-      items: 2,
-      nav: false
-    },
-    835: {
-      items: 2,
+      items: 1,
       nav: true,
-      loop: true
+      dots: true
+    },
+    831: {
+      items: 3,
+      nav: true,
+      loop: true,
+      dots: true
     },
     999: {
       items: 2,
       nav: true,
-      loop: true
+      loop: true,
+      dots: true
     },
     1000: {
       items: 2,
       nav: true,
-      loop: true
+      loop: true,
+      dots: true
     },
     1920: {
       items: 3,
       nav: true,
-      loop: true
+      loop: true,
+      dots: true
     }
   }
 });
