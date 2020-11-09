@@ -10,7 +10,7 @@ $owl.children().each(function (index) {
 $owl.owlCarousel({
   center: true,
   loop: true,
-  items: 3,
+  items: 2,
   nav: true,
   dots: true,
   responsiveClass: true,
