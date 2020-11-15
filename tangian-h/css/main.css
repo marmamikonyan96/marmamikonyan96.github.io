@@ -582,12 +582,15 @@ section.mail form textarea {
     padding-top: 0;
     font-size: 46px;
   }
+  #about section#main_subpage{
+    width: 1120px;
+  }
   .animated p {
     line-height: 1.7;
-    font-size: 38px;
+    font-size: 32px;
     padding-left: 45px;
     padding-top: 60px;
-    width: 55%;
+    width: 75%;
     padding-bottom: 60px;
   }
   .animated h5 {
