@@ -1040,9 +1040,9 @@ section.mail form textarea {
     margin-bottom: 30px;
   }
   #russian .animated p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.5;
-    font-weight: normal;
+    font-weight: 600;
   }
 
   .animated h5 {
@@ -1116,6 +1116,13 @@ section.mail form textarea {
   .title h2 {
     font-size: 26px;
   }
+  section.about {
+    background-image: url(../img/mobileback.png);
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
   #russian section#main_subpage .title h2 {
     font-size: 20px;
   }
@@ -1148,7 +1155,8 @@ section.mail form textarea {
 
   .mapouter {
     position: relative;
-    top: 24px;
+    top: 5px;
+    margin-left: 418px;
   }
   .animated {
     text-align: center;
@@ -1159,6 +1167,9 @@ section.mail form textarea {
     padding-left: 0;
     text-align: center;
   }
+  #about #main_subpage .animated p{
+    width: 78%;
+  }
   #russian section.services {
     height: 100vh;
   }
@@ -1166,7 +1177,7 @@ section.mail form textarea {
     padding-right: 22px;
   }
   #russian section.services .service_title {
-    padding-top: 39%;
+    padding-top: 46%;
   }
   .service__content .container {
     width: 100%;
@@ -1199,15 +1210,66 @@ section.mail form textarea {
   #russian #main_subpage .container {
     width: 227px;
   }
-  #russian #main_subpage .animated h5 {
-    font-size: 22px;
-  }
+  #russian section#main_subpage .title h2 {
+    font-size: 29px;
+}
   #russian #main_subpage .animated {
     padding-top: 0;
   }
   #russian #main_subpage .animated p {
-    font-size: 12px;
+    font-size: 18px;
+    width: 95%;
   }
+}
+@media screen and (max-width: 664px){
+  footer .adress {
+    align-self: flex-end;
+    margin-right: 31px;
+  }
+  .mapouter{
+  margin-left: 35px;
+  }
+  #about #main_subpage .animated .container {
+    width: 500px;
+}
+#russian #about #main_subpage .animated .container {
+  width: 500px;
+}
+
+}
+@media screen and (max-width: 500px){
+  section.about{
+    background-image: none;
+  }
+  section.about .animated p{
+    width: 90%;
+    text-align: justify;
+    padding-left: 10px;
+  }
+  section.services .service_title h2{
+    font-size: 29px;
+  }
+  .service__content .container .item {
+    flex: 0 0 70.3333%;
+  }
+  #russian .service__content .container .item  .item_title{
+    padding-left: 0;
+  }
+  #russian section#main_subpage .container {
+    width: 100%;
+}
+#russian #main_subpage .animated p{
+  width: 80%;
+}
+#about #main_subpage .animated .container{
+  width: 100%;
+}
+#about #main_subpage .animated p {
+  width: 92%;
+}
+#about #main_subpage .title h2 {
+  font-size: 25px;
+}
 }
 @media screen and (max-width: 461px) {
   .row .logo {
