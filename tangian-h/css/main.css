@@ -587,8 +587,11 @@ section.mail form textarea {
     font-size: 38px;
     padding-left: 45px;
     padding-top: 60px;
-    width: 55%;
+    width: 84%;
     padding-bottom: 60px;
+  }
+  #about #main_subpage .animated .container {
+    width: 865px;
   }
   .animated h5 {
     font-size: 41px;
@@ -613,8 +616,12 @@ section.mail form textarea {
   }
   .service__content .container .item .description p {
     padding-left: 20px;
-    font-size: 25px;
+    font-size: 22px;
     margin-top: 28px;
+    text-align: left;
+  }
+  .service__content .container .item .description {
+    width: 860px;
   }
   .service__content .container .item .item_title a:first-child {
     font-size: 45px;
@@ -704,7 +711,11 @@ section.mail form textarea {
     height: 210px;
   }
 }
-
+@media screen and (max-width: 1550px) {
+  .callback .number span {
+    font-size: 32px;
+  }
+}
 @media screen and (max-width: 1039px) {
   a {
     font-size: 21px;
