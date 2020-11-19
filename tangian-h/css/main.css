@@ -500,6 +500,9 @@ section.mail form textarea {
   color: #1e1f46;
   line-height: 2.1;
 }
+#russian .service__content .container .item .item_title:nth-child(2){
+  margin-left: 54px;
+}
 #russian section#main_subpage {
   margin: 0 auto;
   height: auto;
@@ -1152,7 +1155,6 @@ section.mail form textarea {
     height: 17px;
     top: 4px;
   }
-
   .mapouter {
     position: relative;
     top: 5px;
@@ -1212,7 +1214,7 @@ section.mail form textarea {
   }
   #russian section#main_subpage .title h2 {
     font-size: 29px;
-}
+  }
   #russian #main_subpage .animated {
     padding-top: 0;
   }
@@ -1227,15 +1229,14 @@ section.mail form textarea {
     margin-right: 31px;
   }
   .mapouter{
-  margin-left: 35px;
+    margin-left: 35px;
   }
   #about #main_subpage .animated .container {
     width: 500px;
-}
-#russian #about #main_subpage .animated .container {
-  width: 500px;
-}
-
+  }
+  #russian #about #main_subpage .animated .container {
+    width: 500px;
+  }
 }
 @media screen and (max-width: 500px){
   section.about{
@@ -1253,23 +1254,47 @@ section.mail form textarea {
     flex: 0 0 70.3333%;
   }
   #russian .service__content .container .item  .item_title{
-    padding-left: 0;
+    margin-left: 0;
   }
   #russian section#main_subpage .container {
     width: 100%;
+  } 
+  #russian #main_subpage .animated p{
+    width: 80%;
+  }
+  #about #main_subpage .animated .container{
+    width: 100%;
+  }
+  #about #main_subpage .animated p {
+    width: 92%;
+  }
+  #about #main_subpage .title h2 {
+    font-size: 25px;
+  }
+  .title h2 {
+    font-size: 22px;
 }
-#russian #main_subpage .animated p{
-  width: 80%;
-}
-#about #main_subpage .animated .container{
-  width: 100%;
-}
-#about #main_subpage .animated p {
-  width: 92%;
-}
-#about #main_subpage .title h2 {
-  font-size: 25px;
-}
+  .animated p {
+    font-size: 18px;
+  }
+  footer .about ul li a {
+    font-size: 18px;
+  }
+  footer .copyright p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  footer .adress p {
+    font-size: 18px;
+    font-weight: 300;
+  }
+  footer .adress p span {
+    font-size: 17px;
+    font-weight: 300;
+  }
+  section.services {
+    background-position: top;
+  }
 }
 @media screen and (max-width: 461px) {
   .row .logo {
@@ -1284,7 +1309,7 @@ section.mail form textarea {
     align-items: end;
   }
   .callback .contact-title a {
-    font-size: 15px;
+    font-size: 18px;
     padding-top: 0;
   }
   .callback .contact-title {
@@ -1292,7 +1317,7 @@ section.mail form textarea {
     margin-left: 0;
   }
   .callback .number p {
-    font-size: 11px;
+    font-size: 15px;
     margin-right: 10px;
     padding-left: 2px;
     margin-block-start: 0;
@@ -1302,10 +1327,79 @@ section.mail form textarea {
     margin-top: 5px;
   }
   .callback .number span {
-    font-size: 8px;
+    font-size: 12px;
   }
   .callback .number {
     margin-left: 0px;
     margin-bottom: 10px;
+  }
+}
+}
+@media screen and (max-width: 422px){
+  .service__content .container .item .item_title a{
+    font-size: 18px;
+  }
+  .service__content .container .item .description p{
+    text-align: justify;
+  }
+  section.services .service_title{
+    padding-top: 46%;
+  }
+}
+@media screen and (max-width: 320px){
+  #russian section#main_subpage .title h2 {
+    font-size: 23px;
+  }
+  .animated h5 {
+    font-size: 23px;
+  }
+  #russian #main_subpage .animated p {
+    font-size: 17px;
+  }
+  section.about .animated p{
+    text-align: left;
+  }
+  section.services{
+    background-image: none;
+  }
+  #russian section.services{
+    height:auto;
+  }
+  section.services .service_title h2{
+    padding-bottom: 50px;
+  }
+  .title h2 {
+    font-size: 18px;
+  }
+  .animated p {
+    font-size: 16px;
+  }
+  .service__content .container .item .item_title a {
+    font-size: 16px;
+  }
+  footer .about ul li{
+    padding-left: 15px;
+  }
+  footer .about ul li a {
+    font-size: 15px;
+  }
+  footer .copyright {
+    padding-left: 14px;
+  }
+  footer .about ul li:last-child::before{
+    height: 18px;
+    top: 4px;
+  }
+  footer .copyright p span {
+    font-size: 16px;
+  }
+  footer .copyright p{
+    font-size: 17px;
+  }
+  #about #main_subpage .title h2 {
+    font-size: 18px;
+  }
+  .service__content .container .item .description p {
+    font-size: 14px;
   }
 }
