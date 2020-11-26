@@ -154,7 +154,6 @@ section.wrap {
   background-image: url(../img/back.png);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: fixed;
   height: auto;
 }
 
@@ -179,16 +178,16 @@ section.wrap {
 
   i {
     font-size: 22px;
-    position: fixed;
-    right: 99px;
-    top: 90px;
+    position: absolute;
+    right: 121px;
+    top: 1px;
   }
 }
 .button:before {
   content: url(../img/button.png);
-  position: fixed;
-  right: 82px;
-  top: 74px;
+  position: absolute;
+  right: 104px;
+  top: -15px;
 }
 
 .overlay {
@@ -241,6 +240,8 @@ section.wrap {
 .right_item {
   position: absolute;
   width: 863px;
+  top: 124px;
+  right: 63px;
   img {
     width: 100%;
   }
