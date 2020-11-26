@@ -4,21 +4,12 @@ const gulp = require("gulp");
 const concat = require("gulp-concat");
 const imagemin = require("gulp-imagemin");
 const autoprefixer = require("gulp-autoprefixer");
-
 const cleanCSS = require("gulp-clean-css");
-
 const uglify = require("gulp-uglify");
-
-const del = require("del");
-
 const browserSync = require("browser-sync").create();
-
 const sourcemaps = require("gulp-sourcemaps");
-
 const sass = require("gulp-sass");
-
 const styleFiles = ["./src/sass/main.scss"];
-
 const scriptFiles = ["./src/js/main.js"];
 
 gulp.task("styles", () => {
@@ -47,9 +38,6 @@ gulp.task("styles", () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task("del", () => {
-  return del(["build/*"]);
-});
 gulp.task("img-compress", () => {
   return gulp
     .src("./src/img/**")
