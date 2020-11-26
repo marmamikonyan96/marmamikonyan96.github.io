@@ -212,26 +212,39 @@ section.wrap {
   position: relative;
 }
 .left_item img {
-  width: 100%;
+  max-width: 100%;
+}
+.left_item .giometric_image {
+  width: 350px;
+  position: absolute;
+  bottom: -269px;
+  left: 112px;
 }
 
 .left_item::before {
   content: url(../img/back.png);
   position: absolute;
-  width: 100%;
+  display: block;
+  max-width: 100%;
   top: -77px;
   left: -64px;
 }
 
 .right_item {
   position: absolute;
-  width: 853px;
+  max-width: 853px;
   height: 481px;
   top: 124px;
   right: 61px;
 }
 .right_item img {
-  width: 100%;
+  max-width: 100%;
+}
+.right_item .giometric_right {
+  position: absolute;
+  width: 287px;
+  right: 112px;
+  bottom: -180px;
 }
 
 .colour {
@@ -247,11 +260,13 @@ section.wrap {
 .symbol {
   position: absolute;
   left: 453px;
+  display: block;
 }
 
 .symbol:after {
   content: url(/);
   position: absolute;
+  display: block;
   width: 210px;
   height: 9px;
   background-color: #e6d82e;
@@ -259,12 +274,10 @@ section.wrap {
   left: -17px;
 }
 
-.giometric_image {
-  width: 350px;
+.top_gio {
+  width: 224px;
   position: absolute;
-  bottom: -269px;
-  left: 112px;
-}
-.giometric_image img {
-  width: 100%;
+  z-index: 1;
+  right: 264px;
+  top: 7px;
 }
