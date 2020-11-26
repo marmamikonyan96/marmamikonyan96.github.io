@@ -150,10 +150,6 @@ body {
 
 section.wrap {
   position: relative;
-  background-image: url(../img/back.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: auto;
 }
 
 .limited_wrapper {
@@ -237,6 +233,13 @@ section.wrap {
   img {
     width: 100%;
   }
+}
+.left_item::before {
+  content: url(../img/back.png);
+  position: absolute;
+  width: 100%;
+  top: -128px;
+  left: -64px;
 }
 .right_item {
   position: absolute;
