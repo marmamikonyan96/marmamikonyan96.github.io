@@ -139,23 +139,23 @@
   font-weight: 400;
   font-style: regular;
 }
-
+body {
+  max-width: 1440px;
+}
 .container {
   max-width: 1282px;
   padding: 0 15px;
   height: auto;
+  margin: 97px auto;
 }
 
 section.wrap {
   position: relative;
-  .container {
-    background-image: url(../img/back.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: fixed;
-    height: auto;
-    display: flex;
-  }
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: fixed;
+  height: auto;
 }
 
 .limited_wrapper {
@@ -180,6 +180,8 @@ section.wrap {
   i {
     font-size: 22px;
     position: fixed;
+    right: 99px;
+    top: 90px;
   }
 }
 .button:before {
@@ -231,4 +233,15 @@ section.wrap {
   }
 }
 .left_item {
+  width: 803px;
+  img {
+    width: 100%;
+  }
+}
+.right_item {
+  position: absolute;
+  width: 863px;
+  img {
+    width: 100%;
+  }
 }
