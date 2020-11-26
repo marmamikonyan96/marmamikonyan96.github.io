@@ -1,139 +1,141 @@
+/** @format */
+
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-Bold.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-BoldItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-ExtraBold.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-ExtraBold.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-ExtraBlackItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-ExtraBlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-ExtraLight.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-ExtraLight.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-ExtraLightItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-ExtraLightItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-Heavy.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Heavy.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-HeavyItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-HeavyItalic.otf");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-Italic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Italic.otf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-Light.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Light.otf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-LightItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-LightItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-Medium.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-MediumItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-MediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-ThinItalic.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-ThinItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria-Thin.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Geometria';
-  src: url('../fonts/Geometria.otf');
+  font-family: "Geometria";
+  src: url("../fonts/Geometria.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Philosopher';
-  src: url('../fonts/Philosopher-Bold.ttf');
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
-  font-family: 'Philosopher';
-  src: url('../fonts/Philosopher-BoldItalic.ttf');
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Philosopher';
-  src: url('../fonts/Philosopher-Italic.ttf');
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Italic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
-  font-family: 'Philosopher';
-  src: url('../fonts/Philosopher-Regular.ttf');
+  font-family: "Philosopher";
+  src: url("../fonts/Philosopher-Regular.ttf");
   font-weight: 400;
   font-style: regular;
 }
@@ -194,7 +196,6 @@ section.wrap {
   visibility: visible;
   height: 100%;
 }
-
 
 .close-menu {
   display: block;
