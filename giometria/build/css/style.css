@@ -1,2 +1,372 @@
-@font-face{font-family:Geometria;src:url(../fonts/Geometria-Bold.otf);font-weight:700;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria-BoldItalic.otf);font-weight:700;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-ExtraBold.otf);font-weight:800;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria-ExtraBlackItalic.otf);font-weight:900;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-ExtraLight.otf);font-weight:100;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria-ExtraLightItalic.otf);font-weight:100;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-Heavy.otf);font-weight:800;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria-HeavyItalic.otf);font-weight:800;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-Italic.otf);font-weight:400;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-Light.otf);font-weight:200;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria-LightItalic.otf);font-weight:200;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-Medium.otf);font-weight:500;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria-MediumItalic.otf);font-weight:500;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-ThinItalic.otf);font-weight:100;font-style:italic}@font-face{font-family:Geometria;src:url(../fonts/Geometria-Thin.otf);font-weight:100;font-style:normal}@font-face{font-family:Geometria;src:url(../fonts/Geometria.otf);font-weight:400;font-style:normal}@font-face{font-family:Philosopher;src:url(../fonts/Philosopher-Bold.ttf);font-weight:700;font-style:normal}@font-face{font-family:Philosopher;src:url(../fonts/Philosopher-BoldItalic.ttf);font-weight:700;font-style:italic}@font-face{font-family:Philosopher;src:url(../fonts/Philosopher-Italic.ttf);font-weight:400;font-style:italic}@font-face{font-family:Philosopher;src:url(../fonts/Philosopher-Regular.ttf);font-weight:400;font-style:regular}.container{max-width:1282px;margin:0 auto;padding:0 15px;height:auto}.limited_wrapper,section.wrap{position:relative}.navbar{text-align:right;margin-top:90px}.navbar-button{position:relative;display:block;margin-top:42px}.button{cursor:pointer;border-radius:50%;padding:18px;border:5px solid #dadada}.button i{font-size:25px}.overlay{position:fixed;background:#f7e611;top:0;left:0;width:100%;height:100%;opacity:0;visibility:hidden;-webkit-transition:opacity .35s,visibility .35s,height .35s;transition:opacity .35s,visibility .35s,height .35s;overflow:hidden;z-index:10000}.overlay.open{opacity:1;visibility:visible;height:100%}.close-menu{display:block}.overlay.open ul{text-align:center;-webkit-box-orient:vertical;-webkit-box-direction:normal;-ms-flex-direction:column;flex-direction:column;padding:0;margin:190px auto;height:100%;width:100%}.overlay.open ul li{padding-bottom:20px}
+/** @format */
+
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-BoldItalic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraBold.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraBlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraLight.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraLightItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Heavy.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-HeavyItalic.otf);
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Italic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Light.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-LightItalic.otf);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ThinItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Thin.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-Regular.ttf);
+  font-weight: 400;
+  font-style: regular;
+}
+.container {
+  max-width: 1282px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: auto;
+}
+.limited_wrapper,
+section.wrap {
+  position: relative;
+}
+.navbar {
+  text-align: right;
+  margin-top: 90px;
+}
+.navbar-button {
+  position: relative;
+  display: block;
+  margin-top: 42px;
+}
+.button {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 18px;
+  border: 5px solid #dadada;
+}
+.button i {
+  font-size: 25px;
+}
+.overlay {
+  position: fixed;
+  background: #f7e611;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  z-index: 10000;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.close-menu {
+  display: block;
+}
+.overlay.open ul {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  margin: 190px auto;
+  height: 100%;
+  width: 100%;
+}
+.overlay.open ul li {
+  padding-bottom: 20px;
+}
+/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Bold.otf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-BoldItalic.otf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraBold.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraBlackItalic.otf);
+  font-weight: 900;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraLight.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ExtraLightItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Heavy.otf);
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-HeavyItalic.otf);
+  font-weight: 800;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Italic.otf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Light.otf);
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-LightItalic.otf);
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Medium.otf);
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-MediumItalic.otf);
+  font-weight: 500;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-ThinItalic.otf);
+  font-weight: 100;
+  font-style: italic;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria-Thin.otf);
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: Geometria;
+  src: url(../fonts/Geometria.otf);
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-Bold.ttf);
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-BoldItalic.ttf);
+  font-weight: 700;
+  font-style: italic;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-Italic.ttf);
+  font-weight: 400;
+  font-style: italic;
+}
+@font-face {
+  font-family: Philosopher;
+  src: url(../fonts/Philosopher-Regular.ttf);
+  font-weight: 400;
+  font-style: regular;
+}
+.container {
+  max-width: 1282px;
+  margin: 0 auto;
+  padding: 0 15px;
+  height: auto;
+}
+.limited_wrapper,
+section.wrap {
+  position: relative;
+}
+.navbar {
+  text-align: right;
+  margin-top: 90px;
+}
+.navbar-button {
+  position: relative;
+  display: block;
+  margin-top: 42px;
+}
+.button {
+  cursor: pointer;
+  border-radius: 50%;
+  padding: 18px;
+  border: 5px solid #dadada;
+}
+.button i {
+  font-size: 25px;
+}
+.overlay {
+  position: fixed;
+  background: #f7e611;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+  overflow: hidden;
+  z-index: 10000;
+}
+.overlay.open {
+  opacity: 1;
+  visibility: visible;
+  height: 100%;
+}
+.close-menu {
+  display: block;
+}
+.overlay.open ul {
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 0;
+  margin: 190px auto;
+  height: 100%;
+  width: 100%;
+}
+.overlay.open ul li {
+  padding-bottom: 20px;
+}
 /*# sourceMappingURL=style.css.map */
