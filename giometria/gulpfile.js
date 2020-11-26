@@ -64,9 +64,6 @@ gulp.task("scripts", () => {
     .pipe(browserSync.stream());
 });
 
-gulp.task("del", () => {
-  return del(["build/*"]);
-});
 gulp.task("watch", () => {
   browserSync.init({
     server: {
@@ -82,9 +79,5 @@ gulp.task("watch", () => {
 });
 gulp.task(
   "default",
-  gulp.series(
-    "del",
-    gulp.parallel("styles", "scripts", "img-compress"),
-    "watch"
-  )
+  gulp.series(gulp.parallel("styles", "scripts", "img-compress"), "watch")
 );

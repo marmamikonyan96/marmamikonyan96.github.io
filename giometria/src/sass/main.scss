@@ -148,6 +148,7 @@ body {
   max-width: 1282px;
   height: auto;
   margin: 97px auto;
+  position: relative;
 }
 
 section.wrap {
@@ -245,16 +246,16 @@ section.wrap {
   content: url(../img/back.png);
   position: absolute;
   width: 100%;
-  top: -128px;
+  top: -77px;
   left: -64px;
 }
 
 .right_item {
   position: absolute;
-  width: 863px;
-  height: 486px;
+  width: 853px;
+  height: 481px;
   top: 124px;
-  right: 63px;
+  right: 61px;
 
   img {
     width: 100%;
@@ -269,4 +270,32 @@ section.wrap {
   height: 100%;
   background-color: #f7e60f;
   opacity: 0.9;
+}
+
+.symbol {
+  position: absolute;
+  left: 453px;
+
+}
+
+.symbol:after {
+  content: url(/);
+  position: absolute;
+  width: 210px;
+  height: 9px;
+  background-color: #e6d82e;
+  top: 112px;
+  left: -17px;
+
+}
+
+.giometric_image {
+  width: 350px;
+  position: absolute;
+  bottom: -269px;
+  left: 112px;
+
+  img {
+    width: 100%;
+  }
 }
