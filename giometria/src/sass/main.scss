@@ -142,13 +142,20 @@
 
 .container {
   max-width: 1282px;
-  margin: 0 auto;
   padding: 0 15px;
   height: auto;
 }
 
 section.wrap {
   position: relative;
+  .container {
+    background-image: url(../img/back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    height: auto;
+    display: flex;
+  }
 }
 
 .limited_wrapper {
@@ -168,13 +175,18 @@ section.wrap {
 
 .button {
   cursor: pointer;
-  border-radius: 50%;
-  padding: 18px;
-  border: 5px solid #dadada;
+  position: relative;
 
   i {
-    font-size: 25px;
+    font-size: 22px;
+    position: fixed;
   }
+}
+.button:before {
+  content: url(../img/button.png);
+  position: fixed;
+  right: 82px;
+  top: 74px;
 }
 
 .overlay {
@@ -212,6 +224,11 @@ section.wrap {
 
     li {
       padding-bottom: 20px;
+      a {
+        text-decoration: none;
+      }
     }
   }
+}
+.left_item {
 }
