@@ -186,7 +186,7 @@ section.wrap {
   }
 }
 .yellow_part:after {
-  content: url();
+  content: url("");
   position: absolute;
   width: 100%;
   background-color: #ede035;
@@ -226,6 +226,12 @@ section.wrap {
 }
 .square {
   width: 180px;
+  img {
+    width: 100%;
+  }
+}
+.giometric_symbols {
+  width: 350px;
   img {
     width: 100%;
   }
