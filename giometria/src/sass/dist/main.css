@@ -1,121 +1,121 @@
 /** @format */
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Bold.otf");
+  src: url("/giometria/src/fonts/Geometria-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-BoldItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraBold.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraBold.otf");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraBlackItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraBlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraLight.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraLight.otf");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraLightItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraLightItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Heavy.otf");
+  src: url("/giometria/src/fonts/Geometria-Heavy.otf");
   font-weight: 800;
   font-style: normal;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-HeavyItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-HeavyItalic.otf");
   font-weight: 800;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Italic.otf");
-  font-weight: 400;
-  font-style: italic;
-}
-@font-face {
-  font-family: "Geometria";
-  src: url("src/fonts/Geometria-Light.otf");
-  font-weight: 200;
-  font-style: normal;
-}
-@font-face {
-  font-family: "Geometria";
-  src: url("src/fonts/Geometria-LightItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-MediumItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Medium.otf");
+  src: url("/giometria/src/fonts/Geometria-Medium.otf");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Geometria";
+  src: url("/giometria/src/fonts/Geometria-LightItalic.otf");
+  font-weight: 200;
+  font-style: italic;
+}
+@font-face {
+  font-family: "Geometria";
+  src: url("/giometria/src/fonts/Geometria-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-MediumItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-MediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ThinItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-ThinItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Thin.otf");
+  src: url("/giometria/src/fonts/Geometria-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria.otf");
+  src: url("/giometria/src/fonts/Geometria.otf");
   font-weight: 400;
   font-style: normal;
 }
 @font-face {
   font-family: "Philosopher";
-  src: url("src/fonts/Philosopher-Bold.ttf");
+  src: url("/giometria/src/fonts/Philosopher-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Philosopher";
-  src: url("src/fonts/Philosopher-BoldItalic.ttf");
+  src: url("/giometria/src/fonts/Philosopher-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
 }
 @font-face {
   font-family: "Philosopher";
-  src: url("src/fonts/Philosopher-Italic.ttf");
+  src: url("/giometria/src/fonts/Philosopher-Italic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 @font-face {
   font-family: "Philosopher";
-  src: url("src/fonts/Philosopher-Regular.ttf");
+  src: url("/giometria/src/fonts/Philosopher-Regular.ttf");
   font-weight: 400;
   font-style: regular;
 }
@@ -123,23 +123,117 @@ body {
   max-width: 1440px;
 }
 
-.container {
-  max-width: 1282px;
-  height: auto;
-  margin: 97px auto;
-  position: relative;
-}
-
 section.wrap {
   position: relative;
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: inherit;
+  max-width: 100%;
+  position: relative;
+}
+section.wrap .limited_wrapper {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+}
+section.wrap .limited_wrapper .top_symbol {
+  width: 21px;
+  padding-left: 21px;
+  padding-top: 37px;
+}
+section.wrap .limited_wrapper .top_symbol img {
+  width: 100%;
+}
+section.wrap .limited_wrapper .left_col {
+  width: 800px;
+}
+section.wrap .limited_wrapper .yellow_part {
+  margin-top: 50px;
+  margin-left: 95px;
+  background-image: url(../img/left.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  max-width: 100%;
+  position: relative;
+  display: flex;
+  z-index: 1;
+}
+section.wrap .limited_wrapper .yellow_part ul {
+  list-style: none;
+}
+section.wrap .limited_wrapper .yellow_part ul li {
+  font-family: "Geometria";
+  font-style: italic;
+  font-weight: 200;
+  margin-left: 30px;
+  padding-top: 60px;
 }
 
-.limited_wrapper {
-  position: relative;
+.yellow_part:before {
+  content: url("");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #ffff09ed;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.horizontal_num {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  right: 140px;
+  top: 56px;
+  position: absolute;
+}
+.horizontal_num span {
+  font-size: 28px;
+  font-family: "Geometria";
+  font-weight: 800;
+  font-style: normal;
+}
+
+.flex_hor {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 80px;
+  padding-bottom: 0px;
+}
+
+.horizontal_text {
+  margin-left: 107px;
+  margin-top: 56px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+.horizontal_text p {
+  font-size: 9px;
+  font-family: "Geometria";
+  font-weight: 200;
+  font-style: italic;
+}
+
+.square {
+  width: 180px;
+}
+.square img {
+  width: 100%;
+}
+
+.giometric_symbols {
+  width: 310px;
+  margin-left: 180px;
+  margin-top: 52px;
+}
+.giometric_symbols img {
+  width: 100%;
 }
 
 .navbar {
-  text-align: right;
   margin-top: 90px;
 }
 
@@ -156,14 +250,14 @@ section.wrap {
 .button i {
   font-size: 22px;
   position: absolute;
-  right: 121px;
+  right: -164px;
   top: 1px;
 }
 
 .button:before {
   content: url(../img/button.png);
   position: absolute;
-  right: 104px;
+  right: -181px;
   top: -15px;
 }
 
@@ -206,28 +300,138 @@ section.wrap {
   text-decoration: none;
 }
 
+.top_gio {
+  width: 224px;
+  position: absolute;
+  z-index: 1;
+  right: 264px;
+  top: 75px;
+}
+
+.symbol {
+  position: absolute;
+  left: 533px;
+  width: 150px;
+  z-index: 1;
+  bottom: -178px;
+}
+.symbol img {
+  width: 100%;
+}
+
+.symbol:after {
+  content: url("");
+  position: absolute;
+  display: block;
+  width: 210px;
+  height: 9px;
+  background-color: #e6d82e;
+  top: 112px;
+  left: -17px;
+}
+
+.giometric_right {
+  position: absolute;
+  width: 287px;
+  right: 112px;
+  bottom: -293px;
+}
+
+.right_col {
+  background-image: url(../img/photo-1535086181678-5a5c4d23aa7d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  height: auto;
+  max-width: 100%;
+  left: 576px;
+  top: 214px;
+}
+.right_col .yellow_right {
+  display: flex;
+  justify-content: center;
+}
+
+.right_col:before {
+  content: url("");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #ffff09ed;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.ural {
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 10px;
+  margin-top: 60px;
+  padding: 0 10px;
+}
+.ural p {
+  font-size: 17px;
+  font-family: "Geometria";
+  font-weight: 400;
+  color: #fff;
+}
+
+.slide {
+  background-color: #f7e611;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+.slide span {
+  font-size: 45px;
+  font-family: "Geometria";
+  font-weight: 800;
+  text-align: center;
+  margin-top: 90px;
+}
+.slide span:last-child {
+  padding-left: 43px;
+}
+
+/*
+.container {
+  max-width: 1282px;
+  height: auto;
+  margin: 97px auto;
+  position: relative;
+}
+
+
+
 .left_item {
   width: 803px;
   height: 535px;
   position: relative;
-}
-.left_item img {
-  max-width: 100%;
-}
-.left_item .giometric_image {
-  width: 350px;
-  position: absolute;
-  bottom: -269px;
-  left: 112px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .giometric_image {
+    width: 350px;
+    position: absolute;
+    bottom: -269px;
+    left: 112px;
+  }
 }
 
 .left_item::before {
-  content: url(../img/back.png);
+  content: url("");
   position: absolute;
   display: block;
   max-width: 100%;
   top: -77px;
   left: -64px;
+  box-shadow: #526b89;
 }
 
 .right_item {
@@ -236,15 +440,17 @@ section.wrap {
   height: 481px;
   top: 124px;
   right: 61px;
-}
-.right_item img {
-  max-width: 100%;
-}
-.right_item .giometric_right {
-  position: absolute;
-  width: 287px;
-  right: 112px;
-  bottom: -180px;
+
+  img {
+    max-width: 100%;
+  }
+
+  .giometric_right {
+    position: absolute;
+    width: 287px;
+    right: 112px;
+    bottom: -180px;
+  }
 }
 
 .colour {
@@ -280,4 +486,4 @@ section.wrap {
   z-index: 1;
   right: 264px;
   top: 7px;
-}
+}*/

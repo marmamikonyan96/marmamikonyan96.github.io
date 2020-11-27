@@ -143,56 +143,81 @@
 body {
   max-width: 1440px;
 }
+
 section.wrap {
   position: relative;
+  background-image: url(../img/back.png);
+  background-repeat: no-repeat;
+  height: 100vh;
+  background-size: inherit;
+  max-width: 100%;
+  position: relative;
+
   .limited_wrapper {
     position: relative;
+    display: flex;
+    justify-content: space-between;
+
     .top_symbol {
       width: 21px;
       padding-left: 21px;
       padding-top: 37px;
+
       img {
         width: 100%;
       }
     }
+
     .left_col {
-      background-image: url(../img/back.png);
+      width: 800px;
+    }
+
+    .yellow_part {
+      margin-top: 50px;
+      margin-left: 95px;
+      background-image: url(../img/left.jpg);
       background-repeat: no-repeat;
-      height: 100vh;
-      background-size: auto;
+      background-size: cover;
+      height: 100%;
       max-width: 100%;
       position: relative;
-      flex: 0 0 50%;
+      display: flex;
+      z-index: 1;
 
-      .yellow_part {
-        margin-top: 50px;
-        margin-left: 95px;
-        background-image: url(../img/left.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        height: auto;
-        max-width: 100%;
-        position: relative;
-        z-index: 1;
-        .item {
+      ul {
+        list-style: none;
+
+        li {
           font-family: "Geometria";
           font-style: italic;
           font-weight: 200;
-          display: block;
-          margin-left: 134px;
+          margin-left: 30px;
           padding-top: 60px;
         }
       }
     }
   }
 }
+
+.yellow_part:before {
+  content: url("");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #ffff09ed;
+  opacity: 0.9;
+  z-index: -1;
+}
+
 .horizontal_num {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  left: 458px;
+  right: 140px;
   top: 56px;
   position: absolute;
+
   span {
     font-size: 28px;
     font-family: "Geometria";
@@ -200,17 +225,20 @@ section.wrap {
     font-style: normal;
   }
 }
+
 .flex_hor {
   display: inline-flex;
   align-items: center;
-  margin-left: 108px;
-  padding-bottom: 40px;
+  margin-left: 80px;
+  padding-bottom: 0px;
 }
+
 .horizontal_text {
   margin-left: 107px;
   margin-top: 56px;
   writing-mode: vertical-rl;
   text-orientation: upright;
+
   p {
     font-size: 9px;
     font-family: "Geometria";
@@ -218,24 +246,18 @@ section.wrap {
     font-style: italic;
   }
 }
+
 .square {
   width: 180px;
+
   img {
     width: 100%;
   }
 }
-.bg_colour {
-  position: absolute;
-  width: 56%;
-  height: 100%;
-  background-color: #f2e53a;
-  top: 0;
-  opacity: 0.9;
-  z-index: -1;
-}
+
 .giometric_symbols {
   width: 310px;
-  margin-left: 231px;
+  margin-left: 180px;
   margin-top: 52px;
 
   img {
@@ -243,24 +265,7 @@ section.wrap {
   }
 }
 
-/*
-.container {
-  max-width: 1282px;
-  height: auto;
-  margin: 97px auto;
-  position: relative;
-}
-
-section.wrap {
-  position: relative;
-}
-
-.limited_wrapper {
-  position: relative;
-}
-
 .navbar {
-  text-align: right;
   margin-top: 90px;
 }
 
@@ -277,7 +282,7 @@ section.wrap {
   i {
     font-size: 22px;
     position: absolute;
-    right: 121px;
+    right: -164px;
     top: 1px;
   }
 }
@@ -285,7 +290,7 @@ section.wrap {
 .button:before {
   content: url(../img/button.png);
   position: absolute;
-  right: 104px;
+  right: -181px;
   top: -15px;
 }
 
@@ -331,6 +336,121 @@ section.wrap {
     }
   }
 }
+
+.top_gio {
+  width: 224px;
+  position: absolute;
+  z-index: 1;
+  right: 264px;
+  top: 75px;
+}
+
+.symbol {
+  position: absolute;
+  left: 533px;
+  width: 150px;
+  z-index: 1;
+  bottom: -178px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.symbol:after {
+  content: url("");
+  position: absolute;
+  display: block;
+  width: 210px;
+  height: 9px;
+  background-color: #e6d82e;
+  top: 112px;
+  left: -17px;
+}
+
+.giometric_right {
+  position: absolute;
+  width: 287px;
+  right: 112px;
+  bottom: -293px;
+}
+
+.right_col {
+  background-image: url(../img/photo-1535086181678-5a5c4d23aa7d.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  height: auto;
+  max-width: 100%;
+  left: 576px;
+  top: 214px;
+
+  .yellow_right {
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.right_col:before {
+  content: url("");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: #ffff09ed;
+  opacity: 0.9;
+  z-index: -1;
+}
+
+.ural {
+  border-radius: 50%;
+  border: 1px solid #000;
+  margin: 10px;
+  margin-top: 60px;
+  padding: 0 10px;
+
+  p {
+    font-size: 17px;
+    font-family: 'Geometria';
+    font-weight: 400;
+    color: #fff;
+  }
+}
+
+.slide {
+  background-color: #f7e611;
+  z-index: 1;
+  display: none;
+  width: 100%;
+  height: 100%;
+
+  span {
+    font-size: 45px;
+    font-family: 'Geometria';
+    font-weight: 800;
+    text-align: center;
+    margin-top: 90px;
+
+  }
+
+  span:last-child {
+    padding-left: 43px;
+  }
+}
+
+
+/*
+.container {
+  max-width: 1282px;
+  height: auto;
+  margin: 97px auto;
+  position: relative;
+}
+
+
+
 .left_item {
   width: 803px;
   height: 535px;
