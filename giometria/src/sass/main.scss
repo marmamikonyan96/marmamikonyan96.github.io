@@ -375,25 +375,9 @@ section.wrap {
   bottom: -293px;
 }
 
-.right_col {
-  background-image: url(../img/photo-1535086181678-5a5c4d23aa7d.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: absolute;
-  display: flex;
-  z-index: 1;
-  height: auto;
-  max-width: 100%;
-  left: 576px;
-  top: 214px;
 
-  .yellow_right {
-    display: flex;
-    justify-content: center;
-  }
-}
 
-.right_col:before {
+/*.yellow_right:before {
   content: url("");
   position: absolute;
   width: 100%;
@@ -401,8 +385,8 @@ section.wrap {
   top: 0;
   background-color: #ffff09ed;
   opacity: 0.9;
-  z-index: -1;
-}
+  z-index: 11;
+}*/
 
 .ural {
   border-radius: 50%;
