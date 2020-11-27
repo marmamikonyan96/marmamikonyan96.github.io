@@ -149,8 +149,8 @@ section.wrap {
     position: relative;
     .top_symbol {
       width: 21px;
-      margin-left: 21px;
-      margin-top: 37px;
+      padding-left: 21px;
+      padding-top: 37px;
       img {
         width: 100%;
       }
@@ -158,36 +158,47 @@ section.wrap {
     .left_col {
       background-image: url(../img/back.png);
       background-repeat: no-repeat;
-      height: auto;
-      background-size: contain;
+      height: 100vh;
+      background-size: auto;
       max-width: 100%;
       position: relative;
       flex: 0 0 50%;
 
       .yellow_part {
-        padding-top: 80px;
-        background-image: url(../img/kaboompics_Arc\ de\ la\ Rua\ Augusta\ in\ Lisbon\,\ Portugal.jpg);
+        margin-top: 50px;
+        margin-left: 95px;
+        background-image: url(../img/left.jpg);
         background-repeat: no-repeat;
-        background-size: 100%;
+        background-size: contain;
         height: auto;
         max-width: 100%;
+        position: relative;
         .item {
-          margin-bottom: 60px;
           font-family: "Geometria";
           font-style: italic;
           font-weight: 200;
           display: block;
-          margin-left: 95px;
+          margin-left: 134px;
+          padding-top: 60px;
         }
       }
     }
   }
 }
+.yellow_part:after {
+  content: url();
+  position: absolute;
+  width: 100%;
+  background-color: #ede035;
+  top: 0;
+}
 .horizontal_num {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  margin-left: 180px;
+  left: 525px;
+  top: 156px;
+  position: absolute;
   span {
     font-size: 28px;
     font-family: "Geometria";
@@ -198,6 +209,8 @@ section.wrap {
 .flex_hor {
   display: flex;
   align-items: center;
+  margin-left: 108px;
+  padding-bottom: 40px;
 }
 .horizontal_text {
   margin-left: 107px;
