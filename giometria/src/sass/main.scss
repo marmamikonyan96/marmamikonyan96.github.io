@@ -173,24 +173,19 @@ section.wrap {
         height: auto;
         max-width: 100%;
         position: relative;
+        z-index: 1;
         .item {
           font-family: "Geometria";
           font-style: italic;
           font-weight: 200;
-          display: block;
+          display: flex;
+          flex-direction: column;
           margin-left: 134px;
           padding-top: 60px;
         }
       }
     }
   }
-}
-.yellow_part:after {
-  content: url("");
-  position: absolute;
-  width: 100%;
-  background-color: #ede035;
-  top: 0;
 }
 .horizontal_num {
   -webkit-writing-mode: vertical-rl;
@@ -207,7 +202,7 @@ section.wrap {
   }
 }
 .flex_hor {
-  display: flex;
+  display: inline-flex;
   align-items: center;
   margin-left: 108px;
   padding-bottom: 40px;
@@ -229,6 +224,15 @@ section.wrap {
   img {
     width: 100%;
   }
+}
+.bg_colour {
+  position: absolute;
+  width: 56%;
+  height: 100%;
+  background-color: #f2e53a;
+  top: 0;
+  opacity: 0.9;
+  z-index: -1;
 }
 .giometric_symbols {
   width: 350px;
