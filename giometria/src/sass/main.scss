@@ -2,56 +2,56 @@
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Bold.otf");
+  src: url("/giometria/src/fonts/Geometria-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-BoldItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraBold.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraBold.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraBlackItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraBlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraLight.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraLight.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-ExtraLightItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-ExtraLightItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-Heavy.otf");
+  src: url("/giometria/src/fonts/Geometria-Heavy.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("src/fonts/Geometria-HeavyItalic.otf");
+  src: url("/giometria/src/fonts/Geometria-HeavyItalic.otf");
   font-weight: 800;
   font-style: italic;
 }
@@ -146,30 +146,75 @@ body {
 section.wrap {
   position: relative;
   .limited_wrapper {
-    display: flex;
+    position: relative;
+    .top_symbol {
+      width: 21px;
+      margin-left: 21px;
+      margin-top: 37px;
+      img {
+        width: 100%;
+      }
+    }
     .left_col {
       background-image: url(../img/back.png);
       background-repeat: no-repeat;
       height: auto;
+      background-size: contain;
       max-width: 100%;
-      .top_symbol {
-        width: 21px;
-        margin-left: 32px;
-        margin-top: 37px;
-        img {
-          width: 100%;
-        }
-      }
+      position: relative;
+      flex: 0 0 50%;
+
       .yellow_part {
-        padding-left: 134px;
+        padding-top: 80px;
+        background-image: url(../img/kaboompics_Arc\ de\ la\ Rua\ Augusta\ in\ Lisbon\,\ Portugal.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        height: auto;
+        max-width: 100%;
         .item {
           margin-bottom: 60px;
           font-family: "Geometria";
           font-style: italic;
           font-weight: 200;
+          display: block;
+          margin-left: 95px;
         }
       }
     }
+  }
+}
+.horizontal_num {
+  -webkit-writing-mode: vertical-rl;
+  -ms-writing-mode: tb-rl;
+  writing-mode: vertical-rl;
+  margin-left: 180px;
+  span {
+    font-size: 28px;
+    font-family: "Geometria";
+    font-weight: 800;
+    font-style: normal;
+  }
+}
+.flex_hor {
+  display: flex;
+  align-items: center;
+}
+.horizontal_text {
+  margin-left: 107px;
+  margin-top: 56px;
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  p {
+    font-size: 9px;
+    font-family: "Geometria";
+    font-weight: 200;
+    font-style: italic;
+  }
+}
+.square {
+  width: 180px;
+  img {
+    width: 100%;
   }
 }
 
