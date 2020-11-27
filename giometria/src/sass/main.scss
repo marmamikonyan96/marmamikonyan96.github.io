@@ -178,8 +178,7 @@ section.wrap {
           font-family: "Geometria";
           font-style: italic;
           font-weight: 200;
-          display: flex;
-          flex-direction: column;
+          display: block;
           margin-left: 134px;
           padding-top: 60px;
         }
@@ -191,8 +190,8 @@ section.wrap {
   -webkit-writing-mode: vertical-rl;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
-  left: 525px;
-  top: 156px;
+  left: 458px;
+  top: 56px;
   position: absolute;
   span {
     font-size: 28px;
@@ -235,7 +234,10 @@ section.wrap {
   z-index: -1;
 }
 .giometric_symbols {
-  width: 350px;
+  width: 310px;
+  margin-left: 231px;
+  margin-top: 52px;
+
   img {
     width: 100%;
   }
