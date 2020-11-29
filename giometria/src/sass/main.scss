@@ -162,7 +162,6 @@ section.wrap {
   .limited_wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
 
     .top_symbol {
       width: 21px;
@@ -175,7 +174,7 @@ section.wrap {
     }
 
     .left_col {
-      width: 800px;
+      width: 790px;
     }
 
     .yellow_part {
@@ -188,7 +187,7 @@ section.wrap {
       position: relative;
       display: flex;
       z-index: 1;
-      height: 530px;
+      height: 320px;
 
       ul {
         list-style: none;
