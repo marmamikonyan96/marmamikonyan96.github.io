@@ -340,9 +340,22 @@ section.wrap {
 .top_gio {
   width: 224px;
   position: absolute;
-  z-index: 1;
+  z-index: 15;
   right: 264px;
   top: 75px;
+}
+
+.right_col {
+  position: relative;
+}
+
+.yellow_right {
+  width: 800px;
+  z-index: 11;
+
+  img {
+    width: 100%;
+  }
 }
 
 .symbol {
@@ -350,7 +363,7 @@ section.wrap {
   left: 533px;
   width: 150px;
   z-index: 1;
-  bottom: -178px;
+  bottom: 100px;
 
   img {
     width: 100%;
@@ -372,21 +385,9 @@ section.wrap {
   position: absolute;
   width: 287px;
   right: 112px;
-  bottom: -293px;
+  bottom: -14px;
 }
 
-
-
-/*.yellow_right:before {
-  content: url("");
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  background-color: #ffff09ed;
-  opacity: 0.9;
-  z-index: 11;
-}*/
 
 .ural {
   border-radius: 50%;
@@ -394,6 +395,10 @@ section.wrap {
   margin: 10px;
   margin-top: 60px;
   padding: 0 10px;
+  position: absolute;
+  top: 30px;
+  z-index: 1;
+  left: 28px;
 
   p {
     font-size: 17px;
