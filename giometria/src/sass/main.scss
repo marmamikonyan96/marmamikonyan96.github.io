@@ -2,140 +2,140 @@
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Bold.otf");
+  src: url("./src/fonts/Geometria-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-BoldItalic.otf");
+  src: url("./src/fonts/Geometria-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraBold.otf");
+  src: url("./src/fonts/Geometria-ExtraBold.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraBlackItalic.otf");
+  src: url("./src/fonts/Geometria-ExtraBlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraLight.otf");
+  src: url("./src/fonts/Geometria-ExtraLight.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraLightItalic.otf");
+  src: url("./src/fonts/Geometria-ExtraLightItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Heavy.otf");
+  src: url("./src/fonts/Geometria-Heavy.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-HeavyItalic.otf");
+  src: url("./src/fonts/Geometria-HeavyItalic.otf");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-MediumItalic.otf");
+  src: url("./src/fonts/Geometria-MediumItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Medium.otf");
+  src: url("./src/fonts/Geometria-Medium.otf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-LightItalic.otf");
+  src: url("./src/fonts/Geometria-LightItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Medium.otf");
+  src: url("./src/fonts/Geometria-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-MediumItalic.otf");
+  src: url("./src/fonts/Geometria-MediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ThinItalic.otf");
+  src: url("./src/fonts/Geometria-ThinItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Thin.otf");
+  src: url("./src/fonts/Geometria-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria.otf");
+  src: url("./src/fonts/Geometria.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-Bold.ttf");
+  src: url("./src/fonts/Philosopher-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-BoldItalic.ttf");
+  src: url("./src/fonts/Philosopher-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-Italic.ttf");
+  src: url("./src/fonts/Philosopher-Italic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-Regular.ttf");
+  src: url("./src/fonts/Philosopher-Regular.ttf");
   font-weight: 400;
   font-style: regular;
 }
@@ -149,18 +149,17 @@ section.wrap {
   background-image: url(../img/back.png);
   background-repeat: no-repeat;
   height: 100vh;
-  background-size: inherit;
-  max-width: 100%;
+  background-size: 720px;
   position: relative;
 
   .limited_wrapper {
     position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .top_symbol {
       width: 21px;
-      padding-left: 21px;
+      padding-left: 0px;
       padding-top: 37px;
 
       img {
@@ -173,8 +172,8 @@ section.wrap {
     }
 
     .yellow_part {
-      margin-top: 50px;
-      margin-left: 95px;
+      margin-top: 32px;
+      margin-left: 20px;
       background-image: url(../img/left.jpg);
       background-repeat: no-repeat;
       background-size: cover;
@@ -257,7 +256,7 @@ section.wrap {
 
 .giometric_symbols {
   width: 310px;
-  margin-left: 180px;
+  margin-left: 55px;
   margin-top: 52px;
 
   img {
@@ -347,10 +346,10 @@ section.wrap {
 
 .symbol {
   position: absolute;
-  left: 533px;
+  left: 635px;
   width: 150px;
   z-index: 1;
-  bottom: -178px;
+  bottom: -138px;
 
   img {
     width: 100%;
@@ -372,10 +371,8 @@ section.wrap {
   position: absolute;
   width: 287px;
   right: 112px;
-  bottom: -293px;
+  bottom: -250px;
 }
-
-
 
 /*.yellow_right:before {
   content: url("");
@@ -397,33 +394,40 @@ section.wrap {
 
   p {
     font-size: 17px;
-    font-family: 'Geometria';
+    font-family: "Geometria";
     font-weight: 400;
     color: #fff;
   }
 }
-
+.slider_container{
+  overflow: hidden;
+  
+}
+.slider_wrap{
+  background-color:#f7e611;
+  display: flex;
+  height: 380px;
+  width: 140px;
+  transition: 2s;
+}
 .slide {
-  background-color: #f7e611;
   z-index: 1;
   display: none;
-  width: 100%;
-  height: 100%;
+  min-width: 140px;
+  height: 380px;
 
   span {
     font-size: 45px;
-    font-family: 'Geometria';
+    font-family: "Geometria";
     font-weight: 800;
     text-align: center;
     margin-top: 90px;
-
   }
 
   span:last-child {
     padding-left: 43px;
   }
 }
-
 
 /*
 .container {
