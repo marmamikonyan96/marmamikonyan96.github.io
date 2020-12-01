@@ -187,6 +187,7 @@ section.wrap .limited_wrapper .left_col {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  position: relative;
 }
 section.wrap .limited_wrapper .left_col .peremennie {
   margin-left: 70px;
@@ -202,14 +203,14 @@ section.wrap .limited_wrapper .left_col .peremennie span {
 section.wrap .limited_wrapper .left_col .flex_hor {
   display: flex;
   position: absolute;
-  left: 230px;
-  top: 201px;
+  left: 154px;
+  top: 133px;
   z-index: 1000;
 }
 section.wrap .limited_wrapper .left_col .flex_hor .horizontal_text {
   writing-mode: vertical-rl;
   text-orientation: upright;
-  align-items: flex-end;
+  align-self: flex-end;
 }
 section.wrap .limited_wrapper .left_col .flex_hor .horizontal_text p {
   font-size: 9px;
@@ -342,4 +343,8 @@ section.wrap .limited_wrapper .left_col .horizontal_num {
 }
 .right_col .yellow_part {
   flex-direction: column;
+}
+.right_col .giometric_right {
+  margin-left: 401px;
+  margin-top: 36px;
 }

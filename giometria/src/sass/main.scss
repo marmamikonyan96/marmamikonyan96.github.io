@@ -214,6 +214,7 @@ section.wrap {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
+      position: relative;
 
       .peremennie {
         margin-left: 70px;
@@ -231,14 +232,14 @@ section.wrap {
       .flex_hor {
         display: flex;
         position: absolute;
-        left: 230px;
-        top: 201px;
+        left: 154px;
+        top: 133px;
         z-index: 1000;
 
         .horizontal_text {
           writing-mode: vertical-rl;
           text-orientation: upright;
-          align-items: flex-end;
+          align-self: flex-end;
 
           p {
             font-size: 9px;
@@ -386,5 +387,10 @@ section.wrap {
 
   .yellow_part {
     flex-direction: column;
+  }
+
+  .giometric_right {
+    margin-left: 401px;
+    margin-top: 36px;
   }
 }
