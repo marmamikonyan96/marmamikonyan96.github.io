@@ -2,140 +2,140 @@
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Bold.otf");
+  src: url("./src/fonts/Geometria-Bold.otf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-BoldItalic.otf");
+  src: url("./src/fonts/Geometria-BoldItalic.otf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraBold.otf");
+  src: url("./src/fonts/Geometria-ExtraBold.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraBlackItalic.otf");
+  src: url("./src/fonts/Geometria-ExtraBlackItalic.otf");
   font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraLight.otf");
+  src: url("./src/fonts/Geometria-ExtraLight.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ExtraLightItalic.otf");
+  src: url("./src/fonts/Geometria-ExtraLightItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Heavy.otf");
+  src: url("./src/fonts/Geometria-Heavy.otf");
   font-weight: 800;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-HeavyItalic.otf");
+  src: url("./src/fonts/Geometria-HeavyItalic.otf");
   font-weight: 800;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-MediumItalic.otf");
+  src: url("./src/fonts/Geometria-MediumItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Medium.otf");
+  src: url("./src/fonts/Geometria-Medium.otf");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-LightItalic.otf");
+  src: url("./src/fonts/Geometria-LightItalic.otf");
   font-weight: 200;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Medium.otf");
+  src: url("./src/fonts/Geometria-Medium.otf");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-MediumItalic.otf");
+  src: url("./src/fonts/Geometria-MediumItalic.otf");
   font-weight: 500;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-ThinItalic.otf");
+  src: url("./src/fonts/Geometria-ThinItalic.otf");
   font-weight: 100;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria-Thin.otf");
+  src: url("./src/fonts/Geometria-Thin.otf");
   font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Geometria";
-  src: url("/giometria/src/fonts/Geometria.otf");
+  src: url("./src/fonts/Geometria.otf");
   font-weight: 400;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-Bold.ttf");
+  src: url("./src/fonts/Philosopher-Bold.ttf");
   font-weight: 700;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-BoldItalic.ttf");
+  src: url("./src/fonts/Philosopher-BoldItalic.ttf");
   font-weight: 700;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-Italic.ttf");
+  src: url("./src/fonts/Philosopher-Italic.ttf");
   font-weight: 400;
   font-style: italic;
 }
 
 @font-face {
   font-family: "Philosopher";
-  src: url("/giometria/src/fonts/Philosopher-Regular.ttf");
+  src: url("./src/fonts/Philosopher-Regular.ttf");
   font-weight: 400;
   font-style: regular;
 }
@@ -155,6 +155,8 @@ body {
   max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
+  background-size: 720px;
+  position: relative;
 
   @media(max-width: 1200px) {
     .container {
@@ -171,148 +173,161 @@ body {
   @media(max-width:767px) {
     .container {
       max-width: none;
+
     }
   }
-}
 
-section.wrap {
-  position: relative;
-
-  .limited_wrapper {
+  section.wrap {
     position: relative;
-    display: flex;
 
-    .left_col {
-      flex: 0 0 50%;
+    .limited_wrapper {
+      position: relative;
       display: flex;
-    }
-  }
-}
 
-.horizontal_num {
-  -webkit-writing-mode: vertical-rl;
-  -ms-writing-mode: tb-rl;
-  writing-mode: vertical-rl;
-  right: 140px;
-  top: 56px;
-  position: absolute;
-
-  span {
-    font-size: 28px;
-    font-family: "Geometria";
-    font-weight: 800;
-    font-style: normal;
-  }
-}
-
-.horizontal_text {
-  margin-left: 107px;
-  margin-top: 56px;
-  writing-mode: vertical-rl;
-  text-orientation: upright;
-
-  p {
-    font-size: 9px;
-    font-family: "Geometria";
-    font-weight: 200;
-    font-style: italic;
-  }
-}
-
-.square {
-  width: 180px;
-
-  img {
-    width: 100%;
-  }
-}
-
-.giometric_symbols {
-  width: 310px;
-  margin-left: 180px;
-  margin-top: 52px;
-
-  img {
-    width: 100%;
-  }
-}
-
-.navbar {
-  margin-top: 90px;
-}
-
-.navbar-button {
-  position: relative;
-  display: block;
-  margin-top: 42px;
-}
-
-.button {
-  cursor: pointer;
-  position: relative;
-
-  i {
-    font-size: 22px;
-    position: absolute;
-    right: -164px;
-    top: 1px;
-  }
-}
-
-.button:before {
-  content: url(../img/button.png);
-  position: absolute;
-  right: -181px;
-  top: -15px;
-}
-
-.overlay {
-  position: fixed;
-  background: #f7e611;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.35s, visibility 0.35s, height 0.35s;
-  overflow: hidden;
-  z-index: 10000;
-}
-
-.overlay.open {
-  opacity: 1;
-  visibility: visible;
-  height: 100%;
-}
-
-.close-menu {
-  display: block;
-}
-
-.overlay.open {
-  ul {
-    text-align: center;
-    flex-direction: column;
-    padding: 0;
-    margin: 190px auto;
-    height: 100%;
-    width: 100%;
-
-    li {
-      padding-bottom: 20px;
-
-      a {
-        text-decoration: none;
+      .left_col {
+        flex: 0 0 50%;
+        display: flex;
       }
     }
   }
+
+  .horizontal_num {
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: tb-rl;
+    writing-mode: vertical-rl;
+    right: 140px;
+    top: 56px;
+    position: absolute;
+
+    span {
+      font-size: 28px;
+      font-family: "Geometria";
+      font-weight: 800;
+      font-style: normal;
+    }
+  }
+
+  .horizontal_text {
+    margin-left: 107px;
+    margin-top: 56px;
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+
+    p {
+      font-size: 9px;
+      font-family: "Geometria";
+      font-weight: 200;
+      font-style: italic;
+    }
+  }
+
+  .square {
+    width: 180px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .giometric_symbols {
+    width: 310px;
+    margin-left: 55px;
+    margin-top: 52px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .navbar {
+    margin-top: 90px;
+  }
+
+  .navbar-button {
+    position: relative;
+    display: block;
+    margin-top: 42px;
+  }
+
+  .button {
+    cursor: pointer;
+    position: relative;
+
+    i {
+      font-size: 22px;
+      position: absolute;
+      right: -164px;
+      top: 1px;
+    }
+  }
+
+  .button:before {
+    content: url(../img/button.png);
+    position: absolute;
+    right: -181px;
+    top: -15px;
+  }
+
+  .overlay {
+    position: fixed;
+    background: #f7e611;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.35s, visibility 0.35s, height 0.35s;
+    overflow: hidden;
+    z-index: 10000;
+  }
+
+  .overlay.open {
+    opacity: 1;
+    visibility: visible;
+    height: 100%;
+  }
+
+  .close-menu {
+    display: block;
+  }
+
+  .overlay.open {
+    ul {
+      text-align: center;
+      flex-direction: column;
+      padding: 0;
+      margin: 190px auto;
+      height: 100%;
+      width: 100%;
+
+      li {
+        padding-bottom: 20px;
+
+        a {
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  .top_gio {
+    width: 224px;
+    position: absolute;
+    z-index: 15;
+    right: 264px;
+    top: 75px;
+  }
 }
 
-.top_gio {
-  width: 224px;
+.symbol {
   position: absolute;
-  z-index: 15;
-  right: 264px;
-  top: 75px;
+  left: 635px;
+  width: 150px;
+  z-index: 1;
+  bottom: -138px;
+
+  img {
+    width: 100%;
+  }
 }

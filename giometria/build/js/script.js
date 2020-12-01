@@ -1,1 +1,1 @@
-$(document).ready(function(){$(".open-menu").on("click",function(){$(".overlay").addClass("open")}),$(".close-menu").on("click",function(){$(".overlay").removeClass("open")})});document.getElementById("btn-prev"),document.getElementById("btn-next");const e=document.querySelectorAll(".slide");e.Wrapper=document.querySelectorAll(".slider-wrapper");
+$(document).ready(function(){$(".open-menu").on("click",function(){$(".overlay").addClass("open")}),$(".close-menu").on("click",function(){$(".overlay").removeClass("open")})});
