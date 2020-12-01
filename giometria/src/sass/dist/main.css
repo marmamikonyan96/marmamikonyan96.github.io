@@ -343,31 +343,54 @@ section.wrap .limited_wrapper .left_col .horizontal_num {
 }
 .right_col .yellow_part .slider_container {
   margin-top: 90px;
-  margin-right: 230px;
+  margin-right: 121px;
   max-width: 138px;
+  overflow: hidden;
 }
 .right_col .yellow_part .slider_container .slider_wrap {
   display: flex;
+  transition: 2s;
 }
 .right_col .yellow_part .slider_container .slider_wrap .slide {
   background-color: #f7e611;
   margin-left: 15px;
   max-width: 138px;
   height: 260px;
+  position: relative;
 }
-.right_col .yellow_part .slider_container .slider_wrap .slide span {
+.right_col .yellow_part .slider_container .slider_wrap .slide p {
   font-size: 45px;
   color: #000;
   font-family: "Giometria";
   font-weight: 800;
   font-style: italic;
-  padding: 20px;
+  padding: 0 20px;
+  margin-top: 170px;
 }
-.right_col .yellow_part .slider_container .slider_wrap .slide span:last-child {
+.right_col .yellow_part .slider_container .slider_wrap .slide p span {
   margin-left: 47px;
   font-size: 17px;
 }
-.right_col .giometric_right {
+.right_col .yellow_part .slider_container .slider_button #btn-prev {
+  position: absolute;
+  top: 233px;
+  right: 258px;
+  cursor: pointer;
+}
+.right_col .yellow_part .slider_container .slider_button #btn-prev .fas {
+  font-size: 24px;
+  color: #a19829;
+}
+.right_col .yellow_part .slider_container .slider_button #btn-next {
+  position: absolute;
+  top: 233px;
+  right: 112px;
+}
+.right_col .yellow_part .slider_container .slider_button #btn-next .fas {
+  font-size: 24px;
+  color: #a19829;
+}
+.right_col .yellow_part .giometric_right {
   margin-left: 334px;
   margin-top: 36px;
   max-width: 350px;
