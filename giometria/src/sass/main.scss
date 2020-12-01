@@ -357,7 +357,18 @@ section.wrap {
   width: 670px;
   height: 420px;
 
+  .top_gio {
+    max-width: 214px;
+    position: absolute;
+    max-width: 214px;
+    top: -100px;
+    right: 77px;
+    z-index: -1;
+  }
+
   .yellow_part {
+    position: relative;
+
     .ural {
       padding: 34px 84px;
 

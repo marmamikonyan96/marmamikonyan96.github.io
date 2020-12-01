@@ -317,6 +317,17 @@ section.wrap .limited_wrapper .left_col .horizontal_num {
   width: 670px;
   height: 420px;
 }
+.right_col .top_gio {
+  max-width: 214px;
+  position: absolute;
+  max-width: 214px;
+  top: -100px;
+  right: 77px;
+  z-index: -1;
+}
+.right_col .yellow_part {
+  position: relative;
+}
 .right_col .yellow_part .ural {
   padding: 34px 84px;
 }
