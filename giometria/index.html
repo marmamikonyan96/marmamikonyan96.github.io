@@ -14,6 +14,7 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
     <link rel="stylesheet" href="build/css/style.css" />
     <title>task</title>
   </head>
@@ -37,7 +38,7 @@
             <div class="giometric_symbols">
               <img src="./build/img/giometric_img.png" alt="" />
             </div>
-            
+
             <div class="flex_hor">
               <div class="horizontal_text">
                 <p>очень хороший слоган</p>
@@ -47,38 +48,49 @@
               </div>
             </div>
           </div>
-          
+
           <div class="right_col">
             <div class="yellow_part">
-               <div class="top_gio">
-              <img src="./build/img/letters.png" alt="">
-            </div>
+              <div class="top_gio">
+                <img src="./build/img/letters.png" alt="" />
+              </div>
               <div class="ural">
                 <p>
                   URAL<br />
                   <span>03</span>
                 </p>
               </div>
-              
-            <div class="slider_container">
-              <div class="slider_wrap">
-                <div class="slide active">
-                  <p>13_<br /><span>7</span></p>
-                  
+
+              <div class=" giometic_slider swiper-container">
+              <div class="slider_content swiper-wrapper">
+                <div class="main_item swiper-slide active">
+                  <p>13</p>
+                  <p>7</p>
                 </div>
-                <div class="slide">
-                  <p>15_<br /><span>6</span></p>
+                <div class=" main_item swiper-slide">
+                  <p>15</p>
+                  <p>2</p>
                 </div>
-                <div class="slide">
-                  <p>16_<br /><span>4</span></p>
+                <div class=" main_item swiper-slide">
+                  <p>16</p>
+                  <p>4</p>
                 </div>
-                <div class="slide">
-                  <p>12_<br /><span>3</span></p>
+                <div class=" main_item swiper-slide">
+                  <p>12</p>
+                  <p>3</p>
+                </div>
+                <div class=" main_item swiper-slide">
+                  <p>12</p>
+                  <p>3</p>
+                </div>
+                <div class=" main_item swiper-slide">
+                  <p>19</p>
+                  <p>2</p>
                 </div>
               </div>
               <div class="slider_button">
-                <div id="btn-prev"><i class="fas fa-chevron-left"></i></div>
-                <div id="btn-next"><i class="fas fa-chevron-right"></i></div>
+                <div class="swiper-button-prev"> </div>
+                <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -112,6 +124,7 @@
       </div>
     </section>
     <script src="src/js/jquery-3.5.1.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="build/js/script.js"></script>
   </body>
 </html>

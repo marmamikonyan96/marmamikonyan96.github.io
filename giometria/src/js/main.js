@@ -9,3 +9,10 @@ $(document).ready(function () {
     $(".overlay").removeClass("open");
   });
 });
+
+new Swiper(".swiper-container", {
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
