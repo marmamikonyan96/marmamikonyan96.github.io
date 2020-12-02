@@ -423,6 +423,12 @@ section.wrap {
     margin-left: 0;
   }
 
+  .swiper-container .slider_button .swiper-button-next,
+.swiper-container .slider_button .swiper-button-prev {
+    position: absolute;
+    top: 163px;
+  }
+
   .symbol {
     left: 501px;
   }
@@ -436,11 +442,18 @@ section.wrap {
   }
 
   .button:before {
-    right: -476px;
+    right: -437px;
   }
 
   .giometric_right {
     margin-top: 62px;
+  }
+
+  .title {
+    top: 146px;
+    left: 33px;
+    z-index: 1;
+    font-size: 130px;
   }
 }
 @media (max-width: 1245px) {
@@ -542,7 +555,7 @@ section.wrap {
 
   .giometric_right {
     margin-top: 25px;
-    margin-left: 240px;
+    margin-left: 172px;
   }
 
   .ural {
@@ -550,16 +563,28 @@ section.wrap {
   }
 
   .right_col .top_gio {
-    right: 47px;
+    right: 1px;
   }
 
   .swiper-container {
-    margin-left: 0px;
+    margin-left: 161px;
+  }
+
+  .title {
+    font-size: 116px;
+  }
+
+  .swiper-container {
+    margin-left: 101px;
   }
 }
 @media (max-width: 855px) {
   .container {
     max-width: 700px;
+  }
+
+  body {
+    background-size: 50%;
   }
 
   .giometric_symbols {
@@ -582,33 +607,171 @@ section.wrap {
     margin-bottom: 54px;
   }
 
+  .right_col {
+    left: 307px;
+  }
   .right_col .top_gio {
-    right: 7px;
+    right: 70px;
+    max-width: 150px;
+  }
+
+  .left_col {
+    flex: 0 0 58%;
+  }
+
+  .title {
+    top: 228px;
+    font-size: 95px;
+  }
+
+  .swiper-container {
+    margin-left: -3px;
+    margin-top: 34px;
   }
 }
-@media (max-width: 796px) {
+@media (max-width: 795px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .right_col {
+    left: 268px;
+  }
+
+  .swiper-container {
+    margin-left: 54px;
+    margin-top: 34px;
+  }
+
+  .giometric_symbols {
+    padding-left: 0px;
+    max-width: 250px;
+  }
+
+  .yellow_part {
+    margin-bottom: 86px;
+  }
+
+  .giometric_right {
+    max-width: 250px;
+  }
+}
+@media (max-width: 717px) {
   body {
     background-color: #f7e611;
     background-image: none;
+    max-width: 100%;
+    margin: 0;
   }
 
   .container {
     max-width: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .title {
+    display: none;
+  }
+
+  .yellow_part {
+    display: none;
   }
 
   .button::before {
     display: none;
   }
 
-  .peremennie {
-    display: none;
-  }
-
-  .horizontal_num {
+  .symbol::after {
     display: none;
   }
 
   .flex_hor {
     display: none;
+  }
+
+  .giometric_right {
+    display: none;
+  }
+
+  .giometric_symbols {
+    display: none;
+  }
+
+  .limited_wrapper .top_symbol {
+    margin-left: 10px;
+  }
+
+  .navbar {
+    margin-left: 374px;
+    margin-top: 29px;
+  }
+
+  .navbar-button {
+    margin-top: 48px;
+    position: relative;
+  }
+
+  .navbar-button:before {
+    content: url(style.css);
+    position: absolute;
+    background-image: url(../img/mob_border.png);
+    background-repeat: no-repeat;
+    width: 182px;
+    height: 178px;
+    top: -88px;
+    left: 118px;
+  }
+
+  .limited_wrapper {
+    position: relative;
+  }
+
+  .left_col {
+    flex: none;
+    position: absolute;
+    width: 442px;
+    height: 262px;
+    background-image: url(../img/left.jpg);
+    background-repeat: no-repeat;
+    top: 53px;
+    left: 53px;
+    z-index: -1;
+  }
+
+  .left_col:after {
+    content: url("");
+    position: absolute;
+    background-color: #f7e611;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    top: 0;
+  }
+
+  .symbol {
+    left: 202px;
+    top: 651px;
+    z-index: 1;
+  }
+
+  .right_col {
+    position: absolute;
+    width: 521px;
+    height: 334px;
+    background-image: url(../img/right.jpg);
+    background-repeat: no-repeat;
+    left: 17px;
+    top: 360px;
+  }
+
+  .right_col:after {
+    content: url("");
+    position: absolute;
+    background-color: #f7e611;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    top: 0;
   }
 }
