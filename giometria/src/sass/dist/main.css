@@ -401,6 +401,14 @@ section.wrap {
   max-width: 100%;
 }
 
+.title {
+  position: absolute;
+  font-size: 140px;
+  color: #fff;
+  z-index: 1;
+  left: 55px;
+}
+
 /**********mediaa*/
 @media (max-width: 1320px) {
   .container {
@@ -579,7 +587,28 @@ section.wrap {
   }
 }
 @media (max-width: 796px) {
+  body {
+    background-color: #f7e611;
+    background-image: none;
+  }
+
   .container {
     max-width: none;
+  }
+
+  .button::before {
+    display: none;
+  }
+
+  .peremennie {
+    display: none;
+  }
+
+  .horizontal_num {
+    display: none;
+  }
+
+  .flex_hor {
+    display: none;
   }
 }
