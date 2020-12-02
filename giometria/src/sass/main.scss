@@ -766,8 +766,20 @@ section.wrap {
     display: none;
   }
 
-  .flex_hor {
+  .square {
     display: none;
+  }
+
+  .flex_hor {
+    .horizontal_text {
+      writing-mode: vertical-rl;
+      text-orientation: upright;
+      align-self: flex-end;
+      position: fixed;
+      top: 239px;
+      left: 133px;
+      z-index: 1;
+    }
   }
 
   .giometric_right {
@@ -803,6 +815,7 @@ section.wrap {
     height: 178px;
     top: -88px;
     left: 118px;
+    z-index: -1;
   }
 
   .limited_wrapper {
@@ -816,9 +829,9 @@ section.wrap {
     height: 262px;
     background-image: url(../img/left.jpg);
     background-repeat: no-repeat;
-    top: 53px;
-    left: 53px;
-    z-index: -1;
+    top: 22px;
+    left: 98px;
+    z-index: 1;
   }
 
   .left_col:after {
@@ -833,7 +846,7 @@ section.wrap {
 
   .symbol {
 
-    left: 202px;
+    left: 263px;
     top: 651px;
     z-index: 1;
   }
@@ -845,11 +858,11 @@ section.wrap {
     height: 334px;
     background-image: url(../img/right.jpg);
     background-repeat: no-repeat;
-    left: 17px;
+    left: 67px;
     top: 360px;
   }
 
-  .right_col:after {
+  .right_col:before {
     content: url('');
     position: absolute;
     background-color: #f7e611;
@@ -857,5 +870,18 @@ section.wrap {
     height: 100%;
     opacity: 0.8;
     top: 0;
+  }
+
+  .right_col:after {
+    content: url('');
+    position: absolute;
+    background-image: url(../img/mob_gio.png);
+    background-repeat: no-repeat;
+    width: 184px;
+    height: 135px;
+    top: -122px;
+    color: #000;
+    z-index: -11;
+    left: 307px;
   }
 }
