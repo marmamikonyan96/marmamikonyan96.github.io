@@ -675,7 +675,28 @@ section.wrap {
   }
 
   .yellow_part {
+    background-color: transparent;
+  }
+  .yellow_part .top_gio {
     display: none;
+  }
+  .yellow_part .ural {
+    display: none;
+  }
+  .yellow_part .peremennie {
+    display: none;
+  }
+
+  .horizontal_num {
+    display: none;
+  }
+
+  .swiper-container {
+    margin-left: 196px;
+    margin-top: 34px;
+  }
+  .swiper-container .swiper-wrapper .swiper-slide {
+    background-color: transparent;
   }
 
   .button::before {
@@ -747,7 +768,6 @@ section.wrap {
     background-repeat: no-repeat;
     top: 22px;
     left: 98px;
-    z-index: 1;
   }
 
   .left_col:after {
@@ -795,7 +815,7 @@ section.wrap {
     height: 135px;
     top: -122px;
     color: #000;
-    z-index: -11;
+    z-index: 1;
     left: 307px;
   }
 }
