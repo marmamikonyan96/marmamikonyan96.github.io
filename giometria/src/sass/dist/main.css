@@ -268,7 +268,7 @@ section.wrap {
 
 /*menu/end*********************/
 .top_gio {
-  max-widt: 100%;
+  max-width: 100%;
   position: absolute;
   z-index: 15;
   right: 264px;
@@ -495,7 +495,7 @@ section.wrap {
   }
 
   .symbol {
-    left: 388px;
+    left: 520px;
   }
 
   .square {
@@ -505,13 +505,80 @@ section.wrap {
   .flex_hor {
     left: 151px;
   }
+
+  .left_col {
+    flex: 0 0 64%;
+  }
+
+  body {
+    background-size: 62%;
+  }
 }
 @media (max-width: 992px) {
   .container {
     max-width: 750px;
   }
+
+  .right_col {
+    left: 330px;
+  }
+
+  .symbol {
+    left: 413px;
+  }
+
+  .giometric_symbols {
+    padding-left: 15px;
+    margin-top: 58px;
+  }
+
+  .giometric_right {
+    margin-top: 25px;
+    margin-left: 240px;
+  }
+
+  .ural {
+    padding: 34px 55px;
+  }
+
+  .right_col .top_gio {
+    right: 47px;
+  }
+
+  .swiper-container {
+    margin-left: 0px;
+  }
 }
-@media (max-width: 767px) {
+@media (max-width: 855px) {
+  .container {
+    max-width: 700px;
+  }
+
+  .giometric_symbols {
+    padding-left: 0;
+  }
+
+  .giometric_right {
+    margin-left: 141px;
+  }
+
+  .symbol {
+    left: 371px;
+  }
+
+  .flex_hor {
+    left: 90px;
+  }
+
+  .yellow_part {
+    margin-bottom: 54px;
+  }
+
+  .right_col .top_gio {
+    right: 7px;
+  }
+}
+@media (max-width: 796px) {
   .container {
     max-width: none;
   }
