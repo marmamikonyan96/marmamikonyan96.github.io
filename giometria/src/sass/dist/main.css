@@ -335,6 +335,13 @@ section.wrap {
   max-width: 42px;
 }
 
+.mobile-add {
+  display: none;
+}
+.mobile-add .mobile_design {
+  width: 35px;
+}
+
 /*******************slider/swiper.js**************/
 .swiper-container {
   margin-top: 90px;
@@ -680,6 +687,10 @@ section.wrap {
   .yellow_part .top_gio {
     display: none;
   }
+  .yellow_part .button i {
+    right: 367px;
+    top: -37px;
+  }
   .yellow_part .ural {
     display: none;
   }
@@ -694,13 +705,21 @@ section.wrap {
   .swiper-container {
     margin-left: 196px;
     margin-top: 34px;
+    padding-right: 36px;
   }
   .swiper-container .swiper-wrapper .swiper-slide {
     background-color: transparent;
   }
+  .swiper-container .swiper-wrapper .swiper-slide p {
+    padding: 0px 64px;
+  }
 
   .button::before {
     display: none;
+  }
+
+  .symbol {
+    top: 729px;
   }
 
   .symbol::after {
@@ -715,9 +734,6 @@ section.wrap {
     writing-mode: vertical-rl;
     text-orientation: upright;
     align-self: flex-end;
-    position: fixed;
-    top: 239px;
-    left: 133px;
     z-index: 1;
   }
 
@@ -734,7 +750,6 @@ section.wrap {
   }
 
   .navbar {
-    margin-left: 374px;
     margin-top: 29px;
   }
 
@@ -743,31 +758,18 @@ section.wrap {
     position: relative;
   }
 
-  .navbar-button:before {
-    content: url(style.css);
-    position: absolute;
-    background-image: url(../img/mob_border.png);
-    background-repeat: no-repeat;
-    width: 182px;
-    height: 178px;
-    top: -88px;
-    left: 118px;
-    z-index: -1;
-  }
-
   .limited_wrapper {
     position: relative;
   }
 
   .left_col {
     flex: none;
-    position: absolute;
     width: 442px;
     height: 262px;
     background-image: url(../img/left.jpg);
     background-repeat: no-repeat;
-    top: 22px;
-    left: 98px;
+    position: relative;
+    margin-left: 100px;
   }
 
   .left_col:after {
@@ -782,18 +784,18 @@ section.wrap {
 
   .symbol {
     left: 263px;
-    top: 651px;
+    top: 721px;
     z-index: 1;
   }
 
   .right_col {
-    position: absolute;
     width: 521px;
-    height: 334px;
+    height: 480px;
     background-image: url(../img/right.jpg);
     background-repeat: no-repeat;
-    left: 67px;
-    top: 360px;
+    position: relative;
+    left: -443px;
+    top: 350px;
   }
 
   .right_col:before {
@@ -802,7 +804,7 @@ section.wrap {
     background-color: #f7e611;
     width: 100%;
     height: 100%;
-    opacity: 0.8;
+    opacity: 0.7;
     top: 0;
   }
 
@@ -811,11 +813,37 @@ section.wrap {
     position: absolute;
     background-image: url(../img/mob_gio.png);
     background-repeat: no-repeat;
-    width: 184px;
+    width: 187px;
     height: 135px;
-    top: -122px;
-    color: #000;
-    z-index: 1;
-    left: 307px;
+    top: -94px;
+    left: 200px;
+    z-index: -1;
+  }
+
+  .mobile-add {
+    display: flex;
+    align-items: center;
+    margin-top: 83%;
+  }
+  .mobile-add .mobile_design {
+    width: 35px;
+    position: absolute;
+    left: 25px;
+  }
+  .mobile-add .mob_num {
+    position: relative;
+    margin-right: 40px;
+  }
+  .mobile-add .mob_num:after {
+    content: url("");
+    position: absolute;
+    width: 154px;
+    height: 156px;
+    background-color: #f7e611;
+    -webkit-clip-path: polygon(100% 100%, 100% 0, 0 100%);
+    clip-path: polygon(100% 100%, 100% 0, 0 100%);
+    bottom: -14px;
+    right: -40px;
+    z-index: -1;
   }
 }
