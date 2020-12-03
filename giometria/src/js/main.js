@@ -10,31 +10,23 @@ $(document).ready(function () {
   });
 });
 
-function slider(el) {
-  let self = this,
-    _slide = null,
-    _buttons = null;
+$(document).ready(function () {
+  let position = 0;
+  const slidesToShow = 1;
+  const container = $("slider-container");
+  const wrap = $(".slider_wrap");
+  const slide = $(".slide");
+  const btnLeft = $(".btn-left");
+  const btnRight = $(".btn-right");
+  const slideWidth = container.width() / slidesToShow;
 
-  this.el = el;
-
-  function init() {
-    _slide = self.el.getElementById("slide p");
-    _buttons = self.el.querySelector(".buttons");
-    self.currentSlide = 0;
-
-    _buttons.querySelector(".btn-left").addEventListener("click", function () {
-      if (self.currentSlide > 0) {
-        self.showSlide(self.currentSlide - 1);
-      }
-      self.showSlide(_slide.length - 1);
+  slideWidth.each(function (index, slide) {
+    $(slide).css({
+      minWidth: itemWidth,
     });
-
-    _buttons.querySelector(".btn-right").addEventListener("click", function () {
-      if (self.currentSlide < _slide.length - 1) {
-        self.showSlide(self.currentSlide + 1);
-      }
-      self.showSlide(0);
-    });
-  }
-}
-let slider = new Slider(document.getElementById("slider"));
+  });
+  btnLeft.click(function () {
+    console.log("btn");
+  });
+  btnRight.click(function () {});
+});

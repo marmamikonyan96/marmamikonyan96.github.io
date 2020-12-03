@@ -220,7 +220,7 @@ section.wrap {
 .giometric_symbols {
   max-width: 100%;
   padding-left: 69px;
-  margin-top: 85px;
+  margin-top: 70px;
 
 }
 
@@ -347,7 +347,7 @@ section.wrap {
     max-width: 100%;
     position: absolute;
     top: -100px;
-    right: 233px;
+    right: 121px;
     z-index: -1;
   }
 
@@ -358,7 +358,7 @@ section.wrap {
 }
 
 .ural {
-  padding: 34px 84px;
+  padding: 34px 0;
 
   p {
     font-size: 17px;
@@ -438,13 +438,16 @@ section.wrap {
     .btn-right {
       position: absolute;
       top: 183px;
-      right: 300px;
       cursor: pointer;
       font-size: 30px;
       background-color: transparent;
       border: none;
       color: #928c40;
       font-weight: 800;
+    }
+
+    .btn-left {
+      right: 300px;
     }
 
     .btn-right {
@@ -461,10 +464,11 @@ section.wrap {
 
 .title {
   position: absolute;
+  z-index: 7;
+  left: 86px;
+  top: 148px;
   font-size: 140px;
   color: #fff;
-  z-index: 1;
-  left: 55px;
 }
 
 
@@ -485,10 +489,16 @@ section.wrap {
     }
   }
 
-  .swiper-container .slider_button .swiper-button-next,
-  .swiper-container .slider_button .swiper-button-prev {
-    position: absolute;
-    top: 163px;
+  .slider-container {
+    .buttons {
+      .btn-left {
+        right: 300px;
+      }
+
+      .btn-right {
+        right: 100px;
+      }
+    }
   }
 
   .symbol {
@@ -496,8 +506,10 @@ section.wrap {
   }
 
   .right_col {
+    left: 368px;
+
     .top_gio {
-      right: 141px;
+      right: 78px;
     }
   }
 
@@ -516,9 +528,8 @@ section.wrap {
   }
 
   .title {
-    top: 146px;
-    left: 33px;
-    z-index: 1;
+    top: 182px;
+    left: 89px;
     font-size: 130px;
   }
 }
@@ -642,25 +653,30 @@ section.wrap {
   }
 
   .ural {
-    padding: 34px 55px;
+    padding: 34px 0;
   }
 
   .right_col .top_gio {
     right: 1px;
   }
 
-  .swiper-container {
+  .slider-container {
     margin-left: 161px;
   }
 
   .title {
-    font-size: 116px;
+    font-size: 85px;
   }
 
-  .swiper-container {
-    margin-left: 101px;
-  }
+  .buttons {
+    .btn-left {
+      right: 270px;
+    }
 
+    .btn-right {
+      right: 104px;
+    }
+  }
 }
 
 @media(max-width:855px) {
@@ -694,7 +710,7 @@ section.wrap {
   }
 
   .right_col {
-    left: 307px;
+    left: 315px;
 
     .top_gio {
       right: 70px;
@@ -711,9 +727,21 @@ section.wrap {
     font-size: 95px;
   }
 
-  .swiper-container {
+  .slider-container {
     margin-left: -3px;
     margin-top: 34px;
+  }
+
+  .buttons {
+
+    .btn-left,
+    .btn-right {
+      right: 216px;
+    }
+
+    .btn-right {
+      right: 59px;
+    }
   }
 }
 
