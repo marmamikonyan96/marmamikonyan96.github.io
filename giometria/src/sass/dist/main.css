@@ -169,7 +169,7 @@ section.wrap {
   position: absolute;
   left: 154px;
   top: 133px;
-  z-index: 1000;
+  z-index: 5;
 }
 .flex_hor .horizontal_text {
   writing-mode: vertical-rl;
@@ -316,9 +316,9 @@ section.wrap {
   right: 233px;
   z-index: -1;
 }
-
-.yellow_part {
+.right_col .yellow_part {
   position: relative;
+  justify-content: space-around;
 }
 
 .ural {
@@ -342,17 +342,18 @@ section.wrap {
   width: 35px;
 }
 
-/*******************slider/swiper.js**************/
-.swiper-container {
+/*******************slider/.js**************/
+.slider-container {
   margin-top: 90px;
   max-width: 138px;
   overflow: hidden;
 }
-.swiper-container .swiper-wrapper {
+.slider-container #slider_wrap {
   display: flex;
   transition: 2s;
+  padding-left: 30px;
 }
-.swiper-container .swiper-wrapper .swiper-slide {
+.slider-container #slider_wrap .slide {
   background-color: #f7e611;
   max-width: 100%;
   height: 260px;
@@ -360,7 +361,7 @@ section.wrap {
   display: flex;
   flex-direction: column;
 }
-.swiper-container .swiper-wrapper .swiper-slide p {
+.slider-container #slider_wrap .slide p {
   font-size: 45px;
   color: #000;
   font-family: "Giometria";
@@ -370,7 +371,7 @@ section.wrap {
   margin-top: 170px;
   margin-block-end: 2px;
 }
-.swiper-container .swiper-wrapper .swiper-slide p:last-child {
+.slider-container #slider_wrap .slide p:last-child {
   margin-left: 47px;
   font-size: 17px;
   position: relative;
@@ -378,7 +379,7 @@ section.wrap {
   margin-block-start: 2px;
   margin-block-end: 2px;
 }
-.swiper-container .swiper-wrapper .swiper-slide p:last-child:before {
+.slider-container #slider_wrap .slide p:last-child:before {
   content: url("");
   position: absolute;
   background-color: #000;
@@ -386,20 +387,20 @@ section.wrap {
   width: 10px;
   top: -16px;
 }
-.swiper-container .slider_button .swiper-button-prev,
-.swiper-container .slider_button .swiper-button-next {
+.slider-container .buttons .btn-left,
+.slider-container .buttons .btn-right {
   position: absolute;
-  top: 120px;
-  right: 258px;
+  top: 183px;
+  right: 300px;
   cursor: pointer;
+  font-size: 30px;
+  background-color: transparent;
+  border: none;
+  color: #928c40;
+  font-weight: 800;
 }
-.swiper-container .slider_button .swiper-button-prev:after,
-.swiper-container .slider_button .swiper-button-next:after {
-  font-size: 24px;
-  color: #a19829;
-}
-.swiper-container .slider_button .swiper-button-next {
-  right: -8px;
+.slider-container .buttons .btn-right {
+  right: 41px;
 }
 
 .giometric_right {
@@ -637,10 +638,6 @@ section.wrap {
   }
 }
 @media (max-width: 795px) {
-  .container {
-    max-width: 700px;
-  }
-
   .right_col {
     left: 268px;
   }
@@ -687,10 +684,6 @@ section.wrap {
   .yellow_part .top_gio {
     display: none;
   }
-  .yellow_part .button i {
-    right: 367px;
-    top: -37px;
-  }
   .yellow_part .ural {
     display: none;
   }
@@ -716,6 +709,10 @@ section.wrap {
 
   .button::before {
     display: none;
+  }
+
+  .button i {
+    right: 52px;
   }
 
   .symbol {
@@ -751,6 +748,7 @@ section.wrap {
 
   .navbar {
     margin-top: 29px;
+    padding-left: 115px;
   }
 
   .navbar-button {
@@ -789,12 +787,12 @@ section.wrap {
   }
 
   .right_col {
-    width: 521px;
+    width: 444px;
     height: 480px;
     background-image: url(../img/right.jpg);
     background-repeat: no-repeat;
-    position: relative;
-    left: -443px;
+    position: absolute;
+    left: 132px;
     top: 350px;
   }
 

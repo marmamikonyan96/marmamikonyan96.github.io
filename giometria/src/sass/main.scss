@@ -191,7 +191,7 @@ section.wrap {
   position: absolute;
   left: 154px;
   top: 133px;
-  z-index: 1000;
+  z-index: 5;
 
   .horizontal_text {
     writing-mode: vertical-rl;
@@ -350,10 +350,11 @@ section.wrap {
     right: 233px;
     z-index: -1;
   }
-}
 
-.yellow_part {
-  position: relative;
+  .yellow_part {
+    position: relative;
+    justify-content: space-around;
+  }
 }
 
 .ural {
@@ -379,17 +380,18 @@ section.wrap {
   }
 }
 
-/*******************slider/swiper.js**************/
-.swiper-container {
+/*******************slider/.js**************/
+.slider-container {
   margin-top: 90px;
   max-width: 138px;
   overflow: hidden;
 
-  .swiper-wrapper {
+  #slider_wrap {
     display: flex;
     transition: 2s;
+    padding-left: 30px;
 
-    .swiper-slide {
+    .slide {
       background-color: #f7e611;
       max-width: 100%;
       height: 260px;
@@ -430,24 +432,23 @@ section.wrap {
     }
   }
 
-  .slider_button {
+  .buttons {
 
-    .swiper-button-prev,
-    .swiper-button-next {
+    .btn-left,
+    .btn-right {
       position: absolute;
-      top: 120px;
-      right: 258px;
+      top: 183px;
+      right: 300px;
       cursor: pointer;
+      font-size: 30px;
+      background-color: transparent;
+      border: none;
+      color: #928c40;
+      font-weight: 800;
     }
 
-    .swiper-button-prev:after,
-    .swiper-button-next:after {
-      font-size: 24px;
-      color: #a19829;
-    }
-
-    .swiper-button-next {
-      right: -8px;
+    .btn-right {
+      right: 41px;
     }
   }
 }
@@ -717,9 +718,6 @@ section.wrap {
 }
 
 @media(max-width:795px) {
-  .container {
-    max-width: 700px;
-  }
 
   .right_col {
     left: 268px;
@@ -769,11 +767,6 @@ section.wrap {
       display: none;
     }
 
-    .button i {
-      right: 367px;
-      top: -37px;
-    }
-
     .ural {
       display: none;
     }
@@ -801,12 +794,17 @@ section.wrap {
         }
       }
     }
-
   }
 
 
   .button::before {
     display: none;
+  }
+
+  .button {
+    i {
+      right: 52px;
+    }
   }
 
   .symbol {
@@ -846,6 +844,7 @@ section.wrap {
 
   .navbar {
     margin-top: 29px;
+    padding-left: 115px;
   }
 
   .navbar-button {
@@ -878,19 +877,18 @@ section.wrap {
   }
 
   .symbol {
-
     left: 263px;
     top: 721px;
     z-index: 1;
   }
 
   .right_col {
-    width: 521px;
+    width: 444px;
     height: 480px;
     background-image: url(../img/right.jpg);
     background-repeat: no-repeat;
-    position: relative;
-    left: -443px;
+    position: absolute;
+    left: 132px;
     top: 350px;
   }
 
