@@ -798,7 +798,7 @@ section.wrap {
     padding-left: 252px;
     max-width: 100%;
     position: absolute;
-    bottom: 660px;
+    bottom: 25px;
     z-index: -5;
   }
 
@@ -821,38 +821,64 @@ section.wrap {
 
   .symbol {
     left: 266px;
-    bottom: -333px;
+    bottom: 373px;
+    position: fixed;
   }
 
   .adding_items {
     position: absolute;
-    z-index: 1;
+    z-index: 2;
   }
 
   .mobile-add {
     display: flex;
     align-items: center;
-    margin-top: 83%;
+    margin-top: 220px;
+    justify-content: space-between;
   }
   .mobile-add .mobile_design {
     width: 35px;
-    position: absolute;
-    left: 25px;
   }
   .mobile-add .mob_num {
     position: relative;
-    margin-right: 40px;
+    left: 553px;
   }
-  .mobile-add .mob_num:after {
+
+  .mob_num:after {
     content: url("");
-    position: absolute;
-    width: 154px;
-    height: 156px;
+    position: fixed;
+    width: 213px;
+    height: 220px;
     background-color: #f7e611;
-    -webkit-clip-path: polygon(100% 100%, 100% 0, 0 100%);
-    clip-path: polygon(100% 100%, 100% 0, 0 100%);
-    bottom: -14px;
+    clip-path: polygon(100% 100%, 100% 0px, 0px 100%);
+    bottom: 374px;
     right: -40px;
     z-index: -1;
+  }
+}
+@media (max-width: 669px) {
+  .second_item .background {
+    left: -21px;
+  }
+
+  .symbol {
+    left: 266px;
+    bottom: 393px;
+  }
+
+  .mobile-add .mob_num {
+    position: relative;
+    left: 510px;
+  }
+}
+@media (max-width: 612px) {
+  .symbol {
+    left: 234px;
+    bottom: 409px;
+  }
+
+  .mobile-add .mob_num {
+    position: relative;
+    left: 480px;
   }
 }
