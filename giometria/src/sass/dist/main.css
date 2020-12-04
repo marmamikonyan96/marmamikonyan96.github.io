@@ -782,9 +782,9 @@ section.wrap {
   }
 
   .horizontal_text {
+    top: 255px;
+    left: 36px;
     position: absolute;
-    top: 256px;
-    left: 47px;
     z-index: 2;
   }
 
@@ -821,8 +821,17 @@ section.wrap {
 
   .symbol {
     left: 266px;
-    bottom: 373px;
-    position: fixed;
+    bottom: -334px;
+    position: absolute;
+  }
+
+  .giometric_symbols {
+    padding-left: 242px;
+    bottom: 30px;
+  }
+
+  .symbol:after {
+    display: none;
   }
 
   .adding_items {
@@ -833,7 +842,8 @@ section.wrap {
   .mobile-add {
     display: flex;
     align-items: center;
-    margin-top: 220px;
+    margin-top: 0;
+    padding-top: 227px;
     justify-content: space-between;
   }
   .mobile-add .mobile_design {
@@ -851,7 +861,7 @@ section.wrap {
     height: 220px;
     background-color: #f7e611;
     clip-path: polygon(100% 100%, 100% 0px, 0px 100%);
-    bottom: 374px;
+    bottom: 369px;
     right: -40px;
     z-index: -1;
   }
@@ -884,7 +894,8 @@ section.wrap {
 }
 @media (max-width: 585px) {
   .mobile-add {
-    margin-top: 170px;
+    padding-top: 170px;
+    margin-top: 0;
   }
 
   .symbol:after {
@@ -905,11 +916,61 @@ section.wrap {
     right: 15px;
   }
 }
-@media (max-width: 500px) {
-  .background {
-    width: 100%;
+@media (max-width: 569px) {
+  .symbol {
+    bottom: 439px;
   }
 
+  .background {
+    width: 354px;
+    position: fixed;
+    left: 0;
+  }
+
+  .mobile-add {
+    margin-top: 172px;
+  }
+
+  .mobile-add .mob_num {
+    left: 456px;
+  }
+}
+@media (max-width: 560px) {
+  .mobile-add {
+    padding-top: 166px;
+    margin-top: 0;
+  }
+
+  .mobile-add .mob_num {
+    position: relative;
+    left: 445px;
+  }
+}
+@media (max-width: 529px) {
+  .second_item .background {
+    top: 332px;
+  }
+
+  .giometric_symbols {
+    padding-left: 82px;
+    bottom: -289px;
+  }
+
+  .letter_symbol {
+    left: 165px;
+  }
+
+  .background_before {
+    position: absolute;
+    left: 208px;
+    top: 260px;
+  }
+
+  .letter_symbol {
+    left: 153px;
+  }
+}
+@media (max-width: 500px) {
   .navbar:before {
     width: 130px;
   }
@@ -945,7 +1006,7 @@ section.wrap {
   }
 
   .mobile-add {
-    margin-top: 106px;
+    padding-top: 106px;
   }
 
   .mobile-add .mob_num {
@@ -961,45 +1022,39 @@ section.wrap {
     right: -21px;
   }
 }
-@media (max-width: 460px) {
+@media (max-width: 468px) {
   .background_before {
     left: 174px;
   }
 
-  .background {
-    width: 354px;
-    position: fixed;
-    left: 0;
-  }
-
   .symbol {
-    bottom: 608px;
-  }
-
-  .mobile-add {
-    padding-top: 408px;
-    margin-top: 0;
-  }
-
-  .mob_num::after {
-    content: url(style.css);
-    width: 168px;
-    height: 160px;
-    bottom: 599px;
-    right: 0;
-  }
-
-  .giometric_symbols {
-    padding-left: 104px;
-    bottom: -288px;
-  }
-
-  .horizontal_text {
-    top: 227px;
-    left: 4px;
-    position: fixed;
+    left: 241px;
+    bottom: -309px;
   }
 }
+.mobile-add {
+  padding-top: 408px;
+}
+
+.mob_num::after {
+  content: url(style.css);
+  width: 168px;
+  height: 160px;
+  bottom: 599px;
+  right: 0;
+}
+
+.giometric_symbols {
+  padding-left: 104px;
+  bottom: -288px;
+}
+
+.horizontal_text {
+  top: 227px;
+  left: 4px;
+  position: fixed;
+}
+
 @media (max-width: 430) {
   .symbol {
     bottom: 608px;
@@ -1012,5 +1067,10 @@ section.wrap {
 
   .mob_num::after {
     bottom: 585px;
+  }
+}
+@media (max-width: 337) {
+  .background {
+    max-width: 270px;
   }
 }
