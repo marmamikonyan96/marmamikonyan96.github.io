@@ -9,22 +9,48 @@ $(document).ready(function () {
     $(".overlay").removeClass("open");
   });
 });
-$(document).ready(function () {
-  var position = 0;
-  var slidesToShow = 1;
-  var container = $("slider-container");
-  var wrap = $(".slider_wrap");
-  var slide = $(".slide");
-  var btnLeft = $(".btn-left");
-  var btnRight = $(".btn-right");
-  var slideWidth = container.width() / slidesToShow;
-  slideWidth.each(function (index, slide) {
-    $(slide).css({
-      minWidth: itemWidth
-    });
-  });
-  btnLeft.click(function () {
-    console.log("btn");
-  });
-  btnRight.click(function () {});
+var $owl = $(".owl-carousel");
+$owl.children().each(function (index) {
+  $(this).attr("data-position", index); // NB: .attr() instead of .data()
+});
+$owl.owlCarousel({
+  items: 1,
+  nav: true,
+  dots: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true
+    },
+    600: {
+      items: 1,
+      nav: true
+    },
+    798: {
+      items: 1,
+      nav: true
+    },
+    831: {
+      items: 1,
+      nav: true
+    },
+    999: {
+      items: 1,
+      nav: true
+    },
+    1000: {
+      items: 1,
+      nav: true
+    },
+    1920: {
+      items: 1,
+      nav: true
+    }
+  }
+});
+$(document).on("click", ".owl-item>div", function () {
+  var $speed = 100; // in ms
+
+  $owl.trigger("to.owl.carousel", [$(this).data("position"), $speed]);
 });

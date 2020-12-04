@@ -144,6 +144,9 @@ img {
   opacity: 0.9;
 }
 
+.mobile_content {
+  display: none;
+}
 
 section.wrap {
   position: relative;
@@ -192,18 +195,18 @@ section.wrap {
   left: 154px;
   top: 133px;
   z-index: 5;
+}
 
-  .horizontal_text {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    align-self: flex-end;
+.horizontal_text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  align-self: flex-end;
 
-    p {
-      font-size: 9px;
-      font-family: "Geometria";
-      font-weight: 200;
-      font-style: italic;
-    }
+  p {
+    font-size: 9px;
+    font-family: "Geometria";
+    font-weight: 200;
+    font-style: italic;
   }
 }
 
@@ -381,79 +384,83 @@ section.wrap {
 }
 
 /*******************slider/.js**************/
-.slider-container {
+.owl-carousel {
   margin-top: 90px;
-  max-width: 138px;
   overflow: hidden;
+  max-width: 177px;
 
-  #slider_wrap {
+  .item {
+    background-color: #f7e611;
+    max-width: 138px;
+    height: 260px;
+    position: relative;
     display: flex;
-    transition: 2s;
-    padding-left: 30px;
+    flex-direction: column;
 
-    .slide {
-      background-color: #f7e611;
-      max-width: 100%;
-      height: 260px;
-      position: relative;
-      display: flex;
-      flex-direction: column;
-
-
-      p {
-        font-size: 45px;
-        color: #000;
-        font-family: 'Giometria';
-        font-weight: 800;
-        font-style: italic;
-        padding: 0px 44px;
-        margin-top: 170px;
-        margin-block-end: 2px;
-
-      }
-
-      p:last-child {
-        margin-left: 47px;
-        font-size: 17px;
-        position: relative;
-        margin-top: 0;
-        margin-block-start: 2px;
-        margin-block-end: 2px;
-      }
-
-      p:last-child:before {
-        content: url("");
-        position: absolute;
-        background-color: #000;
-        height: 2px;
-        width: 10px;
-        top: -16px;
-      }
-    }
-  }
-
-  .buttons {
-
-    .btn-left,
-    .btn-right {
-      position: absolute;
-      top: 183px;
-      cursor: pointer;
-      font-size: 30px;
-      background-color: transparent;
-      border: none;
-      color: #928c40;
+    p {
+      font-size: 45px;
+      color: #000;
+      font-family: 'Giometria';
       font-weight: 800;
+      font-style: italic;
+      padding: 0px 44px;
+      margin-top: 170px;
+      margin-block-end: 2px;
+
     }
 
-    .btn-left {
-      right: 300px;
+    p:last-child {
+      margin-left: 47px;
+      font-size: 17px;
+      position: relative;
+      margin-top: 0;
+      margin-block-start: 2px;
+      margin-block-end: 2px;
     }
 
-    .btn-right {
-      right: 41px;
+    p:last-child:before {
+      content: url("");
+      position: absolute;
+      background-color: #000;
+      height: 2px;
+      width: 10px;
+      top: -16px;
     }
   }
+}
+
+.owl-carousel .owl-nav button.owl-next {
+  position: absolute;
+  top: 111px;
+  left: 162px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 50px;
+  color: #888235;
+
+}
+
+.owl-item>div {
+  cursor: pointer;
+  margin: 8% 6%;
+  transition: margin 0.2s ease;
+}
+
+.owl-item.center>div {
+  cursor: auto;
+  margin: 0 auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 111px;
+  left: -3px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 50px;
+  color: #888235;
 }
 
 .giometric_right {
@@ -751,9 +758,9 @@ section.wrap {
     left: 268px;
   }
 
-  .swiper-container {
+  .owl-carousel {
     margin-left: 54px;
-    margin-top: 34px;
+    margin-top: 21px;
   }
 
   .giometric_symbols {
@@ -768,178 +775,148 @@ section.wrap {
   .giometric_right {
     max-width: 250px;
   }
-}
 
-@media(max-width:717px) {
-  body {
-    background-color: #f7e611;
-    background-image: none;
-    max-width: 100%;
-    margin: 0;
-  }
-
-  .container {
-    max-width: none;
-    padding: 0;
-    margin: 0;
+  .ural {
+    padding-left: 38px;
   }
 
   .title {
     display: none;
   }
+}
 
-  .yellow_part {
-    background-color: transparent;
-
-    .top_gio {
-      display: none;
-    }
-
-    .ural {
-      display: none;
-    }
-
-    .peremennie {
-      display: none;
-    }
+@media(max-width:717px) {
+  body {
+    background-image: none;
+    background-color: #f7e611;
   }
 
-  .horizontal_num {
+  section.wrap {
     display: none;
   }
 
-  .swiper-container {
-    margin-left: 196px;
-    margin-top: 34px;
-    padding-right: 36px;
+  .mobile_content {
+    display: block;
 
-    .swiper-wrapper {
-      .swiper-slide {
-        background-color: transparent;
-
-        p {
-          padding: 0px 64px;
-        }
-      }
-    }
   }
 
-
-  .button::before {
-    display: none;
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
   }
 
-  .button {
-    i {
-      right: 52px;
-    }
+  .top_bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
   }
 
-  .symbol {
-    top: 729px;
-  }
+  .top_symbol {
+    width: 25px;
 
-  .symbol::after {
-    display: none;
-  }
-
-  .square {
-    display: none;
-  }
-
-  .flex_hor {
-    .horizontal_text {
-      writing-mode: vertical-rl;
-      text-orientation: upright;
-      align-self: flex-end;
-      z-index: 1;
-    }
-  }
-
-  .giometric_right {
-    display: none;
-  }
-
-  .giometric_symbols {
-    display: none;
-  }
-
-  .limited_wrapper {
-    .top_symbol {
-      margin-left: 10px;
+    img {
+      width: 100%;
     }
   }
 
   .navbar {
-    margin-top: 29px;
-    padding-left: 115px;
-  }
-
-  .navbar-button {
-    margin-top: 48px;
     position: relative;
+    margin-top: 0;
   }
 
-  .limited_wrapper {
-    position: relative;
-  }
-
-  .left_col {
-    flex: none;
-    width: 442px;
-    height: 262px;
-    background-image: url(../img/left.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 100px;
-  }
-
-  .left_col:after {
+  .navbar:before {
     content: url('');
     position: absolute;
-    background-color: #f7e611;
+    background-image: url(../img/mob_border.png);
+    background-repeat: no-repeat;
+    width: 225px;
+    right: -22px;
+    top: -24px;
+    height: 174px;
+    z-index: -5;
+  }
+
+  .button::before {
+    display: none;
+    right: 0;
+    left: 0;
+  }
+
+  .button i {
+    position: relative;
+    right: 22px;
+  }
+
+  .background {
+    width: 503px;
+    margin-top: 45px;
+    position: relative;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .background:after {
+    content: url('');
+    position: absolute;
     width: 100%;
     height: 100%;
+    background-color: #f7e611;
     opacity: 0.8;
     top: 0;
+    right: 0;
+  }
+
+  .horizontal_text {
+    position: absolute;
+    top: 256px;
+    left: 47px;
+    z-index: 2;
+  }
+
+  .background_before {
+    position: absolute;
+    left: 312px;
+    top: 291px;
+  }
+
+  .giometric_symbols {
+    padding-left: 252px;
+    max-width: 100%;
+    position: absolute;
+    bottom: 660px;
+    z-index: -5;
+  }
+
+  .second_item {
+    .background {
+      width: 100%;
+      margin-top: 0;
+      position: absolute;
+      left: 0px;
+      top: 399px;
+      z-index: 1;
+      opacity: 0.9;
+    }
+  }
+
+  .letter_symbol {
+    position: absolute;
+    left: 215px;
+    z-index: 1;
+    top: 418px;
   }
 
   .symbol {
-    left: 263px;
-    top: 721px;
+    left: 266px;
+    bottom: -333px;
+
+  }
+
+  .adding_items {
+    position: absolute;
     z-index: 1;
-  }
-
-  .right_col {
-    width: 444px;
-    height: 480px;
-    background-image: url(../img/right.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 132px;
-    top: 350px;
-  }
-
-  .right_col:before {
-    content: url('');
-    position: absolute;
-    background-color: #f7e611;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    top: 0;
-  }
-
-  .right_col:after {
-    content: url('');
-    position: absolute;
-    background-image: url(../img/mob_gio.png);
-    background-repeat: no-repeat;
-    width: 187px;
-    height: 135px;
-    top: -94px;
-    left: 200px;
-    z-index: -1;
   }
 
   .mobile-add {
@@ -972,5 +949,3 @@ section.wrap {
     }
   }
 }
-
-@media(max-width:707px) {}

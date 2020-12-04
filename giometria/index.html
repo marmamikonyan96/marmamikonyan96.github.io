@@ -14,6 +14,8 @@
       integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="build/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="build/css/owl.theme.default.min.css" />
     <link rel="stylesheet" href="build/css/style.css" />
     <title>task</title>
   </head>
@@ -59,39 +61,34 @@
                   <span>03</span>
                 </p>
               </div>
-
-              <div class="slider-container">
-              <div id="slider_wrap">
-                <div class="slide active">
-                  <p>13</p>
-                  <p>7</p>
-                </div>
-                <div class="slide">
-                  <p>15</p>
-                  <p>2</p>
-                </div>
-                <div class="slide">
-                  <p>16</p>
-                  <p>4</p>
-                </div>
-                <div class="slide">
-                  <p>12</p>
-                  <p>3</p>
-                </div>
-                <div class="slide">
-                  <p>12</p>
-                  <p>3</p>
-                </div>
-                <div class="slide">
-                  <p>19</p>
-                  <p>2</p>
+              <div class="owl-carousel">
+                <div class="owl-wrap" style="display: flex;">
+                  <div class="item">
+                    <p>13</p>
+                    <p>7</p>
+                  </div>
+                  <div class="item">
+                    <p>15</p>
+                    <p>2</p>
+                  </div>
+                  <div class="item">
+                    <p>16</p>
+                    <p>4</p>
+                  </div>
+                  <div class="item">
+                    <p>12</p>
+                    <p>3</p>
+                  </div>
+                  <div class="item">
+                    <p>12</p>
+                    <p>3</p>
+                  </div>
+                  <div class="item">
+                    <p>19</p>
+                    <p>2</p>
+                  </div>
                 </div>
               </div>
-              <div class="buttons">
-                <div class="btn-left">&lt</div>
-                <div class="btn-right">&gt</div>
-              </div>
-            </div>
             <div class="mobile-add">
               <div class="mobile_design">
                 <img src="./build/img/trio-mob.png" alt="">
@@ -130,9 +127,74 @@
       <div class="title">
         <p>AFFINAGE</p>
       </div>
-      
     </section>
-    <script src="src/js/jquery-3.5.1.min.js"></script>
+    <!--
+      mobile type*********************************************************************
+    -->
+<div class="mobile_content">
+  <div class="container">
+    <div class="top_bar">
+      <div class="top_symbol">
+        <img src="./build/img/top_s.png" alt="" />
+      </div>
+      <div class="navbar">
+        <div class="navbar-button">
+          <span class="button open-menu" type="button">
+            <i class="fas fa-bars"></i>
+          </span>
+        </div>
+        <div class="overlay">
+          <div class="menu">
+            <ul>
+              <li><a href="#">Main</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">item</a></li>
+              <li><a href="#">Item</a></li>
+              <li class="close-menu" style="cursor: pointer">
+                <i class="fas fa-times"></i>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="first_item">
+      <div class="background">
+        <img src="./build/img/left.jpg" alt="">
+      </div>
+      <div class="horizontal_text">
+        <p>очень хороший слоган</p>
+      </div>
+      <div class="giometric_symbols">
+        <img src="./build/img/giometric_right.png" alt="" />
+      </div>
+      <div class="background_before">
+        <img src="./build/img/mob_gio.png" alt="">
+      </div>
+    </div>
+    <div class="second_item">
+      <div class="background">
+        <img src="./build//img/right.jpg" alt="">
+      </div>
+      <div class="letter_symbol">
+        <img src="./build/img/A.png" alt="">
+      </div>
+      <div class="symbol">
+        <img src="build/img/moon.png" alt="" />
+      </div>
+      <div class="adding_items">
+        <div class="mobile-add">
+          <div class="mobile_design">
+            <img src="./build/img/trio-mob.png" alt="">
+          </div>
+          <div class="mob_num"><p style="font-style: italic; font-size:30px;color:#000; font-weight:800">13</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    <script src="build/js/jquery-3.5.1.min.js"></script>
+    <script src="build/js/owl.carousel.min.js"></script>
     <script src="build/js/script.js"></script>
   </body>
 </html>

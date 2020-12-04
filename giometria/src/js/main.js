@@ -10,23 +10,50 @@ $(document).ready(function () {
   });
 });
 
-$(document).ready(function () {
-  let position = 0;
-  const slidesToShow = 1;
-  const container = $("slider-container");
-  const wrap = $(".slider_wrap");
-  const slide = $(".slide");
-  const btnLeft = $(".btn-left");
-  const btnRight = $(".btn-right");
-  const slideWidth = container.width() / slidesToShow;
+var $owl = $(".owl-carousel");
 
-  slideWidth.each(function (index, slide) {
-    $(slide).css({
-      minWidth: itemWidth,
-    });
-  });
-  btnLeft.click(function () {
-    console.log("btn");
-  });
-  btnRight.click(function () {});
+$owl.children().each(function (index) {
+  $(this).attr("data-position", index); // NB: .attr() instead of .data()
+});
+
+$owl.owlCarousel({
+  items: 1,
+  nav: true,
+  dots: false,
+  responsiveClass: true,
+  responsive: {
+    0: {
+      items: 1,
+      nav: true,
+    },
+    600: {
+      items: 1,
+      nav: true,
+    },
+    798: {
+      items: 1,
+      nav: true,
+    },
+    831: {
+      items: 1,
+      nav: true,
+    },
+    999: {
+      items: 1,
+      nav: true,
+    },
+    1000: {
+      items: 1,
+      nav: true,
+    },
+    1920: {
+      items: 1,
+      nav: true,
+    },
+  },
+});
+
+$(document).on("click", ".owl-item>div", function () {
+  var $speed = 100; // in ms
+  $owl.trigger("to.owl.carousel", [$(this).data("position"), $speed]);
 });

@@ -126,6 +126,10 @@ img {
   opacity: 0.9;
 }
 
+.mobile_content {
+  display: none;
+}
+
 section.wrap {
   position: relative;
 }
@@ -171,12 +175,13 @@ section.wrap {
   top: 133px;
   z-index: 5;
 }
-.flex_hor .horizontal_text {
+
+.horizontal_text {
   writing-mode: vertical-rl;
   text-orientation: upright;
   align-self: flex-end;
 }
-.flex_hor .horizontal_text p {
+.horizontal_text p {
   font-size: 9px;
   font-family: "Geometria";
   font-weight: 200;
@@ -343,25 +348,20 @@ section.wrap {
 }
 
 /*******************slider/.js**************/
-.slider-container {
+.owl-carousel {
   margin-top: 90px;
-  max-width: 138px;
   overflow: hidden;
+  max-width: 177px;
 }
-.slider-container #slider_wrap {
-  display: flex;
-  transition: 2s;
-  padding-left: 30px;
-}
-.slider-container #slider_wrap .slide {
+.owl-carousel .item {
   background-color: #f7e611;
-  max-width: 100%;
+  max-width: 138px;
   height: 260px;
   position: relative;
   display: flex;
   flex-direction: column;
 }
-.slider-container #slider_wrap .slide p {
+.owl-carousel .item p {
   font-size: 45px;
   color: #000;
   font-family: "Giometria";
@@ -371,7 +371,7 @@ section.wrap {
   margin-top: 170px;
   margin-block-end: 2px;
 }
-.slider-container #slider_wrap .slide p:last-child {
+.owl-carousel .item p:last-child {
   margin-left: 47px;
   font-size: 17px;
   position: relative;
@@ -379,7 +379,7 @@ section.wrap {
   margin-block-start: 2px;
   margin-block-end: 2px;
 }
-.slider-container #slider_wrap .slide p:last-child:before {
+.owl-carousel .item p:last-child:before {
   content: url("");
   position: absolute;
   background-color: #000;
@@ -387,22 +387,38 @@ section.wrap {
   width: 10px;
   top: -16px;
 }
-.slider-container .buttons .btn-left,
-.slider-container .buttons .btn-right {
+
+.owl-carousel .owl-nav button.owl-next {
   position: absolute;
-  top: 183px;
+  top: 111px;
+  left: 162px;
   cursor: pointer;
-  font-size: 30px;
+  border: 1px solid transparent;
   background-color: transparent;
-  border: none;
-  color: #928c40;
-  font-weight: 800;
+  font-size: 50px;
+  color: #888235;
 }
-.slider-container .buttons .btn-left {
-  right: 300px;
+
+.owl-item > div {
+  cursor: pointer;
+  margin: 8% 6%;
+  transition: margin 0.2s ease;
 }
-.slider-container .buttons .btn-right {
-  right: 41px;
+
+.owl-item.center > div {
+  cursor: auto;
+  margin: 0 auto;
+}
+
+.owl-carousel .owl-nav button.owl-prev {
+  position: absolute;
+  top: 111px;
+  left: -3px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  background-color: transparent;
+  font-size: 50px;
+  color: #888235;
 }
 
 .giometric_right {
@@ -659,9 +675,9 @@ section.wrap {
     left: 268px;
   }
 
-  .swiper-container {
+  .owl-carousel {
     margin-left: 54px;
-    margin-top: 34px;
+    margin-top: 21px;
   }
 
   .giometric_symbols {
@@ -676,163 +692,141 @@ section.wrap {
   .giometric_right {
     max-width: 250px;
   }
-}
-@media (max-width: 717px) {
-  body {
-    background-color: #f7e611;
-    background-image: none;
-    max-width: 100%;
-    margin: 0;
-  }
 
-  .container {
-    max-width: none;
-    padding: 0;
-    margin: 0;
+  .ural {
+    padding-left: 38px;
   }
 
   .title {
     display: none;
   }
+}
+@media (max-width: 717px) {
+  body {
+    background-image: none;
+    background-color: #f7e611;
+  }
 
-  .yellow_part {
-    background-color: transparent;
-  }
-  .yellow_part .top_gio {
-    display: none;
-  }
-  .yellow_part .ural {
-    display: none;
-  }
-  .yellow_part .peremennie {
+  section.wrap {
     display: none;
   }
 
-  .horizontal_num {
-    display: none;
+  .mobile_content {
+    display: block;
   }
 
-  .swiper-container {
-    margin-left: 196px;
-    margin-top: 34px;
-    padding-right: 36px;
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
   }
-  .swiper-container .swiper-wrapper .swiper-slide {
-    background-color: transparent;
+
+  .top_bar {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
   }
-  .swiper-container .swiper-wrapper .swiper-slide p {
-    padding: 0px 64px;
+
+  .top_symbol {
+    width: 25px;
+  }
+  .top_symbol img {
+    width: 100%;
+  }
+
+  .navbar {
+    position: relative;
+    margin-top: 0;
+  }
+
+  .navbar:before {
+    content: url("");
+    position: absolute;
+    background-image: url(../img/mob_border.png);
+    background-repeat: no-repeat;
+    width: 225px;
+    right: -22px;
+    top: -24px;
+    height: 174px;
+    z-index: -5;
   }
 
   .button::before {
     display: none;
+    right: 0;
+    left: 0;
   }
 
   .button i {
-    right: 52px;
+    position: relative;
+    right: 22px;
   }
 
-  .symbol {
-    top: 729px;
+  .background {
+    width: 503px;
+    margin-top: 45px;
+    position: relative;
+  }
+  .background img {
+    width: 100%;
   }
 
-  .symbol::after {
-    display: none;
+  .background:after {
+    content: url("");
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f7e611;
+    opacity: 0.8;
+    top: 0;
+    right: 0;
   }
 
-  .square {
-    display: none;
+  .horizontal_text {
+    position: absolute;
+    top: 256px;
+    left: 47px;
+    z-index: 2;
   }
 
-  .flex_hor .horizontal_text {
-    writing-mode: vertical-rl;
-    text-orientation: upright;
-    align-self: flex-end;
-    z-index: 1;
-  }
-
-  .giometric_right {
-    display: none;
+  .background_before {
+    position: absolute;
+    left: 312px;
+    top: 291px;
   }
 
   .giometric_symbols {
-    display: none;
-  }
-
-  .limited_wrapper .top_symbol {
-    margin-left: 10px;
-  }
-
-  .navbar {
-    margin-top: 29px;
-    padding-left: 115px;
-  }
-
-  .navbar-button {
-    margin-top: 48px;
-    position: relative;
-  }
-
-  .limited_wrapper {
-    position: relative;
-  }
-
-  .left_col {
-    flex: none;
-    width: 442px;
-    height: 262px;
-    background-image: url(../img/left.jpg);
-    background-repeat: no-repeat;
-    position: relative;
-    margin-left: 100px;
-  }
-
-  .left_col:after {
-    content: url("");
+    padding-left: 252px;
+    max-width: 100%;
     position: absolute;
-    background-color: #f7e611;
+    bottom: 660px;
+    z-index: -5;
+  }
+
+  .second_item .background {
     width: 100%;
-    height: 100%;
-    opacity: 0.8;
-    top: 0;
+    margin-top: 0;
+    position: absolute;
+    left: 0px;
+    top: 399px;
+    z-index: 1;
+    opacity: 0.9;
+  }
+
+  .letter_symbol {
+    position: absolute;
+    left: 215px;
+    z-index: 1;
+    top: 418px;
   }
 
   .symbol {
-    left: 263px;
-    top: 721px;
+    left: 266px;
+    bottom: -333px;
+  }
+
+  .adding_items {
+    position: absolute;
     z-index: 1;
-  }
-
-  .right_col {
-    width: 444px;
-    height: 480px;
-    background-image: url(../img/right.jpg);
-    background-repeat: no-repeat;
-    position: absolute;
-    left: 132px;
-    top: 350px;
-  }
-
-  .right_col:before {
-    content: url("");
-    position: absolute;
-    background-color: #f7e611;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    top: 0;
-  }
-
-  .right_col:after {
-    content: url("");
-    position: absolute;
-    background-image: url(../img/mob_gio.png);
-    background-repeat: no-repeat;
-    width: 187px;
-    height: 135px;
-    top: -94px;
-    left: 200px;
-    z-index: -1;
   }
 
   .mobile-add {
