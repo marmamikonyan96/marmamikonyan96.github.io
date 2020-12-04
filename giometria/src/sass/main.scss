@@ -964,14 +964,91 @@ section.wrap {
   }
 }
 
-@media(max-width:612px) {
+@media(max-width:614px) {
   .symbol {
-    left: 234px;
-    bottom: 409px;
+    left: 209px;
+    bottom: 408px;
   }
 
   .mobile-add .mob_num {
     position: relative;
     left: 480px;
+  }
+}
+
+@media(max-width:585px) {
+  .mobile-add {
+    margin-top: 170px;
+  }
+
+  .symbol {
+    left: 200px;
+    bottom: 439px;
+  }
+
+  .mob_num::after {
+    content: url(style.css);
+    position: fixed;
+    width: 195px;
+    height: 195px;
+    bottom: 374px;
+    right: 15px;
+  }
+}
+
+@media(max-width:500px) {
+  .background {
+    width: 100%;
+  }
+
+  .navbar:before {
+    width: 130px;
+  }
+
+  .horizontal_text {
+    top: 125px;
+  }
+
+  .background_before {
+    left: 160px;
+    top: 228px;
+  }
+
+  .giometric_symbols {
+    padding-left: 170px;
+    bottom: -1px;
+  }
+
+  .second_item .background {
+    left: -8px;
+    top: 329px;
+  }
+
+  .letter_symbol {
+    left: 86px;
+    top: 342px;
+  }
+
+  .symbol {
+    left: 106px;
+    bottom: 619px;
+    width: 100px;
+  }
+
+  .mobile-add {
+    margin-top: 106px;
+  }
+
+  .mobile-add .mob_num {
+    position: relative;
+    left: 243px;
+  }
+
+  .mob_num::after {
+    content: url(style.css);
+    width: 161px;
+    height: 161px;
+    bottom: 617px;
+    right: -21px;
   }
 }
