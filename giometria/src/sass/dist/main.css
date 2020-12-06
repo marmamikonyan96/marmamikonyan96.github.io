@@ -821,7 +821,7 @@ section.wrap {
 
   .symbol {
     left: 266px;
-    bottom: -334px;
+    bottom: 76px;
     position: absolute;
   }
 
@@ -861,7 +861,7 @@ section.wrap {
     height: 220px;
     background-color: #f7e611;
     clip-path: polygon(100% 100%, 100% 0px, 0px 100%);
-    bottom: 369px;
+    bottom: 78px;
     right: -40px;
     z-index: -1;
   }
