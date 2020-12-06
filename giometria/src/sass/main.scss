@@ -968,16 +968,21 @@ section.wrap {
     bottom: 393px;
   }
 
-  .mobile-add .mob_num {
-    position: relative;
-    left: 510px;
+  .mobile-add {
+    margin-top: 0;
+    padding-top: 180px;
+
+    .mob_num {
+      position: relative;
+      left: 510px;
+    }
   }
 }
 
 @media(max-width:614px) {
   .symbol {
     left: 209px;
-    bottom: 408px;
+    bottom: 133px;
   }
 
   .mobile-add .mob_num {

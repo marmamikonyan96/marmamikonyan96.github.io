@@ -876,6 +876,10 @@ section.wrap {
     bottom: 393px;
   }
 
+  .mobile-add {
+    margin-top: 0;
+    padding-top: 180px;
+  }
   .mobile-add .mob_num {
     position: relative;
     left: 510px;
@@ -884,7 +888,7 @@ section.wrap {
 @media (max-width: 614px) {
   .symbol {
     left: 209px;
-    bottom: 408px;
+    bottom: 133px;
   }
 
   .mobile-add .mob_num {
