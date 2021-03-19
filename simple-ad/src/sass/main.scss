@@ -302,17 +302,18 @@ footer ul {
 main{
   .table{
     display: flex;
-    align-items: center;
-    justify-content:space-around;
+    justify-content:space-between;
     margin: 40px;
 
 
     .leftsidebar{
+      margin-left: 85px;
       h2{
         color:#000;
         font-size:33px;
         position:relative;
         text-align:center;
+        padding-bottom: 30px;
       }
       h2:after{
         left:-119px;
@@ -346,13 +347,21 @@ main{
         border-radius:7px;
         border:3px solid #d4caca;
         display:grid;
-        link{
-          margin:2rem 0;
+
+        ul{
+          list-style: none;
+        }
+        li{
+          margin-bottom:5rem;
         }
       }
     }
     .center{
       flex: 0 0 60%;
+      h2{
+        font-size: 35px;
+        font-weight: 600;
+      }
       .product{
         width: 400px;
         margin-left: 30px;
