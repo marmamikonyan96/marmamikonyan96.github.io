@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".wrapper").slick({dots:!1,infinite:!0,speed:1e3,slidesToShow:1,slidesToScroll:1,autoplay:!0})}),$(document).ready(function(){$(".open-menu").on("click",function(){$(".overlay").addClass("open")}),$(".close-menu").on("click",function(){$(".overlay").removeClass("open")})});
