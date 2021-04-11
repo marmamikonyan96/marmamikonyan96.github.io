@@ -1,0 +1,138 @@
+*{
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    color: #383736;
+    font-weight: 700;
+}
+body{
+    background-color: #E5E5E5;
+}
+a{
+    text-decoration: none;
+}
+.container{
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 15px;
+    border-radius: 6px;
+    background-color: #fff;
+    padding: 40px 10px;
+
+}
+
+section.content .content-wrap{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+section.content .content-wrap .image-block{
+    max-width: 87px;
+}
+section.content .content-wrap .sec-apartment{
+    margin-top: 12px;
+    flex: 0 0 45%;
+}
+section.content .content-wrap .sec-apartment h4{
+    text-align: left;
+    font-size: 24px;
+    padding: 0;
+    margin: 0;
+}
+section.content .content-wrap .sec-apartment table th{
+    text-align: left;
+    padding: 7px 40px ;
+    font-weight: 400;
+    line-height: 16px;
+    color: #989691;
+}
+section.content .content-wrap .sec-apartment table th:first-child{
+    padding-left: 0;
+}
+section.content .content-wrap .sec-apartment table td{
+    text-align: left;
+    padding-left: 40px;
+    font-weight: 500;
+    font-size: 14px;
+}
+section.content .content-wrap .sec-apartment table td:first-child{
+    padding-left: 0;
+}
+section.content .content-wrap .sec-apartment .position{
+    display: flex;
+    margin-top: 20px;
+    margin-left: 20px;
+    
+}
+section.content .content-wrap .sec-apartment .position .accept{
+    background-color: #F2FAF0;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+section.content .content-wrap .sec-apartment .position .accept a{
+    color: #64B851;
+    font-weight: 500;
+
+}
+section.content .content-wrap .sec-apartment .position .decline{
+    background-color: #F2FAF0;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 10px 20px;
+    display: flex;
+}
+section.content .content-wrap .sec-apartment .position .decline a{
+    color: #EB4B51;
+    font-weight: 500;
+    margin-left: 5px;
+}
+section.content .content-wrap .cost p{
+    font-weight: 400;
+    color: #989691;
+    font-size: 14px;
+}
+section.content .content-wrap .cost p a{
+    text-decoration: none;
+    color: #2794DB;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+
+}
+section.content .content-wrap .cost p a:hover{
+    border-bottom: 2px solid #2794DB;
+}
+section.content .content-wrap .cost .cost-number p{
+    color: #383736;
+    font-weight: 700;
+    font-size: 24px;
+}
+section.content .content-wrap .cost .description p{
+   font-weight: 400;
+   font-size: 14px;
+   color: #989691;
+   line-height: 20px;
+}
+section.content .content-wrap .cost .description p span{
+    color: #EB4B51;
+    font-weight: 500;
+}
+section.content .content-wrap .cost .btn{
+    background-color: #FAC62D;
+    border: 1px solid #FAC62D;
+    border-radius: 6px;
+    padding: 12px 40px;
+    display: flex;
+    width: 100%;
+    text-align: center;
+}
+section.content .content-wrap .cost .btn a{
+    padding-left: 8px;
+}
+@media only screen and (max-width: 1150px){
+    .container{
+        max-width: 100%;
+    }
+}
+@media only screen and (max-width: 1122px){
+    
+}
